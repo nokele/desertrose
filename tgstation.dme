@@ -15,6 +15,7 @@
 
 // BEGIN_INCLUDE
 #include "_maps\_basemap.dm"
+#include "_maps\templates\dungeons\dungeons.dm"
 #include "code\_compile_options.dm"
 #include "code\world.dm"
 #include "code\__DEFINES\_extools.dm"
@@ -2394,6 +2395,7 @@
 #include "code\modules\language\sylvan.dm"
 #include "code\modules\language\vampiric.dm"
 #include "code\modules\language\voltaic.dm"
+#include "code\modules\language\wayfarer.dm"
 #include "code\modules\language\xenocommon.dm"
 #include "code\modules\library\lib_codex_gigas.dm"
 #include "code\modules\library\lib_items.dm"
@@ -2416,6 +2418,7 @@
 #include "code\modules\mapping\map_config.dm"
 #include "code\modules\mapping\map_orientation_pattern.dm"
 #include "code\modules\mapping\map_template.dm"
+#include "code\modules\mapping\mapping_helpers.dm"
 #include "code\modules\mapping\minimaps.dm"
 #include "code\modules\mapping\preloader.dm"
 #include "code\modules\mapping\reader.dm"
@@ -2632,6 +2635,7 @@
 #include "code\modules\mob\living\carbon\human\species_types\felinid.dm"
 #include "code\modules\mob\living\carbon\human\species_types\flypeople.dm"
 #include "code\modules\mob\living\carbon\human\species_types\furrypeople.dm"
+#include "code\modules\mob\living\carbon\human\species_types\gen2synth.dm"
 #include "code\modules\mob\living\carbon\human\species_types\ghoul.dm"
 #include "code\modules\mob\living\carbon\human\species_types\golems.dm"
 #include "code\modules\mob\living\carbon\human\species_types\humans.dm"
