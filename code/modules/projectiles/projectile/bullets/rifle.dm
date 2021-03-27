@@ -8,10 +8,10 @@
 
 /obj/item/projectile/bullet/a762/ap
 	name = "7.62 AP bullet"
-	damage = 35 //32
-	armour_penetration = 0.7
-	wound_bonus = 40
-	bare_wound_bonus = -40
+	damage = 30 //32
+	armour_penetration = 0.5
+	wound_bonus = 30
+	bare_wound_bonus = -30
 
 /obj/item/projectile/bullet/a762/jhp
 	name = "7.62 JHP bullet"
@@ -36,8 +36,8 @@
 
 /obj/item/projectile/bullet/a762/match
 	name = "7.62 match bullet"
-	damage = 50 //48
-	armour_penetration = 0.6
+	damage = 43 //50
+	armour_penetration = 0
 	wound_bonus = 25
 	bare_wound_bonus = 25
 
@@ -54,9 +54,9 @@
 
 /obj/item/projectile/bullet/a556/ap
 	name = "5.56 AP bullet"
-	damage = 31
-	armour_penetration = 0.72 //0.65
-	wound_bonus = 36
+	damage = 28
+	armour_penetration = 0.6 //0.65
+	wound_bonus = 30
 	bare_wound_bonus = -18
 
 /obj/item/projectile/bullet/a556/jhp
@@ -68,8 +68,8 @@
 
 /obj/item/projectile/bullet/a556/match
 	name = "5.56 match bullet"
-	damage = 45 //46
-	armour_penetration = 0.4 //0.45
+	damage = 40 //46
+	armour_penetration = 0 //0.45
 	wound_bonus = 18
 	bare_wound_bonus = 18
 
