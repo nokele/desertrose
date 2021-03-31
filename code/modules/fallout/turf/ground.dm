@@ -53,6 +53,7 @@
 /turf/open/indestructible/ground/outside
 	turf_light_range = 3
 	turf_light_power = 0.75
+	slowdown = 0.2
 
 /turf/open/indestructible/ground/outside/Initialize()
 	. = ..()
@@ -88,7 +89,7 @@
 	. = ..()
 	if(prob(1))
 		salvage = new /obj/item/salvage/low()
-		if(prob(7))
+		if(prob(15))
 			salvage = new /obj/item/salvage/high()
 	if(!((locate(/obj/structure) in src) || (locate(/obj/machinery) in src)))
 		plantGrass()
@@ -162,7 +163,7 @@
 //	step_sounds = list("human" = "dirtfootsteps")
 //	allowed_plants = list(/obj/item/seeds/poppy/broc, /obj/item/seeds/xander, /obj/item/seeds/mutfruit,
 //	/obj/item/seeds/potato, /obj/item/seeds/carrot, /obj/item/seeds/pumpkin, /obj/item/seeds/corn, /obj/item/seeds/agave)
-	slowdown = 0.2
+	slowdown = 0.3
 	flags_1 = CAN_HAVE_NATURE
 	footstep = FOOTSTEP_SAND
 	barefootstep = FOOTSTEP_SAND
