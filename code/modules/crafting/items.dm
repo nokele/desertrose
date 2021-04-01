@@ -1,3 +1,13 @@
+/obj/item/scrap/research
+	name = "strange object"
+	desc = "What mysteries could this hold?"
+	icon = 'icons/obj/assemblies.dmi'
+
+/obj/item/scrap/research/Initialize()
+	. = ..()
+	icon_state = pick("shock_kit","armor-igniter-analyzer","infra-igniter0","infra-igniter1","radio-multitool","prox-radio1","radio-radio","timer-multitool0","radio-igniter-tank")
+	name = "[pick("broken","twisted","spun","improved","silly","regular","badly made")] [pick("device","object","toy","illegal tech","weapon")]"
+
 /obj/item/metaldetector
 	name = "metal detector"
 	desc = "Detects burried salvage in a 5 tile radius."
@@ -38,12 +48,6 @@
 	icon_state = "blueprint_empty"
 	w_class = WEIGHT_CLASS_TINY
 
-/obj/item/salvage
-	name = "salvage"
-	icon = 'icons/fallout/objects/items.dmi'
-	icon_state = "blueprint_empty"
-	w_class = WEIGHT_CLASS_NORMAL
-
 /obj/item/stack/prefabs
 	name = "crafting prefabs"
 	icon = 'icons/fallout/objects/items.dmi'
@@ -58,7 +62,7 @@
 
 /obj/item/blueprint/research
 	name = "mysterious blueprint"
-	desc = "... (grants 25k research points when destructively analyzed - the BoS or Vault might want this.)"
+	desc = "... (grants 10k research points when destructively analyzed - the BoS or Vault might want this.)"
 	icon_state = "blueprint2"
 
 /obj/item/blueprint/misc/stim
@@ -912,12 +916,70 @@
 	icon_state = "auto_sear"
 
 //salvage
+/obj/item/salvage
+	name = "salvage"
+	icon = 'icons/fallout/objects/items.dmi'
+	icon_state = "blueprint_empty"
+	w_class = WEIGHT_CLASS_NORMAL
+	var/list/Loot = list() //List of items
+
 /obj/item/salvage/low
 	name = "Pre-war salvage"
 	desc = "Some pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
 	icon_state = "salvage"
+	Loot = list(/obj/item/stack/crafting/metalparts/five,
+				/obj/item/stack/ore/blackpowder,
+				/obj/item/stack/crafting/electronicparts/three,
+				/obj/item/stack/sheet/lead/five,
+				/obj/item/stack/sheet/metal/five,
+				/obj/item/stack/sheet/metal/ten,
+				/obj/item/stack/sheet/cloth/five,
+				/obj/item/stack/sheet/leather/five,
+				/obj/item/camera,
+				/obj/item/scrap/research
+				)
+
+/obj/item/salvage/crafting
+	name = "salvaged components"
+	desc = "Some salvaged components, it could contain some useful materials if dissasembled using a workbench..."
+	icon_state = "salvagecomponents"
+	Loot = list(/obj/item/crafting/diode,
+				/obj/item/crafting/transistor,
+				/obj/item/crafting/capacitor,
+				/obj/item/crafting/fuse,
+				/obj/item/crafting/resistor,
+				/obj/item/crafting/switch_crafting,
+				/obj/item/crafting/bulb,
+				/obj/item/crafting/board,
+				/obj/item/crafting/buzzer,
+				/obj/item/crafting/frame,
+				/obj/item/crafting/small_gear,
+				/obj/item/crafting/large_gear,
+				/obj/item/crafting/duct_tape,
+				/obj/item/crafting/coffee_pot,
+				/obj/item/crafting/wonderglue,
+				/obj/item/crafting/turpentine,
+				/obj/item/crafting/abraxo,
+				/obj/item/crafting/igniter,
+				/obj/item/crafting/timer,
+				/obj/item/crafting/sensor,
+				/obj/item/crafting/lunchbox)
+
 
 /obj/item/salvage/high
 	name = "Advanced pre-war salvage"
 	desc = "Some advanced pre-war salvage, it could contain some useful materials if dissasembled using a workbench..."
 	icon_state = "goodsalvage"
+	Loot = list(/obj/item/stack/crafting/goodparts/five,
+				/obj/item/blueprint/research,
+				/obj/item/advanced_crafting_components/receiver,
+				/obj/item/advanced_crafting_components/assembly,
+				/obj/item/advanced_crafting_components/alloys,
+				/obj/item/reagent_containers/hypospray/medipen/stimpak,
+				/obj/item/weldingtool/advanced,
+				/obj/item/stock_parts/cell/ammo/mfc,
+				/obj/item/stock_parts/cell/ammo/ec,
+				/obj/item/megaphone)
+
+
+
