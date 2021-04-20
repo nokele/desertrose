@@ -85,6 +85,12 @@
 	name = "reinforced combat helmet"
 	color = "#302E2E" // Dark Grey
 
+/obj/item/clothing/head/helmet/f13/combat/mk2/raider
+	name = "customized raider combat helmet"
+	desc = "(VI) A reinforced combat helmet painted black with the laser designator removed."
+	icon_state = "combat_helmet_raider"
+	item_state = "combat_helmet_raider"
+
 /obj/item/clothing/head/helmet/f13/rangerbroken
 	name = "broken riot helmet"
 	icon_state = "ranger_broken"
@@ -316,6 +322,13 @@
 	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 	requires_training = FALSE
 
+/obj/item/clothing/head/helmet/f13/power_armor/t45b/restored
+	name = "restored T-45b helmet"
+	desc = "(VIII) It's a restored T-45b power armor helmet."
+	armor_block_chance = 80
+	deflection_chance = 20 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
+	requires_training = TRUE
+
 /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 	name = "raider T-45b power helmet"
 	desc = "(VIII) This power armor helmet is so decrepit and battle-worn that it have lost most of its capability to protect the wearer from harm. This helmet seems to be heavily modified, heavy metal banding fused to the helmet"
@@ -496,7 +509,7 @@
 
 /obj/item/clothing/head/f13
 	flags_inv = HIDEHAIR
-
+	
 /obj/item/clothing/head/f13/rastacap
 	name = "rastacap"
 	desc = "(I) <font color='#157206'>Him haffi drop him fork and run,</font><br><font color='green'>Him can't stand up to Jah Jah son,</font><br><font color='#fd680e'>Him haffi lef' ya with him gun,</font><br><font color='red'>Dig off with him bomb.</font>"
@@ -505,11 +518,17 @@
 	cold_protection = HEAD //This tam brings the warm reggae and Jamaican sun with it.
 	min_cold_protection_temperature = FIRE_HELM_MIN_TEMP_PROTECT
 
-/obj/item/clothing/head/f13/fez
-	name = "fez"
-	desc = "(I) Fezzes are cool!"
-	icon_state = "fez"
-	item_state = "secsoft"
+/obj/item/clothing/head/f13/hairband
+	name = "hairband"
+	desc = "Pretty yellow hairband"
+	icon_state = "50shairband"
+	item_state = "50shairband"
+
+/obj/item/clothing/head/f13/nursehat
+	name = "nursehat"
+	desc = "White cloth headdress for nurses"
+	icon_state = "nursehat"
+	item_state = "nursehat"
 
 /obj/item/clothing/head/f13/beaver
 	name = "beaverkin"

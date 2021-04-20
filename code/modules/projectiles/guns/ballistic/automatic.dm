@@ -563,7 +563,7 @@
 
 /obj/item/gun/ballistic/automatic/mini_uzi
 	name = "uzi"
-	desc = "A lightweight, burst-fire submachien gun, for when you really want someone dead. Uses 9mm rounds."
+	desc = "A lightweight, burst-fire submachine gun, for when you really want someone dead. Uses 9mm rounds."
 	icon_state = "mini-uzi"
 	mag_type = /obj/item/ammo_box/magazine/uzim9mm
 	w_class = WEIGHT_CLASS_NORMAL
@@ -660,6 +660,7 @@
 	scope_x_offset = 4
 	scope_y_offset = 15
 	extra_damage = -4
+	fire_delay = 4
 	suppressor_x_offset = 26
 	suppressor_y_offset = 28
 
@@ -815,7 +816,7 @@
 	scope_x_offset = 4
 	scope_y_offset = 11
 	can_suppress = TRUE
-	scope_state = "rifle_suppressor"
+	suppressor_state = "rifle_suppressor"
 	suppressor_x_offset = 27
 	suppressor_y_offset = 27
 	//automatic = 0

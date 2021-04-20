@@ -550,7 +550,8 @@
 				/obj/item/reagent_containers/pill/patch/turbo,
 				/obj/item/reagent_containers/pill/patch/healingpowder,
 				/obj/item/reagent_containers/pill/stimulant,
-				/obj/item/reagent_containers/syringe/medx
+				/obj/item/reagent_containers/syringe/medx,
+				/obj/item/storage/pill_bottle/chem_tin/buffout
 				)
 /*	------------------------------------------------
 	--------------WEAPON SPAWNERS-------------------
@@ -1704,3 +1705,12 @@
 		/obj/item/attachments/auto_sear
 	)
 
+/obj/effect/spawner/lootdrop/f13/npc_raider
+	name = "loot drop"
+	lootcount = 1
+	lootdoubles = FALSE
+	loot = list(
+		/obj/effect/spawner/bundle/f13/sig,
+		/obj/effect/spawner/bundle/f13/beretta,
+		/obj/effect/spawner/bundle/f13/ninemil
+	)
