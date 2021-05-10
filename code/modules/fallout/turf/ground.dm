@@ -184,6 +184,24 @@
 	icon = 'icons/fallout/turfs/sidewalk.dmi'
 //	step_sounds = list("human" = "erikafootsteps")
 
+/turf/open/indestructible/ground/outside/roaddirt
+	name = "road"
+	icon_state = "innermiddle"
+	icon = 'icons/fallout/turfs/asphaltdirt.dmi'
+//	step_sounds = list("human" = "erikafootsteps")
+
+/turf/open/indestructible/ground/outside/sidewalkdirt
+	name = "sidewalk"
+	icon_state = "outermiddle"
+	icon = 'icons/fallout/turfs/sidewalkdirt.dmi'
+//	step_sounds = list("human" = "erikafootsteps")
+
+/turf/open/indestructible/ground/outside/graveldirt
+	name = "gravel"
+	icon_state = "graveldirt"
+	icon = 'icons/fallout/turfs/ground.dmi'
+//	step_sounds = list("human" = "erikafootsteps")
+
 /turf/open/indestructible/ground/outside/ruins
 	name = "ruins"
 	desc = "It's just a pile of concrete rubble."
