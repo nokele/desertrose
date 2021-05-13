@@ -597,6 +597,24 @@
 	icon_state = "floordirtysolid"
 	},
 /area/f13/tunnel)
+<<<<<<< Updated upstream
+=======
+"aVT" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/spawner/lootdrop/bedsheet,
+/obj/structure/bed,
+/turf/open/floor/f13{
+	icon_state = "purplefull"
+	},
+/area/f13/enclave)
+"aWj" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/decal/cleanable/dirt/dust,
+/turf/open/floor/f13{
+	icon_state = "purplefull"
+	},
+/area/f13/enclave)
+>>>>>>> Stashed changes
 "aWq" = (
 /obj/machinery/button/door{
 	id = "bosdorm9";
@@ -1958,6 +1976,10 @@
 	icon_state = "whitegreenrustychess"
 	},
 /area/f13/followers)
+"bXv" = (
+/obj/machinery/microwave/stove,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
 "bYK" = (
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/traitbooks,
@@ -3153,6 +3175,10 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"dmO" = (
+/obj/structure/closet/fridge/meat,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
 "dnu" = (
 /obj/structure/simple_door/metal/barred,
 /obj/effect/decal/cleanable/dirt,
@@ -3290,6 +3316,13 @@
 	icon_state = "darkyellowfull"
 	},
 /area/f13/brotherhood/offices1st)
+<<<<<<< Updated upstream
+=======
+"dwY" = (
+/obj/machinery/vending/hydroseeds,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
+>>>>>>> Stashed changes
 "dxi" = (
 /obj/structure/bookcase/manuals,
 /obj/effect/decal/cleanable/dirt{
@@ -3716,6 +3749,13 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/ncr)
+<<<<<<< Updated upstream
+=======
+"dNK" = (
+/obj/machinery/hydroponics/constructable,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
+>>>>>>> Stashed changes
 "dOk" = (
 /obj/structure/closet,
 /obj/effect/spawner/lootdrop/f13/cash_random_low,
@@ -4942,6 +4982,13 @@
 /obj/structure/simple_door/metal/barred,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
+"ePW" = (
+/obj/effect/spawner/lootdrop/bedsheet,
+/obj/structure/bed,
+/turf/open/floor/f13{
+	icon_state = "purplefull"
+	},
+/area/f13/enclave)
 "eQC" = (
 /obj/machinery/telecomms/server/presets/engineering,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
@@ -5987,6 +6034,18 @@
 	icon_state = "yellowdirtyfull"
 	},
 /area/f13/clinic)
+"fSG" = (
+/obj/structure/bed,
+/obj/effect/spawner/lootdrop/bedsheet,
+/obj/machinery/light{
+	dir = 4
+	},
+/obj/effect/spawner/lootdrop/bedsheet,
+/obj/effect/spawner/lootdrop/bedsheet,
+/turf/open/floor/f13{
+	icon_state = "purplefull"
+	},
+/area/f13/enclave)
 "fSI" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/chair/office{
@@ -6549,6 +6608,13 @@
 /obj/machinery/mineral/ore_redemption,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
+<<<<<<< Updated upstream
+=======
+"gzs" = (
+/obj/structure/reagent_dispensers/watertank,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
+>>>>>>> Stashed changes
 "gzt" = (
 /obj/effect/landmark/start/f13/raider,
 /turf/open/floor/f13/wood{
@@ -7379,6 +7445,13 @@
 	icon_state = "dark"
 	},
 /area/f13/bunker)
+<<<<<<< Updated upstream
+=======
+"hsN" = (
+/obj/machinery/vending/hydronutrients,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
+>>>>>>> Stashed changes
 "hsP" = (
 /obj/structure/decoration/vent,
 /obj/effect/decal/cleanable/dirt,
@@ -7953,6 +8026,10 @@
 	icon_state = "reddirtyfull"
 	},
 /area/f13/bunker)
+"hXy" = (
+/obj/item/chair,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
 "hYh" = (
 /obj/structure/chair/sofa/corp/right,
 /obj/effect/decal/cleanable/dirt{
@@ -9689,6 +9766,17 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/bunker)
+<<<<<<< Updated upstream
+=======
+"jJV" = (
+/obj/structure/chair/sofa/corp/right{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "purplefull"
+	},
+/area/f13/enclave)
+>>>>>>> Stashed changes
 "jKo" = (
 /obj/machinery/power/apc{
 	dir = 1;
@@ -12358,6 +12446,14 @@
 /obj/structure/tires/two,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/tunnel)
+<<<<<<< Updated upstream
+=======
+"mKy" = (
+/obj/effect/decal/cleanable/dirt/dust,
+/obj/effect/landmark/start/f13/uslt,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
+>>>>>>> Stashed changes
 "mKE" = (
 /obj/structure/cable{
 	icon_state = "4-8"
@@ -13251,6 +13347,12 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/bunker)
+"nJa" = (
+/obj/structure/curtain,
+/turf/open/floor/f13{
+	icon_state = "purplefull"
+	},
+/area/f13/enclave)
 "nJB" = (
 /obj/machinery/light/fo13colored/Pink{
 	name = "light tube"
@@ -16731,6 +16833,10 @@
 /obj/item/stack/sheet/cloth/ten,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
+"rgm" = (
+/obj/effect/landmark/start/f13/ussgt,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
 "rgt" = (
 /obj/structure/table/reinforced,
 /turf/open/floor/f13{
@@ -16752,6 +16858,11 @@
 /obj/structure/table,
 /turf/open/floor/carpet,
 /area/f13/ncr)
+"rhc" = (
+/obj/machinery/processor/chopping_block,
+/obj/structure/table/greyscale,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
 "rhP" = (
 /obj/structure/table,
 /obj/item/storage/fancy/cigarettes/cigpack_cannabis,
@@ -17002,6 +17113,12 @@
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random,
 /turf/open/floor/f13/wood,
 /area/f13/building)
+"ruj" = (
+/obj/machinery/shower{
+	pixel_y = 23
+	},
+/turf/closed/wall/rust,
+/area/f13/enclave)
 "run" = (
 /obj/machinery/light/fo13colored/Aqua{
 	name = "light fixture"
@@ -17849,6 +17966,14 @@
 	icon_state = "darkyellowfull"
 	},
 /area/f13/brotherhood/offices1st)
+"shj" = (
+/obj/structure/toilet/greyscale{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "purplefull"
+	},
+/area/f13/enclave)
 "shl" = (
 /obj/machinery/telecomms/server/presets/service,
 /turf/open/floor/plasteel/dark/telecomms/mainframe,
@@ -19475,6 +19600,13 @@
 /obj/effect/decal/cleanable/generic,
 /turf/open/floor/f13/wood,
 /area/f13/caves)
+<<<<<<< Updated upstream
+=======
+"utz" = (
+/obj/structure/sink/kitchen,
+/turf/closed/wall/rust,
+/area/f13/enclave)
+>>>>>>> Stashed changes
 "utP" = (
 /obj/machinery/door/airlock/grunge{
 	req_access_txt = "120"
@@ -19738,6 +19870,10 @@
 "uJD" = (
 /turf/closed/wall/f13/wood/interior,
 /area/f13/tunnel)
+"uJI" = (
+/obj/structure/table/greyscale,
+/turf/open/floor/plasteel/dark,
+/area/f13/enclave)
 "uKB" = (
 /obj/structure/barricade/wooden,
 /obj/structure/decoration/warning,
@@ -54545,6 +54681,7 @@ uoO
 uoO
 aoj
 aoj
+<<<<<<< Updated upstream
 aoj
 uoO
 uoO
@@ -54556,6 +54693,19 @@ uoO
 uoO
 uoO
 uoO
+=======
+bfy
+vbu
+pon
+qfx
+vbu
+wTH
+pon
+qfx
+qNd
+fgy
+bfy
+>>>>>>> Stashed changes
 uoO
 uoO
 aoj
@@ -54802,6 +54952,7 @@ uoO
 aoj
 aoj
 aoj
+<<<<<<< Updated upstream
 aoj
 aoj
 uoO
@@ -54813,6 +54964,19 @@ uoO
 uoO
 uoO
 uoO
+=======
+bfy
+vbu
+nYd
+nYd
+vbu
+wTH
+nYd
+nYd
+vbu
+hMJ
+bfy
+>>>>>>> Stashed changes
 uoO
 uoO
 uoO
@@ -55059,6 +55223,7 @@ uoO
 aoj
 aoj
 aoj
+<<<<<<< Updated upstream
 aoj
 uoO
 uoO
@@ -55070,6 +55235,19 @@ aoj
 uoO
 uoO
 aoj
+=======
+bfy
+vbu
+jJV
+ouq
+vbu
+wTH
+ejG
+ouq
+vbu
+wXe
+bfy
+>>>>>>> Stashed changes
 aoj
 uoO
 uoO
@@ -56084,6 +56262,7 @@ uoO
 uoO
 uoO
 uoO
+<<<<<<< Updated upstream
 uoO
 aoj
 aoj
@@ -56100,6 +56279,21 @@ uoO
 uoO
 uoO
 uoO
+=======
+bfy
+lCU
+gXQ
+gXQ
+xiO
+bfy
+xiO
+xiO
+wrY
+xiO
+bfy
+gNg
+bfy
+>>>>>>> Stashed changes
 uoO
 uoO
 uoO
@@ -56341,6 +56535,7 @@ uoO
 uoO
 uoO
 uoO
+<<<<<<< Updated upstream
 uoO
 aoj
 aoj
@@ -56366,6 +56561,33 @@ uoO
 uoO
 aoj
 uoO
+=======
+bfy
+sfx
+gXQ
+gXQ
+mHA
+bfy
+gXQ
+xiO
+dVt
+xiO
+bfy
+wTH
+bfy
+bfy
+bfy
+bfy
+gNg
+bfy
+bfy
+bfy
+ruj
+bfy
+ruj
+bfy
+ruj
+>>>>>>> Stashed changes
 uoO
 eLE
 "}
@@ -56598,6 +56820,7 @@ uoO
 uoO
 uoO
 uoO
+<<<<<<< Updated upstream
 uoO
 uoO
 uoO
@@ -56623,6 +56846,33 @@ uoO
 uoO
 aoj
 aoj
+=======
+bfy
+aEJ
+gXQ
+gXQ
+xiO
+bfy
+gXQ
+gXQ
+wAg
+xiO
+bfy
+vbu
+vbu
+vbu
+vbu
+vbu
+vbu
+vbu
+bfy
+nJa
+bfy
+nJa
+bfy
+nJa
+bfy
+>>>>>>> Stashed changes
 uoO
 eLE
 "}
@@ -56855,6 +57105,7 @@ uoO
 uoO
 uoO
 uoO
+<<<<<<< Updated upstream
 uoO
 uoO
 uoO
@@ -56880,6 +57131,33 @@ uoO
 uoO
 uoO
 uoO
+=======
+bfy
+jwN
+xiO
+jfx
+xiO
+bfy
+gXQ
+xiO
+xjn
+xiO
+bfy
+wTH
+ePW
+vbu
+aVT
+wTH
+ePW
+vbu
+eZN
+vbu
+vbu
+vbu
+vbu
+vbu
+iKI
+>>>>>>> Stashed changes
 uoO
 eLE
 "}
@@ -57112,6 +57390,7 @@ aoj
 uoO
 uoO
 uoO
+<<<<<<< Updated upstream
 uoO
 uoO
 uoO
@@ -57137,6 +57416,33 @@ uoO
 aoj
 aoj
 uoO
+=======
+bfy
+fKm
+gXQ
+gXQ
+leT
+bfy
+gXQ
+gXQ
+cIY
+xiO
+bfy
+vbu
+vbu
+deH
+deH
+aWj
+vbu
+vbu
+bfy
+eZN
+bfy
+eZN
+bfy
+eZN
+bfy
+>>>>>>> Stashed changes
 uoO
 eLE
 "}
@@ -57369,6 +57675,7 @@ aoj
 uoO
 uoO
 uoO
+<<<<<<< Updated upstream
 uoO
 uoO
 uoO
@@ -57394,6 +57701,33 @@ aoj
 aoj
 aoj
 uoO
+=======
+bfy
+rxi
+slw
+xiO
+xTp
+bfy
+mKy
+rgm
+wNG
+xiO
+bfy
+bgL
+nim
+vbu
+fSG
+vbu
+nim
+vbu
+bfy
+shj
+bfy
+shj
+bfy
+shj
+bfy
+>>>>>>> Stashed changes
 uoO
 eLE
 "}
@@ -57626,6 +57960,7 @@ aoj
 aoj
 uoO
 uoO
+<<<<<<< Updated upstream
 uoO
 uoO
 uoO
@@ -57651,6 +57986,33 @@ aoj
 aoj
 aoj
 uoO
+=======
+bfy
+bfy
+gXQ
+xiO
+bfy
+bfy
+xiO
+xiO
+xiO
+xiO
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+>>>>>>> Stashed changes
 uoO
 eLE
 "}
@@ -57883,17 +58245,17 @@ aoj
 aoj
 uoO
 uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-aoj
+bfy
+dwY
+xiO
+xiO
+hsN
+bfy
+utz
+bfy
+bfy
+bfy
+bfy
 aoj
 aoj
 aoj
@@ -58140,17 +58502,17 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+bfy
+xiO
+xiO
+xiO
+xiO
+xiO
+xiO
+dmO
+dmO
+rhc
+bfy
 aoj
 uoO
 uoO
@@ -58397,17 +58759,17 @@ uoO
 aoj
 aoj
 uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+bfy
+dNK
+xiO
+dNK
+xiO
+xiO
+bXv
+xiO
+xiO
+xiO
+bfy
 aoj
 uoO
 aoj
@@ -58654,17 +59016,17 @@ uoO
 aoj
 aoj
 uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-aoj
-uoO
-aoj
-aoj
-uoO
-uoO
+bfy
+gzs
+xiO
+xiO
+xiO
+xiO
+xiO
+xiO
+xiO
+xiO
+bfy
 aoj
 uoO
 aoj
@@ -58911,17 +59273,17 @@ uoO
 aoj
 aoj
 uoO
-uoO
-uoO
-uoO
-aoj
-aoj
-aoj
-uoO
-aoj
-aoj
-uoO
-uoO
+bfy
+xiO
+xiO
+xiO
+xiO
+xiO
+xiO
+hXy
+hXy
+hXy
+bfy
 aoj
 uoO
 uoO
@@ -59168,17 +59530,17 @@ uoO
 uoO
 uoO
 uoO
-aoj
-aoj
-aoj
-aoj
-aoj
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+bfy
+dNK
+xiO
+dNK
+xiO
+xiO
+xiO
+uJI
+uJI
+uJI
+bfy
 aoj
 uoO
 aoj
@@ -59425,17 +59787,17 @@ uoO
 uoO
 uoO
 uoO
-aoj
-aoj
-aoj
-aoj
-uoO
-uoO
-uoO
-uoO
-aoj
-aoj
-uoO
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
+bfy
 uoO
 uoO
 aoj
