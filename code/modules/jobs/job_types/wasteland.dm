@@ -57,6 +57,12 @@
 	minimal_access = list(ACCESS_ENCLAVE)
 
 	outfit = /datum/outfit/job/wasteland/enclavesgt
+	
+/datum/job/wasteland/enclavesgt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+	..()
+	if(visualsOnly)
+		return
+	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
 /datum/outfit/job/wasteland/enclavesgt
 	name = "Enclave Sergant"
@@ -70,7 +76,7 @@
 	belt = 			/obj/item/storage/belt/military/army
 	shoes = 		/obj/item/clothing/shoes/combat/swat
 	id = 			/obj/item/card/id/dogtag/enclave
-	suit_store =  	/obj/item/gun/energy/laser/plasma
+	suit_store =  	/obj/item/gun/energy/laser/plasma/carbine
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak=2,
@@ -110,13 +116,13 @@
 	belt = 			/obj/item/storage/belt/military/army
 	shoes = 		/obj/item/clothing/shoes/combat/swat
 	id = 			/obj/item/card/id/dogtag/enclave
-	suit_store =  	/obj/item/gun/energy/laser/plasma/carbine
+	suit_store =  	/obj/item/gun/energy/laser/plasma/glock
 
 	backpack_contents = list(
 		/obj/item/reagent_containers/hypospray/medipen/stimpak/super=2,
 		/obj/item/grenade/flashbang=1,
 		/obj/item/pda=1,
-		/obj/item/stock_parts/cell/ammo/mfc=3,
+		/obj/item/stock_parts/cell/ammo/ec=3,
 		/obj/item/storage/bag/money/small/wastelander,
 		/obj/item/kitchen/knife/combat
 		)
