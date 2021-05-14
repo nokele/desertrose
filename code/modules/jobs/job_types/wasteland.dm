@@ -58,7 +58,7 @@
 
 	outfit = /datum/outfit/job/wasteland/enclavesgt
 	
-/datum/job/wasteland/enclavesgt/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/wasteland/enclavesgt/proc/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
