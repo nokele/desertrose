@@ -48,7 +48,6 @@
 	var/mutation_color = ""
 	var/no_update = 0
 	var/body_markings = ""	//for bodypart markings
-	var/body_markings_icon = 'modular_citadel/icons/mob/mam_markings.dmi'
 	var/list/markings_color = list()
 	var/aux_marking
 	var/digitigrade_type
@@ -643,8 +642,6 @@
 		if(S.mutant_bodyparts["mam_body_markings"])
 			var/datum/sprite_accessory/Smark
 			Smark = GLOB.mam_body_markings_list[H.dna.features["mam_body_markings"]]
-			if(Smark)
-				body_markings_icon = Smark.icon
 			if(H.dna.features["mam_body_markings"] != "None")
 				body_markings = Smark?.icon_state || lowertext(H.dna.features["mam_body_markings"])
 				aux_marking = Smark?.icon_state || lowertext(H.dna.features["mam_body_markings"])
@@ -711,15 +708,6 @@
 			if(burnstate)
 				. += image('icons/mob/dam_mob.dmi', "[dmg_overlay_type]_[body_zone]_0[burnstate]", -DAMAGE_LAYER, image_dir)
 
-		if(!isnull(body_markings) && status == BODYPART_ORGANIC)
-			if(!use_digitigrade)
-				if(body_zone == BODY_ZONE_CHEST)
-					. += image(body_markings_icon, "[body_markings]_[body_zone]_[icon_gender]", -MARKING_LAYER, image_dir)
-				else
-					. += image(body_markings_icon, "[body_markings]_[body_zone]", -MARKING_LAYER, image_dir)
-			else
-				. += image(body_markings_icon, "[body_markings]_[digitigrade_type]_[use_digitigrade]_[body_zone]", -MARKING_LAYER, image_dir)
-
 	var/image/limb = image(layer = -BODYPARTS_LAYER, dir = image_dir)
 	var/list/aux = list()
 	var/image/marking
@@ -754,71 +742,7 @@
 		else
 			limb.icon_state = "[species_id]_[body_zone]"
 
-		// Body markings
-		if(!isnull(body_markings))
-			if(species_id == "husk")
-				marking = image('modular_citadel/icons/mob/markings_notmammals.dmi', "husk_[body_zone]", -MARKING_LAYER, image_dir)
-			else if(species_id == "husk" && use_digitigrade)
-				marking = image('modular_citadel/icons/mob/markings_notmammals.dmi', "husk_[digitigrade_type]_[use_digitigrade]_[body_zone]", -MARKING_LAYER, image_dir)
-
-			else if(!use_digitigrade)
-				if(body_zone == BODY_ZONE_CHEST)
-					marking = image(body_markings_icon, "[body_markings]_[body_zone]_[icon_gender]", -MARKING_LAYER, image_dir)
-				else
-					marking = image(body_markings_icon, "[body_markings]_[body_zone]", -MARKING_LAYER, image_dir)
-			else
-				marking = image(body_markings_icon, "[body_markings]_[digitigrade_type]_[use_digitigrade]_[body_zone]", -MARKING_LAYER, image_dir)
-
-			. += marking
-
 		// Citadel End
-
-		if(aux_icons)
-			for(var/I in aux_icons)
-				var/aux_layer = aux_icons[I]
-				aux += image(limb.icon, "[species_id]_[I]", -aux_layer, image_dir)
-				if(!isnull(aux_marking))
-					if(species_id == "husk")
-						auxmarking += image('modular_citadel/icons/mob/markings_notmammals.dmi', "husk_[I]", -aux_layer, image_dir)
-					else
-						auxmarking += image(body_markings_icon, "[body_markings]_[I]", -aux_layer, image_dir)
-			. += aux
-			. += auxmarking
-
-	else
-		limb.icon = icon
-		if(should_draw_gender)
-			limb.icon_state = "[body_zone]_[icon_gender]"
-		else
-			limb.icon_state = "[body_zone]"
-
-		if(aux_icons)
-			for(var/I in aux_icons)
-				var/aux_layer = aux_icons[I]
-				aux += image(limb.icon, "[I]", -aux_layer, image_dir)
-				if(!isnull(aux_marking))
-					if(species_id == "husk")
-						auxmarking += image('modular_citadel/icons/mob/markings_notmammals.dmi', "husk_[I]", -aux_layer, image_dir)
-					else
-						auxmarking += image(body_markings_icon, "[body_markings]_[I]", -aux_layer, image_dir)
-			. += auxmarking
-			. += aux
-
-		if(!isnull(body_markings))
-			if(species_id == "husk")
-				marking = image('modular_citadel/icons/mob/markings_notmammals.dmi', "husk_[body_zone]", -MARKING_LAYER, image_dir)
-			else if(species_id == "husk" && use_digitigrade)
-				marking = image('modular_citadel/icons/mob/markings_notmammals.dmi', "husk_digitigrade_[use_digitigrade]_[body_zone]", -MARKING_LAYER, image_dir)
-
-			else if(!use_digitigrade)
-				if(body_zone == BODY_ZONE_CHEST)
-					marking = image(body_markings_icon, "[body_markings]_[body_zone]_[icon_gender]", -MARKING_LAYER, image_dir)
-				else
-					marking = image(body_markings_icon, "[body_markings]_[body_zone]", -MARKING_LAYER, image_dir)
-			else
-				marking = image(body_markings_icon, "[body_markings]_[digitigrade_type]_[use_digitigrade]_[body_zone]", -MARKING_LAYER, image_dir)
-			. += marking
-		return
 
 	if(color_src) //TODO - add color matrix support for base species limbs
 		var/draw_color = mutation_color || species_color

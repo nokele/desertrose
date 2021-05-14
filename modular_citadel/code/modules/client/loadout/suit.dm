@@ -15,11 +15,6 @@
 	name = "Red poncho"
 	path = /obj/item/clothing/suit/poncho/red
 
-/datum/gear/suit/redhood
-	name = "Red cloak"
-	path = /obj/item/clothing/suit/hooded/cloak/david
-	cost = 3
-
 /datum/gear/suit/jacketbomber
 	name = "Bomber jacket"
 	path = /obj/item/clothing/suit/jacket
