@@ -332,16 +332,6 @@
 	icon_state = "leechjar"
 	item_state = "leechjar"
 
-/obj/item/clothing/neck/devilwings
-	name = "Strange Wings"
-	desc = "These strange wings look like they once attached to something... or someone...? Whatever the case, their presence makes you feel uneasy.."
-	icon = 'icons/obj/custom.dmi'
-	icon_state = "devilwings"
-	mob_overlay_icon = 'modular_citadel/icons/mob/clothing/devilwings64x64.dmi'
-	item_state = "devilwings"
-	worn_x_dimension = 64
-	worn_y_dimension = 34
-
 /obj/item/clothing/neck/flagcape
 	name = "Flag Cape"
 	desc = "A truly patriotic form of heroic attire."
