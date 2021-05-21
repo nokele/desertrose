@@ -1,3 +1,17 @@
+/*East Coast "Friendly" Animals
+-	Goat 		/mob/living/simple_animal/hostile/retaliate/goat
+-	Brahmin		/mob/living/simple_animal/cow/brahmin
+-	Radstag		/mob/living/simple_animal/radstag
+-	Chicken		/mob/living/simple_animal/chicken
+
+-	Pet Dog		/mob/living/simple_animal/pet/dog/kaiser	unique unmutated dog
+-	Pet Snake	/mob/living/simple_animal/pet/hognose		unique enclave pet
+
+*/
+
+/mob/living/simple_animal
+	icon = 'icons/mob/critters/animalfriend.dmi'
+
 //goat
 /mob/living/simple_animal/hostile/retaliate/goat
 	name = "goat"
@@ -226,27 +240,6 @@
 	else
 		..()
 
-//a cow that produces a random reagent in its udder
-/mob/living/simple_animal/cow/random
-	name = "strange cow"
-	desc = "Something seems off about the milk this cow is producing."
-
-/mob/living/simple_animal/cow/random/Initialize()
-	milk_reagent = get_random_reagent_id() //this has a blacklist so don't worry about romerol cows, etc
-	..()
-
-//Wisdom cow, speaks and bestows great wisdoms
-/mob/living/simple_animal/cow/wisdom
-	name = "wisdom cow"
-	desc = "Known for its wisdom, shares it with all"
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/wisdomcow = 1) //truly the best meat
-	gold_core_spawnable = FALSE
-	speak_chance = 10 //the cow is eager to share its wisdom! //but is wise enough to not lag  the server too bad
-	milk_reagent = /datum/reagent/medicine/liquid_wisdom
-
-/mob/living/simple_animal/cow/wisdom/Initialize()
-	. = ..()
-	speak = GLOB.wisdoms //Done here so it's setup properly
 
 /mob/living/simple_animal/chick
 	name = "\improper chick"
@@ -397,142 +390,6 @@
 	else
 		STOP_PROCESSING(SSobj, src)
 
-// Space kiwis, ergo quite a copypasta of chickens.
-
-/mob/living/simple_animal/kiwi
-	name = "space kiwi"
-	desc = "Exposure to low gravity made them grow larger."
-	gender = FEMALE
-	icon_state = "kiwi"
-	icon_living = "kiwi"
-	icon_dead = "kiwi_dead"
-	speak = list("Chirp!","Cheep cheep chirp!!","Cheep.")
-	speak_emote = list("chirps","trills")
-	emote_hear = list("chirps.")
-	emote_see = list("pecks at the ground.","jumps in place.")
-	density = FALSE
-	speak_chance = 2
-	turns_per_move = 3
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 3)
-	var/egg_type = /obj/item/reagent_containers/food/snacks/egg/kiwiEgg
-	var/food_type = /obj/item/reagent_containers/food/snacks/grown/wheat
-	response_help_continuous  = "pets"
-	response_help_simple = "pet"
-	response_disarm_continuous = "gently pushes aside"
-	response_disarm_simple = "gently push aside"
-	response_harm_continuous = "kicks"
-	response_harm_simple = "kick"
-	attack_verb_continuous = "kicks"
-	attack_verb_simple = "kick"
-	health = 25
-	maxHealth = 25
-	ventcrawler = VENTCRAWLER_ALWAYS
-	var/eggsleft = 0
-	var/eggsFertile = TRUE
-	pass_flags = PASSTABLE | PASSMOB
-	mob_size = MOB_SIZE_SMALL
-	var/list/feedMessages = list("It chirps happily.","It chirps happily.")
-	var/list/layMessage = list("lays an egg.","squats down and croons.","begins making a huge racket.","begins chirping raucously.")
-	gold_core_spawnable = FRIENDLY_SPAWN
-	var/static/kiwi_count = 0
-
-	footstep_type = FOOTSTEP_MOB_CLAW
-
-/mob/living/simple_animal/kiwi/Destroy()
-	--kiwi_count
-	return ..()
-
-/mob/living/simple_animal/kiwi/Initialize()
-	. = ..()
-	++kiwi_count
-
-/mob/living/simple_animal/kiwi/BiologicalLife(seconds, times_fired)
-	if(!(. = ..()))
-		return
-	if((!stat && prob(3) && eggsleft > 0) && egg_type)
-		visible_message("[src] [pick(layMessage)]")
-		eggsleft--
-		var/obj/item/E = new egg_type(get_turf(src))
-		E.pixel_x = rand(-6,6)
-		E.pixel_y = rand(-6,6)
-		if(eggsFertile)
-			if(kiwi_count < MAX_CHICKENS && prob(25))
-				START_PROCESSING(SSobj, E)
-
-/obj/item/reagent_containers/food/snacks/egg/kiwiEgg/process()
-	if(isturf(loc))
-		amount_grown += rand(1,2)
-		if(amount_grown >= 100)
-			visible_message("[src] hatches with a quiet cracking sound.")
-			new /mob/living/simple_animal/babyKiwi(get_turf(src))
-			STOP_PROCESSING(SSobj, src)
-			qdel(src)
-	else
-		STOP_PROCESSING(SSobj, src)
-
-/mob/living/simple_animal/kiwi/attackby(obj/item/O, mob/user, params)
-	if(istype(O, food_type)) //feedin' dem kiwis
-		if(!stat && eggsleft < 8)
-			var/feedmsg = "[user] feeds [O] to [name]! [pick(feedMessages)]"
-			user.visible_message(feedmsg)
-			qdel(O)
-			eggsleft += rand(1, 4)
-		else
-			to_chat(user, "<span class='warning'>[name] doesn't seem hungry!</span>")
-	else
-		..()
-
-/mob/living/simple_animal/babyKiwi
-	name = "baby space kiwi"
-	desc = "So huggable."
-	icon_state = "babykiwi"
-	icon_living = "babykiwi"
-	icon_dead = "babykiwi_dead"
-	gender = FEMALE
-	speak = list("Cherp.","Cherp?","Chirrup.","Cheep!")
-	speak_emote = list("chirps")
-	emote_hear = list("chirps.")
-	emote_see = list("pecks at the ground.","Happily bounces in place.")
-	density = FALSE
-	speak_chance = 2
-	turns_per_move = 2
-	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab = 2)
-	response_help_continuous = "pets"
-	response_help_simple = "pet"
-	response_disarm_continuous = "gently pushes aside"
-	response_disarm_simple = "gently push aside"
-	response_harm_continuous = "kicks"
-	response_harm_simple = "kick"
-	attack_verb_continuous = "kicks"
-	attack_verb_simple = "kick"
-	health = 10
-	maxHealth = 10
-	ventcrawler = VENTCRAWLER_ALWAYS
-	var/amount_grown = 0
-	pass_flags = PASSTABLE | PASSGRILLE | PASSMOB
-	mob_size = MOB_SIZE_TINY
-	gold_core_spawnable = FRIENDLY_SPAWN
-
-	footstep_type = FOOTSTEP_MOB_CLAW
-
-/mob/living/simple_animal/babyKiwi/Initialize()
-	. = ..()
-	pixel_x = rand(-6, 6)
-	pixel_y = rand(0, 10)
-
-/mob/living/simple_animal/babyKiwi/BiologicalLife(seconds, times_fired)
-	if(!(. = ..()))
-		return
-	if(!stat && !ckey)
-		amount_grown += rand(1,2)
-		if(amount_grown >= 100)
-			new /mob/living/simple_animal/kiwi(src.loc)
-			qdel(src)
-
-/obj/item/reagent_containers/food/snacks/egg/kiwiEgg
-	name = "kiwi egg"
-	desc = "A slightly bigger egg!"
-	icon_state = "kiwiegg"
 
 /obj/item/udder
 	name = "udder"
@@ -874,3 +731,64 @@ mob/living/simple_animal/cow/brahmin/Topic(href, href_list)
 	. = ..()
 	resize = 0.7
 	update_transform()
+
+
+/mob/living/simple_animal/pet/dog/kaiser
+	name = "Kaiser"
+	desc = "A rare pure breed rottweiler, named Kaiser."
+	icon = 'icons/mob/critters/animalfriend.dmi'
+	icon_state = "rottweiler"
+	icon_living = "rottweiler"
+	icon_dead = "rottweiler_dead"
+	mob_biotypes = MOB_ORGANIC|MOB_BEAST
+	response_help_continuous = "pets"
+	response_help_simple = "pet"
+	response_disarm_continuous = "bops"
+	response_disarm_simple = "bop"
+	response_harm_continuous = "kicks"
+	response_harm_simple = "kick"
+	speak = list("Grrfff!", "Woof!", "Bark!", "Awoo?")
+	speak_emote = list("barks", "woofs")
+	emote_hear = list("barks!", "woofs!", "whines.","pants.")
+	emote_see = list("stares at nothing.", "sniffs the air.","licks its paw.")
+	faction = list("dog")
+	see_in_dark = 5
+	speak_chance = 1
+	turns_per_move = 10
+	footstep_type = FOOTSTEP_MOB_CLAW
+
+/mob/living/simple_animal/pet/dog/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/wuv, "growls happily!", EMOTE_AUDIBLE, /datum/mood_event/pet_animal, "growls!", EMOTE_AUDIBLE)
+	AddElement(/datum/element/mob_holder, held_icon)
+
+/mob/living/simple_animal/pet/hognose
+	name = "Hognose snake"
+	desc = "A small pet snake."
+	icon = 'icons/mob/critters/animalfriend.dmi'
+	icon_state = "snake"
+	icon_living = "snake"
+	icon_dead = "snake_dead"
+	mob_biotypes = MOB_ORGANIC|MOB_BEAST
+	response_help_continuous = "pets"
+	response_help_simple = "pet"
+	response_disarm_continuous = "bops"
+	response_disarm_simple = "bop"
+	response_harm_continuous = "kicks"
+	response_harm_simple = "kick"
+	speak = list("Tsssss!", "Fsssss!", "Hisssss!", "Mssss?")
+	speak_emote = list("hisses")
+	emote_hear = list("slithers", "sways.")
+	emote_see = list("stares blankly.", "tastes the air.","coils around the nearest object.")
+	faction = list("dog")
+	see_in_dark = 5
+	speak_chance = 1
+	turns_per_move = 10
+	var/held_icon = "corgi"
+
+	footstep_type = FOOTSTEP_MOB_CLAW
+
+/mob/living/simple_animal/pet/dog/ComponentInitialize()
+	. = ..()
+	AddElement(/datum/element/wuv, "growls happily!", EMOTE_AUDIBLE, /datum/mood_event/pet_animal, "growls!", EMOTE_AUDIBLE)
+	AddElement(/datum/element/mob_holder, held_icon)
