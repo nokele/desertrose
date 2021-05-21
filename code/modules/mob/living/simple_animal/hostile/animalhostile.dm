@@ -131,7 +131,7 @@ Stuff not supposed to be in East coast (to differentiate, give flavour. Less is 
 	a_intent = INTENT_HARM
 	blood_volume = 0
 
-/mob/living/simple_animal/hostile/bloatflyeast/bullet_act(obj/item/projectile/Proj)
+/mob/living/simple_animal/hostile/bloatflynew/bullet_act(obj/item/projectile/Proj)
 	if(!Proj)
 		return
 	if(prob(50))
@@ -140,7 +140,7 @@ Stuff not supposed to be in East coast (to differentiate, give flavour. Less is 
 		visible_message("<span class='danger'>[src] dodges [Proj]!</span>")
 		return 0
 
-/mob/living/simple_animal/hostile/bloatfly/AttackingTarget()
+/mob/living/simple_animal/hostile/bloatflynew/AttackingTarget()
 	. = ..()
 	if(. && ishuman(target))
 		var/mob/living/carbon/human/H = target
