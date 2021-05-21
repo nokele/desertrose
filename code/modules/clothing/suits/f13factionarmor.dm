@@ -458,7 +458,7 @@
 
 /obj/item/clothing/suit/armor/f13/combat/ncr_patrol/mutant
 	name = "mutant ranger armor"
-	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor. It's got NCR markings, making it clear who it was made by."
+	desc = "(V) A set of standard issue ranger patrol armor that provides defense similar to a suit of pre-war combat armor, but has been expanded and modified to fit the bulk of a Super Mutant. It's got NCR markings, making it clear who it was made by."
 	icon_state = "mutie_ranger_armour"
 	item_state = "mutie_ranger_armour"
 
