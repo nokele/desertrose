@@ -244,78 +244,6 @@
 	var/deflection_chance = 0
 	var/armor_block_threshold = 0.3 //projectiles below this will deflect
 	var/melee_block_threshold = 30
-	var/powerLevel = 7000
-	var/powerMode = 3
-	var/powered = TRUE
-
-/obj/item/clothing/head/helmet/f13/power_armor/examine(mob/user)	
-	. = ..()
-	to_chat(user, "The charge meter reads [powerLevel] and the helmet is operating in power mode [powerMode].")
-
-/obj/item/clothing/head/helmet/f13/power_armor/attackby(obj/item/I, mob/user, params)
-	. = ..()
-	if(istype(I,/obj/item/fusion_fuel)&& powered)
-		var/obj/item/fusion_fuel/fuel = I
-		if(src.powerLevel>=50000)
-			to_chat(user, "The fusion core is full.")
-			return
-		if(fuel.fuel >= 5000)
-			src.powerLevel += 5000
-			fuel.fuel -= 5000
-			to_chat(user, "You charge the fusion core to [src.powerLevel] units of fuel. [fuel.fuel]/20000 left in the fuel cell.")
-			return
-		to_chat(user, "The fuel cell is empty.")
-
-
-/obj/item/clothing/head/helmet/f13/power_armor/Initialize()
-	. = ..()
-	if(powered)
-		for(var/i=0, i<=3, ++i)
-			processPower()
-
-/obj/item/clothing/head/helmet/f13/power_armor/equipped(mob/user, slot)
-	. = ..()
-	if(slot!=SLOT_HEAD)
-		return
-	if(powered)
-		RegisterSignal(user, COMSIG_MOVABLE_MOVED, .proc/processPower)
-
-/obj/item/clothing/head/helmet/f13/power_armor/proc/processPower()
-	if(powerLevel>0)//drain charge
-		powerLevel -= 1
-	if(powerLevel > 20000)//switch to 3 power mode
-		if(powerMode <= 2)
-			powerUp()
-		return
-	if(powerLevel > 10000)//switch to 2 power
-		if(powerMode <= 1)
-			powerUp()
-		if(powerMode > 2)
-			powerDown()
-		return
-	if(powerLevel > 5000)//switch to 1 power
-		if(powerMode <= 0)
-			powerUp()
-		if(powerMode > 1)
-			powerDown()
-		return
-	if(powerLevel >= 1)//switch to 0 power
-		if(powerMode >= 0)
-			powerDown()
-
-/obj/item/clothing/head/helmet/f13/power_armor/proc/powerUp()
-	powerMode += 1
-	slowdown -= 0.15
-	var/mob/living/L = loc
-	L.update_equipment_speed_mods()
-	armor = armor.modifyRating(linemelee = 75, linebullet = 75, linelaser = 75)
-
-/obj/item/clothing/head/helmet/f13/power_armor/proc/powerDown()
-	powerMode -= 1
-	slowdown += 0.15
-	var/mob/living/L = loc
-	L.update_equipment_speed_mods()
-	armor = armor.modifyRating(linemelee = -75, linebullet = -75, linelaser = -75)
 
 /obj/item/clothing/head/helmet/f13/power_armor/ComponentInitialize()
 	. = ..()
@@ -400,7 +328,6 @@
 	armor_block_chance = 25
 	deflection_chance = 10 //10% chance to block damage from blockable bullets and redirect the bullet at a random angle. Not nearly as effective as true power armor
 	requires_training = FALSE
-	powered = FALSE
 
 /obj/item/clothing/head/helmet/f13/power_armor/t45b/restored
 	name = "restored T-45b helmet"
@@ -408,7 +335,6 @@
 	armor_block_chance = 60
 	deflection_chance = 10 //20% chance to block damage from blockable bullets and redirect the bullet at a random angle
 	requires_training = TRUE
-	powered = TRUE
 
 /obj/item/clothing/head/helmet/f13/power_armor/raiderpa_helm
 	name = "raider T-45b power helmet"
@@ -419,8 +345,6 @@
 	requires_training = FALSE
 	armor_block_chance = 20
 	deflection_chance = 10
-	powered = FALSE
-
 
 /obj/item/clothing/head/helmet/f13/power_armor/hotrod
 	name = "hotrod T-45b power helmet"
@@ -430,7 +354,6 @@
 	armor = list("tier" = 8, "energy" = 50, "bomb" = 48, "bio" = 60, "rad" = 50, "fire" = 80, "acid" = 0, "wound" = 40)
 	requires_training = FALSE
 	armor_block_chance = 20
-	powered = FALSE
 	deflection_chance = 10 //5% chance to block damage from blockable bullets and redirect the bullet at a random angle. Stripped down version of an already stripped down version
 
 /obj/item/clothing/head/helmet/f13/power_armor/vaulttec
@@ -594,6 +517,18 @@
 			block_return[BLOCK_RETURN_REDIRECT_METHOD] = REDIRECT_METHOD_DEFLECT
 			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
+
+//Part of the peacekeeper enclave stuff, adjust values as needed.
+/obj/item/clothing/head/helmet/f13/power_armor/enclave/x02helmet
+	name = "X-02 helmet"
+	desc = "(X) The X-02 Enclave power armor helmet."
+	icon_state = "PA_helmet_x02"
+	item_state = "PA_helmet_x02"
+	slowdown = 0.1
+	armor = list("tier" = 10, "energy" = 65, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+	actions_types = list(/datum/action/item_action/toggle_helmet_light)
+	armor_block_chance = 85
+	deflection_chance = 35
 
 //Generic Tribal - For Wayfarer specific, see f13factionhead.dm
 
