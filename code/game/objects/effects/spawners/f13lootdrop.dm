@@ -425,7 +425,7 @@
 	name = "tier 5 armor"
 	loot = list(
 				/obj/effect/spawner/bundle/f13/armor/t45d,
-				/obj/effect/spawner/bundle/f13/armor/t51b				
+				/obj/effect/spawner/bundle/f13/armor/t51b
 				)
 
 /obj/effect/spawner/bundle/f13/armor/t45d
@@ -598,16 +598,16 @@
 				/obj/item/switchblade,
 				/obj/item/throwing_star/spear,
 				/obj/item/surgicaldrill,
-				/obj/item/kitchen/knife/combat,
 				/obj/item/kitchen/knife/combat/survival,
 				/obj/item/kitchen/knife/combat/bone,
 				/obj/item/instrument/guitar,
 				/obj/item/instrument/violin,
 				/obj/item/instrument/saxophone,
-				/obj/item/claymore/machete/pipe,
 				/obj/item/kitchen/knife/cosmicdirty,
 				/obj/item/melee/unarmed/brass,
-				/obj/item/melee/unarmed/brass/spiked
+				/obj/item/melee/unarmed/brass/spiked,
+				/obj/item/claymore/machete/pipe,
+				/obj/item/claymore/machete/pipe/pan
 				)
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/tier3 //TIER 3 MELEE WEAPON
@@ -615,6 +615,8 @@
 	lootcount = 1
 
 	loot = list(
+				,
+				/obj/item/kitchen/knife/combat,
 				/obj/item/weldingtool,
 				/obj/item/twohanded/spear,
 				/obj/item/bostaff,
@@ -622,7 +624,6 @@
 				/obj/item/kitchen/knife/butcher,
 				/obj/item/claymore/machete/golf,
 				/obj/item/claymore/machete,
-				/obj/item/claymore/machete/reinforced,
 				/obj/item/shield/legion/buckler,
 				/obj/item/melee/unarmed/tigerclaw,
 				/obj/item/melee/unarmed/bladed,
@@ -634,6 +635,8 @@
 	lootcount = 1
 
 	loot = list(
+				/obj/item/kitchen/knife/bowie,
+				/obj/item/claymore/machete/reinforced,
 				/obj/item/twohanded/fireaxe,
 				/obj/item/twohanded/sledgehammer,
 				/obj/item/twohanded/fireaxe/bmprsword,
@@ -650,7 +653,6 @@
 	loot = list(
 				/obj/item/twohanded/thermic_lance,
 				/obj/item/twohanded/chainsaw,
-				/obj/item/kinetic_crusher,
 				/obj/item/nullrod/claymore/chainsaw_sword,
 				/obj/item/melee/powerfist,
 				/obj/item/melee/transforming/energy/axe,
@@ -671,6 +673,17 @@
 			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier3 = 20,
 			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier4 = 10
 			)
+
+/obj/effect/spawner/lootdrop/f13/weapon/melee/random_low
+	name = "low tier random melee loot"
+	lootcount = 1
+
+	loot = list(
+			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier1 = 55,
+			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier2 = 30,
+			/obj/effect/spawner/lootdrop/f13/weapon/melee/tier3 = 15
+			)
+
 
 /obj/effect/spawner/lootdrop/f13/weapon/melee/random_high
 	name = "high tier random melee loot"
