@@ -260,7 +260,7 @@
 	death_sound = 'sound/f13npc/roach/roach_death.ogg'
 
 /mob/living/simple_animal/hostile/giantant
-	name = "fireant"
+	name = "giant ant"
 	desc = "A large mutated insect that finds its way everywhere."
 	icon = 'icons/mob/wastemobs.dmi'
 	icon_state = "GiantAnt"
