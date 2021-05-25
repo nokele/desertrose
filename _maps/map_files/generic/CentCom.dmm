@@ -124,8 +124,6 @@
 /turf/open/floor/plating/f13/outside/desert,
 /area/syndicate_mothership)
 "ax" = (
-/obj/effect/holodeck_effect/mobspawner/penguin,
-/obj/effect/holodeck_effect/mobspawner/penguin,
 /obj/item/toy/snowball{
 	pixel_y = 6
 	},
@@ -259,7 +257,6 @@
 	},
 /area/holodeck/rec_center/lounge)
 "aR" = (
-/obj/effect/holodeck_effect/mobspawner/penguin_baby,
 /obj/structure/flora/tree/pine,
 /turf/open/floor/holofloor/snow,
 /area/holodeck/rec_center/winterwonderland)
