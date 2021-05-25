@@ -216,19 +216,20 @@
 	var/requires_training = TRUE
 	var/powered = TRUE
 	var/armor_block_chance = 0 //Chance for the power armor to block a low penetration projectile
-	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+	protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 	var/deflection_chance = 0 //Chance for the power armor to redirect a blocked projectile
 	var/armor_block_threshold = 0.3 //projectiles below this will deflect
 	var/melee_block_threshold = 30
 	var/dmg_block_threshold = 42
 	var/powerLevel = 7000
 	var/powerMode = 3
+	repair_kit = /obj/item/repair_kit/pa
 
-/obj/item/clothing/suit/armor/f13/power_armor/examine(mob/user)	
+/obj/item/clothing/suit/armor/f13/power_armor/examine(mob/user)
 	. = ..()
 	to_chat(user, "The charge meter reads [powerLevel] and the armor is operating in power mode [powerMode].")
 
-/obj/item/fusion_fuel	
+/obj/item/fusion_fuel
 	name = "fusion fuel cell"
 	desc = "Some fusion fuel used to recharge the fusion cores of Power Armor."
 	icon = 'icons/obj/power.dmi'
@@ -347,6 +348,8 @@
 
 /obj/item/clothing/suit/armor/f13/power_armor/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(damage >= src.dmg_block_threshold && check_armor_penetration(object) >= 0)
+		return ..()//doesnt block
+	if(src.armor_durability<60)
 		return ..()//doesnt block
 	if(check_armor_penetration(object) <= src.armor_block_threshold && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))
 		if(prob(armor_block_chance))
@@ -599,6 +602,31 @@
 			return BLOCK_SHOULD_REDIRECT | BLOCK_REDIRECTED | BLOCK_SUCCESS | BLOCK_PHYSICAL_INTERNAL
 	return ..()
 
+//Peacekeeper armor adjust as needed
+obj/item/clothing/suit/armor/f13/power_armor/x02
+	name = "X-02 power armor"
+	desc = "(X) Upgraded pre-war power armor design used by the Enclave."
+	icon_state = "PA_x02"
+	item_state = "PA_x02"
+	slowdown = 0.15 //+0.1 from helmet = total 0.25
+	armor_block_chance = 85
+	deflection_chance = 35 //35% chance to block damage from blockable bullets and redirect the bullet at a random angle. Less overall armor compared to T-60, but higher deflection.
+	armor = list("tier" = 10, "energy" = 65, "bomb" = 62, "bio" = 100, "rad" = 99, "fire" = 90, "acid" = 0, "wound" = 70)
+
+/obj/item/clothing/suit/armor/f13/enclave/armorvest
+	name = "armored vest"
+	desc = "(VI) Efficient prewar design issued to Enclave personell."
+	icon_state = "armor_enclave_peacekeeper"
+	item_state = "armor_enclave_peacekeeper"
+	armor = list("tier" = 6)
+
+/obj/item/clothing/suit/armor/f13/enclave/officercoat
+	name = "armored coat"
+	desc = "(VII) Premium prewar armor fitted into a coat for Enclave officers."
+	icon_state = "armor_enclave_officer"
+	item_state = "armor_enclave_officer"
+	armor = list("tier" = 7)
+
 //Generic Tribal - For Wayfarer specific, see f13factionhead.dm
 /obj/item/clothing/suit/armor/f13/tribal
 	name = "tribal armor"
@@ -630,7 +658,7 @@
 	armor = list("tier" = 5, "energy" = 60, "bomb" = 40, "bio" = 30, "rad" = 20, "fire" = 60, "acid" = 0)
 	resistance_flags = FIRE_PROOF
 	var/hit_reflect_chance = 20
-	var/list/protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
+	protected_zones = list(BODY_ZONE_CHEST, BODY_ZONE_PRECISE_GROIN, BODY_ZONE_L_ARM, BODY_ZONE_R_ARM, BODY_ZONE_L_LEG, BODY_ZONE_R_LEG)
 
 /obj/item/clothing/suit/armor/tesla/run_block(mob/living/owner, atom/object, damage, attack_text, attack_type, armour_penetration, mob/attacker, def_zone, final_block_chance, list/block_return)
 	if(is_energy_reflectable_projectile(object) && (attack_type == ATTACK_TYPE_PROJECTILE) && (def_zone in protected_zones))

@@ -68,7 +68,7 @@
 	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/raider/arclight
-	name = "raider arclight helmet"
+	name = "arclight raider helmet"
 	desc = "(IV) An intimidating visor, however its eye protection qualities are compromised."
 	icon_state = "arclight"
 	item_state = "arclight"
@@ -79,7 +79,7 @@
 	AddComponent(/datum/component/armor_plate)
 
 /obj/item/clothing/head/helmet/f13/raider/blastmaster
-	name = "raider blastmaster helmet"
+	name = "blastmaster raider helmet"
 	desc = "(IV) A sturdy helmet to protect against both the elements and from harm, if only it was not looking in such poor condition."
 	icon_state = "blastmaster"
 	item_state = "blastmaster"
@@ -146,7 +146,7 @@
 	flags_inv = HIDEEARS|HIDEHAIR
 
 /obj/item/clothing/head/helmet/f13/raidermetal
-	name = "raider metal helmet"
+	name = "metal raider helmet"
 	desc = "(V) A metal helmet, rusty and awful."
 	icon_state = "raidermetal"
 	item_state = "raidermetal"
@@ -158,12 +158,51 @@
 	visor_flags_cover = HEADCOVERSEYES | HEADCOVERSMOUTH
 
 /obj/item/clothing/head/helmet/f13/raidercombathelmet
-	name = "raider combat helmet"
+	name = "combat raider helmet"
 	desc = "(V) A combat helmet modified with metal plating"
 	icon_state = "raider_combat_helmet"
 	item_state = "raider_combat_helmet"
 	armor = list("tier" = 5, "energy" = 35, "bomb" = 70, "bio" = 70, "rad" = 70, "fire" = 65, "acid" = 30)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
+
+
+//Enclave
+
+/obj/item/clothing/head/helmet/f13/helmet/enclave/science
+	name = "science beret"
+	desc = "(I) Blue beret signifying the wearer is a Science Officer of the Enclave."
+	icon_state = "hat_enclave_science"
+	item_state = "hat_enclave_science"
+	flags_inv = HIDEEARS|HIDEFACE
+	flags_cover = null
+	armor = list("tier" = 1)
+
+/obj/item/clothing/head/helmet/f13/helmet/enclave/intel
+	name = "intel beret"
+	desc = "(III) Dark beret issued to Intelligence Officers of the Enclave."
+	icon_state = "hat_enclave_intel"
+	item_state = "hat_enclave_intel"
+	flags_inv = HIDEEARS|HIDEFACE
+	flags_cover = null
+	armor = list("tier" = 3)
+
+/obj/item/clothing/head/helmet/f13/helmet/enclave/peacekeeper
+	name = "peacekeeper cap"
+	desc = "(IV) Reinforced field cap issued to the soldiers of the Enclave."
+	icon_state = "hat_enclave_peacekeeper"
+	item_state = "hat_enclave_peacekeeper"
+	flags_inv = HIDEEARS|HIDEHAIR
+	strip_delay = 50
+	dynamic_hair_suffix = ""
+	dynamic_fhair_suffix = ""
+	armor = list("tier" = 4)
+
+/obj/item/clothing/head/helmet/f13/helmet/enclave/officer
+	name = "officer hat"
+	desc = "(V) Wheeled hat with kevlar cap under."
+	icon_state = "hat_enclave_officer"
+	item_state = "hat_enclave_officer"
+	armor = list("tier" = 5)
 
 //Legion
 /obj/item/clothing/head/f13/legion/servant
@@ -754,7 +793,7 @@
 	armor = list("tier" = 4, "energy" = 20, "bomb" = 20, "bio" = 70, "rad" = 10, "fire" = 20, "acid" = 0)
 	flags_inv = HIDEMASK|HIDEEARS|HIDEEYES|HIDEFACE|HIDEHAIR|HIDEFACIALHAIR
 
-/obj/item/clothing/head/helmetf13/wayfarer/shamanred
+/obj/item/clothing/head/helmet/f13/wayfarer/shamanred
 	name = "crimson mask"
 	desc = "(IV) An uncanny helm passed down through generations, originating from a tribal culture once situated at the top of a Sonoran mesa."
 	icon_state = "shamanred"
