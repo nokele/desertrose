@@ -1200,11 +1200,9 @@
 /turf/open/floor/plating/snowed/temperatre,
 /area/awaymission/cabin/snowforest/sovietsurface)
 "dX" = (
-/mob/living/simple_animal/pet/penguin/emperor,
 /turf/open/floor/plating/ice/smooth,
 /area/awaymission/cabin/snowforest)
 "dY" = (
-/mob/living/simple_animal/pet/penguin/baby,
 /turf/open/floor/plating/ice/smooth,
 /area/awaymission/cabin/snowforest)
 "dZ" = (

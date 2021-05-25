@@ -133,27 +133,6 @@
 	controller = null
 	return ..()
 
-/obj/machinery/pool/filter/emag_act(mob/living/user)
-	. = ..()
-	if(!(obj_flags & EMAGGED))
-		to_chat(user, "<span class='warning'>You disable the [src]'s shark filter! Run!</span>")
-		obj_flags |= EMAGGED
-		do_sparks(5, TRUE, src)
-		icon_state = "filter_b"
-		addtimer(CALLBACK(src, /obj/machinery/pool/filter/proc/spawn_shark), 50)
-		var/msg = "[key_name(user)] emagged the pool filter and spawned a shark"
-		log_game(msg)
-		message_admins(msg)
-
-/obj/machinery/pool/filter/proc/spawn_shark()
-	if(prob(50))
-		new /mob/living/simple_animal/hostile/shark(loc)
-	else
-		if(prob(50))
-			new /mob/living/simple_animal/hostile/shark/kawaii(loc)
-		else
-			new /mob/living/simple_animal/hostile/shark/laser(loc)
-
 /obj/machinery/pool/filter/on_attack_hand(mob/user, act_intent = user.a_intent, unarmed_attack_flags)
 	to_chat(user, "You search the filter.")
 	for(var/obj/O in contents)
