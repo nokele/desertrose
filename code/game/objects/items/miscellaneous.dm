@@ -169,7 +169,6 @@
 		"Dog" = /mob/living/simple_animal/pet/dog,
 		"Corgi" = /mob/living/simple_animal/pet/dog/corgi,
 		"Pug" = /mob/living/simple_animal/pet/dog/pug,
-		"Exotic Corgi" = /mob/living/simple_animal/pet/dog/corgi/exoticcorgi,
 		"Fox" = /mob/living/simple_animal/pet/fox,
 		"Red Panda" = /mob/living/simple_animal/pet/redpanda,
 		"Possum" = /mob/living/simple_animal/opossum)

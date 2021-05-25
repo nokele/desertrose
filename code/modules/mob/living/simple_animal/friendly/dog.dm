@@ -35,7 +35,7 @@
 	icon_living = "corgi"
 	icon_dead = "corgi_dead"
 	butcher_results = list(/obj/item/reagent_containers/food/snacks/meat/slab/corgi = 3, /obj/item/stack/sheet/animalhide/corgi = 1)
-	childtype = list(/mob/living/simple_animal/pet/dog/corgi/puppy = 95, /mob/living/simple_animal/pet/dog/corgi/puppy/void = 5)
+	childtype = list(/mob/living/simple_animal/pet/dog/corgi/puppy = 100)
 	animal_species = /mob/living/simple_animal/pet/dog
 	gold_core_spawnable = FRIENDLY_SPAWN
 	collar_type = "corgi"
@@ -73,16 +73,6 @@
 	collar_type = "pug"
 	held_icon = "pug"
 
-/mob/living/simple_animal/pet/dog/corgi/exoticcorgi
-	name = "Exotic Corgi"
-	desc = "As cute as it is colorful!"
-	icon = 'icons/mob/pets.dmi'
-	icon_state = "corgigrey"
-	icon_living = "corgigrey"
-	icon_dead = "corgigrey_dead"
-	animal_species = /mob/living/simple_animal/pet/dog/corgi/exoticcorgi
-	nofur = TRUE
-
 /mob/living/simple_animal/pet/dog/Initialize()
 	. = ..()
 	var/dog_area = get_area(src)
@@ -94,11 +84,6 @@
 /mob/living/simple_animal/pet/dog/corgi/Initialize()
 	. = ..()
 	regenerate_icons()
-
-/mob/living/simple_animal/pet/dog/corgi/exoticcorgi/Initialize()
-		. = ..()
-		var/newcolor = rgb(rand(0, 255), rand(0, 255), rand(0, 255))
-		add_atom_colour(newcolor, FIXED_COLOUR_PRIORITY)
 
 /mob/living/simple_animal/pet/dog/corgi/death(gibbed)
 	..(gibbed)
@@ -572,23 +557,6 @@
 		to_chat(usr, "<span class='warning'>You can't fit this on [src]!</span>")
 		return
 	..()
-
-
-/mob/living/simple_animal/pet/dog/corgi/puppy/void		//Tribute to the corgis born in nullspace
-	name = "\improper void puppy"
-	real_name = "voidy"
-	desc = "A corgi puppy that has been infused with deep space energy. It's staring back..."
-	icon_state = "void_puppy"
-	icon_living = "void_puppy"
-	icon_dead = "void_puppy_dead"
-	nofur = TRUE
-	unsuitable_atmos_damage = 0
-	minbodytemp = TCMB
-	maxbodytemp = T0C + 40
-	held_icon = "void_puppy"
-
-/mob/living/simple_animal/pet/dog/corgi/puppy/void/Process_Spacemove(movement_dir = 0)
-	return 1	//Void puppies can navigate space.
 
 
 //LISA! SQUEEEEEEEEE~
