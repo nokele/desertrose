@@ -660,9 +660,9 @@ Raider
 	title = "Vigilante"
 	flag = F13VIGILANTE
 	faction = "Wastelander"
-	total_positions = 1
-	spawn_positions = 1
-	description = "You have come a long way to reach this god forsaken place... it is now your job to protect its inhabitants from all sorts of injustice. Your moral codex requires you to help anyone in need and to never harm an innocent. Always try to capture and reeducate criminals instead of killing. Do not get involved in the conflicts between the factions, that is not your fight."
+	total_positions = 3
+	spawn_positions = 3
+	description = "You have travelled the mojave for many years to finally reach this crime-infested hellhole. Be the hero this wasteland deserves, if not the one it needs. Punish the wicked and protect the innocent...for a price. And don't get involved in fights between the major factions."
 	supervisors = "your moral code"
 	selection_color = "#76885f"
 	exp_requirements = 3000
@@ -671,9 +671,7 @@ Raider
 	outfit = /datum/outfit/job/wasteland/f13vigilante
 
 	loadout_options = list(
-							/datum/outfit/loadout/desert_ranger,
-							/datum/outfit/loadout/bounty_hunter,
-							/datum/outfit/loadout/retired_ranger)
+							/datum/outfit/loadout/bounty_hunter)
 
 /datum/outfit/job/wasteland/f13vigilante
 	name = "Vigilante"
@@ -697,32 +695,15 @@ Raider
 	..()
 	if(visualsOnly)
 		return
-	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_LIGHT_STEP, src)
-
-/datum/outfit/loadout/desert_ranger
-	name = "Desert Ranger"
-	head = /obj/item/clothing/head/helmet/f13/ncr/rangercombat/desert
-	suit = /obj/item/clothing/suit/armor/f13/rangercombat/desert
-	r_hand = /obj/item/gun/ballistic/revolver/revolver44/desert_ranger
-	backpack_contents = list(
-							/obj/item/ammo_box/m44box/swc=2
-							)
 
 /datum/outfit/loadout/bounty_hunter
 	name = "Bounty Hunter"
-	head = /obj/item/clothing/suit/armor/f13/combat/mk2/dark
-	suit = /obj/item/clothing/head/helmet/f13/combat/mk2/dark
-	r_hand = /obj/item/gun/ballistic/automatic/g11/upgraded
+	head = /obj/item/clothing/suit/armor/f13/combat/dark
+	suit = /obj/item/clothing/head/helmet/f13/combat/dark
+	r_hand = /obj/item/gun/ballistic/automatic/rangemaster
 	backpack_contents = list(
-							/obj/item/ammo_box/magazine/m473=2
-							)
-
-/datum/outfit/loadout/retired_ranger
-	name = "Retired Veteran"
-	r_hand = /obj/item/gun/ballistic/revolver/sequoia
-	backpack_contents = list(
-							/obj/item/ammo_box/c4570/explosive=2
+							/obj/item/ammo_box/magazine/m762=2
 							)
 
 /datum/job/wasteland/f13adminboos
