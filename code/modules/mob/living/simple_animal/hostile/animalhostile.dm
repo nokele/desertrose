@@ -39,11 +39,12 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 */
 
 /mob/living/simple_animal/hostile
-	icon = 'icons/mob/critters/mobhostileEAST.dmi'
+	icon = 'icons/fallout/mob/hostile_east.dmi'
 
 /mob/living/simple_animal/hostile/radroacheast
 	name = "Radroach"
 	desc = "A large insect that finds its way everywhere."
+	icon = 'icons/fallout/mob/hostile_general.dmi'
 	icon_state = "radroach"
 	icon_living = "radroach"
 	icon_dead = "radroach_dead"
@@ -78,7 +79,8 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 
 /mob/living/simple_animal/hostile/ghoulrotter
 	name = "rotting ghoul"
-	desc = "A ghoul that has lost its mind and become aggressive."
+	desc = "A bloated ghoul that has lost its mind and become aggressive."
+	icon = 'icons/fallout/mob/hostile_feralghoul.dmi'
 	icon_state = "ghoulrotter"
 	icon_living = "ghoulrotter"
 	icon_dead = "ghoulrotter_dead"
@@ -112,10 +114,11 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 	idlesound = list('sound/f13npc/ghoul/idle.ogg')
 	death_sound = 'sound/f13npc/ghoul/ghoul_death.ogg'
 
-//Would love to have bloatfly inject disease or radiation. Last choice toxins. Erase this comment when fixed.
+//Would love to have bloatfly shoot weak projectiles, weak power. Erase this comment when fixed.
 /mob/living/simple_animal/hostile/bloatflyeast
 	name = "bloatfly"
-	desc = "A common pest resembling an oversized blow-fly. Carry diseases."
+	desc = "A common pest resembling an oversized blow-fly. Can attack at a distance."
+	icon = 'icons/fallout/mob/hostile_general.dmi'
 	icon_state = "bloatfly"
 	icon_living = "bloatfly"
 	icon_dead = "bloatfly_dead"
@@ -156,21 +159,10 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 		visible_message("<span class='danger'>[src] dodges [Proj]!</span>")
 		return 0
 
-/mob/living/simple_animal/hostile/bloatflynew/AttackingTarget()
-	. = ..()
-	if(. && ishuman(target))
-		var/mob/living/carbon/human/H = target
-		H.reagents.add_reagent(/datum/reagent/toxin/cazador_venom, 2)
-
-/datum/reagent/toxin/cazador_venom/on_mob_life(mob/living/M)
-	if(volume >= 16)
-		M.adjustToxLoss(5, 0)
-	..()
-
 /mob/living/simple_animal/hostile/molerat
 	name = "molerat"
 	desc = "A large mutated rat-mole hybrid that finds its way everywhere. Common in caves and underground areas."
-	icon = 'icons/mob/critters/mobhostileGENERAL.dmi'
+	icon = 'icons/fallout/mob/hostile_general.dmi'
 	icon_state = "mole_rat"
 	icon_living = "mole_rat"
 	icon_dead = "mole_rat_dead"
@@ -209,6 +201,7 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 /mob/living/simple_animal/hostile/mirelurk
 	name = "mirelurk"
 	desc = "A giant mutated crustacean with a rock-hard exo-skeleton and a endless hunger."
+	icon = 'icons/fallout/mob/hostile_east.dmi'
 	icon_state = "mirelurk"
 	icon_living = "mirelurk"
 	icon_dead = "mirelurk_d"
@@ -225,6 +218,7 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 /mob/living/simple_animal/hostile/mirelurk/baby
 	name = "mirelurk baby"
 	desc = "A neophyte mirelurk baby, mostly harmless."
+	icon = 'icons/fallout/mob/hostile_east.dmi'
 	icon_state = "mirelurkbaby"
 	icon_living = "mirelurkbaby"
 	icon_dead = "mirelurkbaby_d"
@@ -255,6 +249,7 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 /mob/living/simple_animal/hostile/skolf
 	name = "skull wolf"
 	desc = "Half rotted by radiation, blind, hunting by smell and sound."
+	icon = 'icons/fallout/mob/hostile_east.dmi'
 	icon_state = "skolf"
 	icon_living = "skolf"
 	icon_dead = "skolf_dead"
@@ -289,6 +284,7 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 /mob/living/simple_animal/hostile/radscorpioneast
 	name = "Radscorpion"
 	desc = "A mutated arthropod with an armored carapace and a powerful sting."
+	icon = 'icons/fallout/mob/hostile_general.dmi'
 	icon_state = "radscorpion_blue"
 	icon_living = "radscorpion_blue"
 	icon_dead = "radscorpion_blue_dead"
@@ -337,6 +333,7 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 /mob/living/simple_animal/hostile/giantanteast
 	name = "Giant Ant"
 	desc = "A large mutated insect that finds its way everywhere."
+	icon = 'icons/fallout/mob/hostile_general.dmi'
 	icon_state = "ant"
 	icon_living = "ant"
 	icon_dead = "ant_dead"
@@ -381,7 +378,7 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 /mob/living/simple_animal/hostile/yaoguai
 	name = "Yao Guai"
 	desc = "Radiation has caused the brown bear to lose its pelt, grow large with ulcers and a rage fueled by agony. The chinese name for them has stuck."
-	icon = 'icons/mob/critters/mob32x64.dmi'
+	icon = 'icons/fallout/mob/mob_32x64.dmi'
 	icon_state = "yaoguai"
 	icon_living = "yaoguai"
 	icon_dead = "yaoguai_dead"
@@ -416,6 +413,7 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 /mob/living/simple_animal/hostile/aradnid
 	name = "aradnid"
 	desc = "Deeply disturbing creature, they can only consume radiated meat and drag their prey to contaminated areas to tenderize them."
+	icon = 'icons/fallout/mob/hostile_east.dmi'
 	icon_state = "aradnid"
 	icon_living = "aradnid"
 	icon_dead = "aradnid_dead"
@@ -461,7 +459,7 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 /mob/living/simple_animal/hostile/centaur
 	name = "Centaur"
 	desc = "The result of infection by FEV gone horribly wrong."
-	icon = 'icons/mob/critters/mobhostileGENERAL.dmi'
+	icon = 'icons/fallout/mob/hostile_general.dmi'
 	icon_state = "centaur"
 	icon_living = "centaur"
 	icon_dead = "centaur_d"
@@ -511,7 +509,7 @@ to produce smoke or slow down victims? Stuff like that added to a couple would b
 /mob/living/simple_animal/hostile/scolopendra
 	name = "Scolopendra"
 	desc = "The clicking of chitin and multitudes of legs is all you hear before the huge centipede rushes in to catch its prey."
-	icon = 'icons/mob/critters/mob32x64.dmi'
+	icon = 'icons/fallout/mob/mob_32x64.dmi'
 	icon_state = "scolopendra"
 	icon_living = "scolopendra"
 	icon_dead = "scolopendra_dead"

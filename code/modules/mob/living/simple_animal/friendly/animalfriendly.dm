@@ -4,16 +4,16 @@
 -	Radstag		/mob/living/simple_animal/radstag
 -	Chicken		/mob/living/simple_animal/chicken
 
--	Pet Dog		/mob/living/simple_animal/pet/dog/kaiser	unique unmutated dog
--	Pet Snake	/mob/living/simple_animal/pet/hognose		unique enclave pet
-
+-	Pet Dog		/mob/living/simple_animal/pet/dog/kaiser	unique BoS pet
+-	Pet Snake	/mob/living/simple_animal/pet/hognose		unique Enclave pet
+-	Pet Skolf	/mob/living/simple_animal/pet/dog/skolf		unique Talon pet
 */
 
 
 /mob/living/simple_animal/cow/brahmin
 	name = "brahmin"
 	desc = "Brahmin or brahma are mutated cattle with two heads and looking udderly ridiculous.<br>Known for their milk, just don't tip them over."
-	icon = 'icons/mob/critters/mobfriendly.dmi'
+	icon = 'icons/fallout/mob/mob_friendly.dmi'
 	icon_state = "brahmin"
 	icon_living = "brahmin"
 	icon_dead = "brahmin_dead"
@@ -55,7 +55,7 @@
 /mob/living/simple_animal/radstag
 	name = "radstag"
 	desc = "a two headed dear that will run at the first sight of danger."
-	icon = 'icons/mob/critters/mobfriendly.dmi'
+	icon = 'icons/fallout/mob/mob_friendly.dmi'
 	icon_state = "radstag"
 	icon_living = "radstag"
 	icon_dead = "radstag_dead"
@@ -87,7 +87,7 @@ Snek for Enclave East*/
 /mob/living/simple_animal/pet/dog/kaiser
 	name = "Kaiser"
 	desc = "A rare pure breed rottweiler, named Kaiser."
-	icon = 'icons/mob/critters/mobfriendly.dmi'
+	icon = 'icons/fallout/mob/mob_friendly.dmi'
 	icon_state = "rottweiler"
 	icon_living = "rottweiler"
 	icon_dead = "rottweiler_dead"
@@ -116,7 +116,7 @@ Snek for Enclave East*/
 /mob/living/simple_animal/pet/hognose
 	name = "Hognose snake"
 	desc = "A small pet snake."
-	icon = 'icons/mob/critters/mobfriendly.dmi'
+	icon = 'icons/fallout/mob/mob_friendly.dmi'
 	icon_state = "snake"
 	icon_living = "snake"
 	icon_dead = "snake_dead"
@@ -145,10 +145,10 @@ Snek for Enclave East*/
 	AddElement(/datum/element/mob_holder, held_icon)
 
 
-/mob/living/simple_animal/pet/dog/talondog
+/mob/living/simple_animal/pet/dog/skolf
 	name = "Placeholder"
-	desc = "Somehow, this Skolf has been tamed. Kind of. Looks terrifying with its cranium exposed but it acts sort of like a dog."
-	icon = 'icons/mob/critters/mobhostileEAST.dmi'
+	desc = "Somehow, this Skolf has been tamed by the mercenaries. Kind of. Looks terrifying with its cranium exposed but it acts sort of like a dog."
+	icon = 'icons/fallout/mob/hostile_east.dmi'
 	icon_state = "skolf"
 	icon_living = "skolf"
 	icon_dead = "skolf_dead"
