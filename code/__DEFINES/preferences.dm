@@ -67,6 +67,7 @@
 #define EXP_TYPE_GHOST			"Ghost"
 #define EXP_TYPE_ADMIN			"Admin"
 //f13 stuff
+#define EXP_TYPE_FALLOUT		"Fallout"
 #define EXP_TYPE_VAULT			"Vault"
 #define EXP_TYPE_BROTHERHOOD	"Bos"
 #define EXP_TYPE_NCR			"Ncr"
@@ -80,6 +81,7 @@
 #define EXP_TYPE_DECANUS        "Decanus"
 #define EXP_TYPE_TRIBAL			"Tribal"
 #define EXP_TYPE_FOLLOWERS		"FoA"
+#define EXP_TYPE_OUTLAW			"Outlaw"
 //Flags in the players table in the db
 #define DB_FLAG_EXEMPT 							(1<<0)
 #define DB_FLAG_AGE_CONFIRMATION_INCOMPLETE		(1<<1)

@@ -180,6 +180,9 @@ GLOBAL_LIST_INIT(brotherhood_command_positions, list(
 ))
 
 GLOBAL_LIST_INIT(brotherhood_positions, list(
+	"Head Paladin",
+	"Head Knight",
+	"Head Scribe",
 	"Star Paladin",
 	"Paladin",
 	"Star Knight",
@@ -223,7 +226,9 @@ GLOBAL_LIST_INIT(legion_positions, list(
 	"Auxilia",
 	"Camp Follower",
 	"Legion Slave",
-	"Legion Vexillarius"
+	"Legion Vexillarius",
+	"Legion Centurion",
+	"Legion Venator"
 ))
 
 GLOBAL_LIST_INIT(ncr_rangervet_positions, list(
@@ -285,6 +290,7 @@ GLOBAL_LIST_INIT(wasteland_positions, list(
 	"Outlaw",
 	"Faithful",
 	"Wastelander",
+	"Vigilante"
 ))
 
 GLOBAL_LIST_INIT(enclave_positions, list(
@@ -318,7 +324,8 @@ GLOBAL_LIST_INIT(followers_positions, list(
 	"Followers Doctor",
 	"Followers Guard",
 	"Followers Volunteer",
-	"Followers Scientist"
+	"Followers Scientist",
+	"Followers Administrator"
 ))
 
 
@@ -333,6 +340,10 @@ GLOBAL_LIST_INIT(exp_jobsmap, list(
 	EXP_TYPE_SECURITY = list("titles" = security_positions),
 	EXP_TYPE_SILICON = list("titles" = list("AI","Cyborg")),
 	EXP_TYPE_SERVICE = list("titles" = civilian_positions),
+
+	EXP_TYPE_FALLOUT       = list("titles" = brotherhood_positions | den_positions | legion_positions | ncr_positions | vault_positions | wasteland_positions | tribal_positions | followers_positions | enclave_positions),
+
+	EXP_TYPE_OUTLAW        = list("titles" = list("Outlaw")),
 	EXP_TYPE_BROTHERHOOD   = list("titles" = brotherhood_positions),
 	EXP_TYPE_DEN           = list("titles" = den_positions ),
 	EXP_TYPE_LEGION        = list("titles" = legion_positions),
