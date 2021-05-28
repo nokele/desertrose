@@ -41,6 +41,7 @@
 		/obj/item/key,
 		/obj/item/cartridge,
 		/obj/item/camera_film,
+		/obj/item/stack/ore/bluespace_crystal,
 		/obj/item/reagent_containers/food/snacks/grown/poppy,
 		/obj/item/instrument/harmonica,
 		/obj/item/mining_voucher,

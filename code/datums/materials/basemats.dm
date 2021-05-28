@@ -120,6 +120,18 @@ Unless you know what you're doing, only use the first three numbers. They're in 
 	source.RemoveElement(/datum/element/firestacker, amount=1)
 	qdel(source.GetComponent(/datum/component/explodable))
 
+///Can cause bluespace effects on use. (Teleportation) (Not yet implemented)
+/datum/material/bluespace
+	name = "quantum mesh"
+	desc = "Crystals with bluespace properties"
+	color = list(119/255, 217/255, 396/255,0, 0,0,0,0, 0,0,0,0, 0,0,0,1, 0,0,0,0)
+	integrity_modifier = 0.2 //these things shatter when thrown.
+	alpha = 200
+	categories = list(MAT_CATEGORY_ORE = TRUE)
+	beauty_modifier = 0.5
+	sheet_type = /obj/item/stack/sheet/bluespace_crystal
+	value_per_unit = 0.15
+
 ///Mediocre force increase
 /datum/material/titanium
 	name = "titanium"

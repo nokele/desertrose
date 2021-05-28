@@ -66,6 +66,7 @@
 	var/list/components = initial(C.upgrade_reagents) + initial(C.upgrade_reagents2) + initial(C.upgrade_reagents3)
 
 	var/list/grind = list(
+		/datum/reagent/bluespace,
 		/datum/reagent/gold,
 		/datum/reagent/toxin/plasma,
 		/datum/reagent/uranium

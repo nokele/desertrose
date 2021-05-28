@@ -239,6 +239,14 @@
 	for(var/i in 1 to 7)
 		new /obj/item/reagent_containers/glass/beaker( src )
 
+/obj/item/storage/box/beakers/bluespace
+	name = "box of bluespace beakers"
+	illustration = "beaker"
+
+/obj/item/storage/box/beakers/bluespace/PopulateContents()
+	for(var/i in 1 to 7)
+		new /obj/item/reagent_containers/glass/beaker/bluespace(src)
+
 /obj/item/storage/box/medsprays
 	name = "box of medical sprayers"
 	desc = "A box full of medical sprayers, with unscrewable caps and precision spray heads."
@@ -1339,6 +1347,7 @@ obj/item/storage/box/stingbangs
 		/obj/item/disk/tech_disk/debug=1,\
 		/obj/item/uplink/debug=1,\
 		/obj/item/uplink/nuclear/debug=1,\
+		/obj/item/storage/box/beakers/bluespace=1,\
 		/obj/item/storage/box/beakers/variety=1,\
 		/obj/item/storage/box/material=1,\
 		/obj/item/storage/belt/medical/surgery_belt_adv=1
@@ -1354,6 +1363,7 @@ obj/item/storage/box/stingbangs
 	new /obj/item/reagent_containers/glass/beaker/plastic(src)
 	new /obj/item/reagent_containers/glass/beaker/meta(src)
 	new /obj/item/reagent_containers/glass/beaker/noreact(src)
+	new /obj/item/reagent_containers/glass/beaker/bluespace(src)
 
 /obj/item/storage/box/strange_seeds_5pack
 

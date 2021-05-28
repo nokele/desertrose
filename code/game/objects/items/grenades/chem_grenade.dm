@@ -460,14 +460,14 @@
 
 /obj/item/grenade/chem_grenade/facid/Initialize()
 	. = ..()
-	var/obj/item/reagent_containers/glass/beaker/B1 = new(src)
-	var/obj/item/reagent_containers/glass/beaker/B2 = new(src)
+	var/obj/item/reagent_containers/glass/beaker/bluespace/B1 = new(src)
+	var/obj/item/reagent_containers/glass/beaker/bluespace/B2 = new(src)
 
-	B1.reagents.add_reagent(/datum/reagent/toxin/acid/fluacid, 110)
+	B1.reagents.add_reagent(/datum/reagent/toxin/acid/fluacid, 290)
 	B1.reagents.add_reagent(/datum/reagent/potassium, 10)
 	B2.reagents.add_reagent(/datum/reagent/phosphorus, 10)
 	B2.reagents.add_reagent(/datum/reagent/consumable/sugar, 10)
-	B2.reagents.add_reagent(/datum/reagent/toxin/acid/fluacid, 100)
+	B2.reagents.add_reagent(/datum/reagent/toxin/acid/fluacid, 280)
 
 	beakers += B1
 	beakers += B2
@@ -532,13 +532,13 @@
 
 /obj/item/grenade/chem_grenade/clf3/Initialize()
 	. = ..()
-	var/obj/item/reagent_containers/glass/beaker/B1 = new(src)
-	var/obj/item/reagent_containers/glass/beaker/B2 = new(src)
+	var/obj/item/reagent_containers/glass/beaker/bluespace/B1 = new(src)
+	var/obj/item/reagent_containers/glass/beaker/bluespace/B2 = new(src)
 
-	B1.reagents.add_reagent(/datum/reagent/fluorosurfactant, 100)
-	B1.reagents.add_reagent(/datum/reagent/clf3, 20)
-	B2.reagents.add_reagent(/datum/reagent/water, 100)
-	B2.reagents.add_reagent(/datum/reagent/clf3, 20)
+	B1.reagents.add_reagent(/datum/reagent/fluorosurfactant, 250)
+	B1.reagents.add_reagent(/datum/reagent/clf3, 50)
+	B2.reagents.add_reagent(/datum/reagent/water, 250)
+	B2.reagents.add_reagent(/datum/reagent/clf3, 50)
 
 	beakers += B1
 	beakers += B2
@@ -550,16 +550,35 @@
 
 /obj/item/grenade/chem_grenade/bioterrorfoam/Initialize()
 	. = ..()
-	var/obj/item/reagent_containers/glass/beaker/B1 = new(src)
-	var/obj/item/reagent_containers/glass/beaker/B2 = new(src)
+	var/obj/item/reagent_containers/glass/beaker/bluespace/B1 = new(src)
+	var/obj/item/reagent_containers/glass/beaker/bluespace/B2 = new(src)
 
-	B1.reagents.add_reagent(/datum/reagent/cryptobiolin, 40)
-	B1.reagents.add_reagent(/datum/reagent/water, 20)
-	B1.reagents.add_reagent(/datum/reagent/toxin/mutetoxin, 20)
-	B1.reagents.add_reagent(/datum/reagent/toxin/spore, 20)
-	B1.reagents.add_reagent(/datum/reagent/toxin/itching_powder, 20)
-	B2.reagents.add_reagent(/datum/reagent/fluorosurfactant, 80)
-	B2.reagents.add_reagent(/datum/reagent/toxin/mutagen, 40)
+	B1.reagents.add_reagent(/datum/reagent/cryptobiolin, 75)
+	B1.reagents.add_reagent(/datum/reagent/water, 50)
+	B1.reagents.add_reagent(/datum/reagent/toxin/mutetoxin, 50)
+	B1.reagents.add_reagent(/datum/reagent/toxin/spore, 75)
+	B1.reagents.add_reagent(/datum/reagent/toxin/itching_powder, 50)
+	B2.reagents.add_reagent(/datum/reagent/fluorosurfactant, 150)
+	B2.reagents.add_reagent(/datum/reagent/toxin/mutagen, 150)
+	beakers += B1
+	beakers += B2
+
+/obj/item/grenade/chem_grenade/tuberculosis
+	name = "Fungal tuberculosis grenade"
+	desc = "WARNING: GRENADE WILL RELEASE DEADLY SPORES CONTAINING ACTIVE AGENTS. SEAL SUIT AND AIRFLOW BEFORE USE."
+	stage = READY
+
+/obj/item/grenade/chem_grenade/tuberculosis/Initialize()
+	. = ..()
+	var/obj/item/reagent_containers/glass/beaker/bluespace/B1 = new(src)
+	var/obj/item/reagent_containers/glass/beaker/bluespace/B2 = new(src)
+
+	B1.reagents.add_reagent(/datum/reagent/potassium, 50)
+	B1.reagents.add_reagent(/datum/reagent/phosphorus, 50)
+	B1.reagents.add_reagent(/datum/reagent/fungalspores, 200)
+	B2.reagents.add_reagent(/datum/reagent/blood, 250)
+	B2.reagents.add_reagent(/datum/reagent/consumable/sugar, 50)
+
 	beakers += B1
 	beakers += B2
 

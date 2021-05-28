@@ -64,6 +64,7 @@ handles linking back and forth.
 		/datum/material/plasma,
 		/datum/material/uranium,
 		/datum/material/titanium,
+		/datum/material/bluespace,
 		/datum/material/plastic,
 		)
 

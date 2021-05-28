@@ -1097,7 +1097,7 @@
 		)
 	spawn_flags = IC_SPAWN_RESEARCH
 	power_draw_per_use = 40
-	var/list/mtypes = list(/datum/material/iron, /datum/material/glass, /datum/material/silver, /datum/material/gold, /datum/material/diamond, /datum/material/plasma, /datum/material/uranium, /datum/material/titanium, /datum/material/biomass, /datum/material/plastic)
+	var/list/mtypes = list(/datum/material/iron, /datum/material/glass, /datum/material/silver, /datum/material/gold, /datum/material/diamond, /datum/material/plasma, /datum/material/uranium, /datum/material/titanium, /datum/material/bluespace, /datum/material/biomass, /datum/material/plastic)
 
 
 /obj/item/integrated_circuit/input/matscan/do_work()

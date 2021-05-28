@@ -461,3 +461,15 @@
 		. += "<span class='notice'>It can add up to [uses] charges to compatible devices.</span>"
 	else
 		. += "<span class='warning'>The crystal is gone.</span>"
+
+/obj/item/bluespacerecharge/attackby(obj/item/I, mob/user, params)
+	..()
+	if(!istype(I, /obj/item/stack/ore/bluespace_crystal) || uses)
+		return
+	var/obj/item/stack/ore/bluespace_crystal/B = I
+	if (B.amount < 10)
+		return
+	uses += 3
+	to_chat(user, "<span class='notice'>You insert [I] into [src].</span>")
+	B.use(10)
+	icon_state = initial(icon_state)

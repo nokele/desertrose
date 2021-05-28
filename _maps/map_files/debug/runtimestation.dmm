@@ -639,6 +639,8 @@
 /obj/item/storage/box/beakers,
 /obj/item/storage/box/syringes,
 /obj/structure/table,
+/obj/item/reagent_containers/glass/beaker/bluespace,
+/obj/item/reagent_containers/glass/beaker/bluespace,
 /obj/item/reagent_containers/syringe,
 /obj/machinery/airalarm/unlocked{
 	pixel_y = 23
