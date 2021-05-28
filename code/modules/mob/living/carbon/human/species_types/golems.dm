@@ -396,7 +396,6 @@
 	name = "Bluespace Golem"
 	id = "bluespace golem"
 	fixed_mut_color = "33f"
-	meat = /obj/item/stack/ore/bluespace_crystal
 	info_text = "As a <span class='danger'>Bluespace Golem</span>, you are spatially unstable: You will teleport when hit, and you can teleport manually at a long distance."
 	attack_verb = "bluespace punch"
 	attack_sound = 'sound/effects/phasein.ogg'

@@ -88,14 +88,3 @@
 				to_chat(user, "<span class='notice'>You successfully compress [target]! The compressor now has [charges] charges.</span>")
 		else
 			to_chat(user, "<span class='notice'>Anomalous error. Summon a coder.</span>")
-
-/obj/item/compressionkit/attackby(obj/item/I, mob/user, params)
-	..()
-	if(istype(I, /obj/item/stack/ore/bluespace_crystal))
-		var/obj/item/stack/ore/bluespace_crystal/B = I
-		charges += 2
-		to_chat(user, "<span class='notice'>You insert [I] into [src]. It now has [charges] charges.</span>")
-		if(B.amount > 1)
-			B.amount -= 1
-		else
-			qdel(I)

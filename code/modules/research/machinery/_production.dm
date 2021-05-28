@@ -104,7 +104,6 @@
 /obj/machinery/rnd/production/proc/check_mat(datum/design/being_built, mat)	// now returns how many times the item can be built with the material
 	if (!materials.mat_container)  // no connected silo
 		return 0
-	var/list/all_materials = being_built.reagents_list + being_built.materials
 
 	var/A = materials.mat_container.get_material_amount(mat)
 	if(!A)
@@ -112,11 +111,9 @@
 
 	// these types don't have their .materials set in do_print, so don't allow
 	// them to be constructed efficiently
-	var/ef = efficient_with(being_built.build_path) ? print_cost_coeff : 1
-	return round(A / max(1, all_materials[mat] * ef))
 
 /obj/machinery/rnd/production/proc/efficient_with(path)
-	return !ispath(path, /obj/item/stack/sheet) && !ispath(path, /obj/item/stack/ore/bluespace_crystal)
+	return !ispath(path, /obj/item/stack/sheet) && !ispath(path, /obj/item/stack/ore/uranium)
 
 /obj/machinery/rnd/production/proc/user_try_print_id(id, amount)
 	if((!istype(linked_console) && requires_console) || !id)
@@ -270,16 +267,6 @@
 	var/list/l = list()
 	var/temp_material
 	var/c = 50
-	var/t
-	var/all_materials = D.materials + D.reagents_list
-	for(var/M in all_materials)
-		t = check_mat(D, M)
-		temp_material += " | "
-		if (t < 1)
-			temp_material += "<span class='bad'>[all_materials[M] * coeff] [CallMaterialName(M)]</span>"
-		else
-			temp_material += " [all_materials[M] * coeff] [CallMaterialName(M)]"
-		c = min(c,t)
 
 	var/clearance = !(obj_flags & EMAGGED) && (offstation_security_levels || is_station_level(z))
 	var/sec_text = ""

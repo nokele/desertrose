@@ -31,8 +31,6 @@
 				examine_list += "<span class='notice'>The mech could use some <b>sheets of strong steel</b>.</span>"
 			if(/obj/item/mecha_parts/part)
 				examine_list += "<span class='notice'>The mech could use a mech <b>part</b>.</span>"
-			if(/obj/item/stack/ore/bluespace_crystal)
-				examine_list += "<span class='notice'>The mech could use a <b>crystal</b> of sorts.</span>"
 			if(/obj/item/assembly/signaler/anomaly)
 				examine_list += "<span class='notice'>The mech could use a <b>anomaly</b> of sorts.</span>"
 
@@ -1631,7 +1629,7 @@
 
 		//15
 		list(
-			"key" = /obj/item/stack/ore/bluespace_crystal,
+			"key" = /obj/item/stack/cable_coil,
 			"amount" = 1,
 			"back_key" = TOOL_SCREWDRIVER,
 			"desc" = "Capacitor is secured."

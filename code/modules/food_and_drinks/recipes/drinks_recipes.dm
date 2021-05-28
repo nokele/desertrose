@@ -780,7 +780,7 @@
 	name = "Blazaam"
 	id = /datum/reagent/consumable/ethanol/blazaam
 	results = list(/datum/reagent/consumable/ethanol/blazaam = 3)
-	required_reagents = list(/datum/reagent/consumable/ethanol/gin = 2, /datum/reagent/consumable/peachjuice = 1, /datum/reagent/bluespace = 1)
+	required_reagents = list(/datum/reagent/consumable/ethanol/gin = 2, /datum/reagent/consumable/peachjuice = 1)
 
 /datum/chemical_reaction/planet_cracker
 	name = "Planet Cracker"

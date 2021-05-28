@@ -1264,32 +1264,6 @@
 		mytray.adjustHealth(-round(chems.get_reagent_amount(src.type) * 1))
 		mytray.adjustToxic(round(chems.get_reagent_amount(src.type) * 2))
 
-/datum/reagent/bluespace
-	name = "Bluespace Dust"
-	description = "A dust composed of microscopic bluespace crystals, with minor space-warping properties."
-	reagent_state = SOLID
-	color = "#0000CC"
-	taste_description = "fizzling blue"
-	pH = 12
-	value = REAGENT_VALUE_RARE
-	material = /datum/material/bluespace
-
-/datum/reagent/bluespace/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
-	if(method == TOUCH || method == VAPOR)
-		do_teleport(M, get_turf(M), (reac_volume / 5), asoundin = 'sound/effects/phasein.ogg', channel = TELEPORT_CHANNEL_BLUESPACE) //4 tiles per crystal
-	..()
-
-/datum/reagent/bluespace/on_mob_life(mob/living/carbon/M)
-	if(current_cycle > 10 && prob(15))
-		to_chat(M, "<span class='warning'>You feel unstable...</span>")
-		M.Jitter(2)
-		current_cycle = 1
-		addtimer(CALLBACK(M, /mob/living/proc/bluespace_shuffle), 30)
-	..()
-
-/mob/living/proc/bluespace_shuffle()
-	do_teleport(src, get_turf(src), 5, asoundin = 'sound/effects/phasein.ogg', channel = TELEPORT_CHANNEL_BLUESPACE)
-
 /datum/reagent/telecrystal
 	name = "Telecrystal Dust"
 	description = "A blood-red dust comprised of something that was much more useful when it was intact."

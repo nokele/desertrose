@@ -104,7 +104,7 @@
 	name = "Eigenstasium"
 	id = /datum/reagent/fermi/eigenstate
 	results = list(/datum/reagent/fermi/eigenstate = 1)
-	//required_reagents = list(/datum/reagent/bluespace = 1, /datum/reagent/stable_plasma = 1, /datum/reagent/consumable/caramel = 1)
+	//required_reagents = list(/datum/reagent/stable_plasma = 1, /datum/reagent/consumable/caramel = 1)
 	mix_message = "the reaction zaps suddenly!"
 	//FermiChem vars:
 	OptimalTempMin 		= 350 // Lower area of bell curve for determining heat based rate reactions
@@ -201,7 +201,7 @@
 	name = "MKUltra"
 	id = /datum/reagent/fermi/enthrall
 	results = list(/datum/reagent/fermi/enthrall = 5)
-	required_reagents = list(/datum/reagent/consumable/coco = 1, /datum/reagent/bluespace = 1, /datum/reagent/toxin/mindbreaker = 1, /datum/reagent/medicine/psicodine = 1, /datum/reagent/drug/happiness = 1)
+	required_reagents = list(/datum/reagent/consumable/coco = 1, /datum/reagent/toxin/mindbreaker = 1, /datum/reagent/medicine/psicodine = 1, /datum/reagent/drug/happiness = 1)
 	required_catalysts = list(/datum/reagent/blood = 1)
 	mix_message = "the reaction gives off a burgundy plume of smoke!"
 	//FermiChem vars:

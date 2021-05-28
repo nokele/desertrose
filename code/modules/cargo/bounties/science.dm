@@ -107,15 +107,6 @@
 	required_count = 20 //Easy to make
 	wanted_types = list(/obj/item/stock_parts/micro_laser/quadultra)
 
-/datum/bounty/item/science/fakecrystals
-	name = "Synthetic Bluespace Crystals"
-	description = "Don't, uh, tell anyone, but one of our BSA arrays might have had a little... accident. Send us some bluespace crystals so we can recalibrate it before anyone realizes. The whole set uses artificial bluespace crystals, so we need and not any other type of bluespace crystals..."
-	reward = 8000
-	required_count = 5
-	wanted_types = list(/obj/item/stack/ore/bluespace_crystal/artificial)
-	exclude_types = list(/obj/item/stack/ore/bluespace_crystal,
-						/obj/item/stack/sheet/bluespace_crystal,
-						/obj/item/stack/ore/bluespace_crystal/refined)
 
 /datum/bounty/item/science/noneactive_reactivearmor
 	name = "Reactive Armor Shells"
