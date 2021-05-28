@@ -382,7 +382,7 @@
 	icon_state = "bluespace_tray"
 	desc = "A tray created using bluespace technology to fit more food on it."
 	max_items = 30 // far more items
-	custom_materials = list(/datum/material/iron = 2000, /datum/material/bluespace = 500)
+	custom_materials = list(/datum/material/iron = 2000)
 
 /*
  *	Chemistry bag - IT'S A MEDICAL BAG NOW, IN YOUR FACE SCIENCE

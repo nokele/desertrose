@@ -126,7 +126,7 @@
 /datum/chemical_reaction/bluespacecrystalifaction/on_reaction(datum/reagents/holder, multiplier)
 	var/location = get_turf(holder.my_atom)
 	for(var/i = 1, i <= multiplier, i++)
-		new /obj/item/stack/sheet/bluespace_crystal(location)
+		new /obj/item/stack/sheet/plasteel(location)
 
 /datum/chemical_reaction/capsaicincondensation
 	name = "Capsaicincondensation"

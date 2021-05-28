@@ -603,7 +603,7 @@
 	initial_gas_mix = ICEMOON_DEFAULT_ATMOS
 
 /turf/closed/mineral/bscrystal
-	mineralType = /obj/item/stack/ore/bluespace_crystal
+	mineralType = /obj/item/stack/sheet/plasteel
 	mineralAmt = 1
 	spreadChance = 0
 	spread = 0

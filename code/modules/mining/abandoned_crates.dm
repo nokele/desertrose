@@ -84,7 +84,7 @@
 				var/newitem = pick(subtypesof(/obj/item/stock_parts) - /obj/item/stock_parts/subspace)
 				new newitem(src)
 		if(69 to 70)
-			new /obj/item/stack/ore/bluespace_crystal(src, 5)
+			new /obj/item/stack/sheet/plasteel(src, 5)
 		if(71 to 72)
 			new /obj/item/pickaxe/drill(src)
 		if(73 to 74)

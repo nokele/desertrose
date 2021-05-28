@@ -24,9 +24,9 @@
 		deductcharge(hitcost * 0.25)
 
 /obj/item/melee/baton/cattleprod/attackby(obj/item/I, mob/user, params)//handles sticking a crystal onto a stunprod to make a teleprod
-	if(istype(I, /obj/item/stack/ore/bluespace_crystal))
+	if(istype(I, /obj/item/stack/sheet/plasteel))
 		if(!cell)
-			var/obj/item/stack/ore/bluespace_crystal/BSC = I
+			var/obj/item/stack/sheet/plasteel/BSC = I
 			var/obj/item/melee/baton/cattleprod/teleprod/S = new /obj/item/melee/baton/cattleprod/teleprod
 			remove_item_from_storage(user)
 			qdel(src)

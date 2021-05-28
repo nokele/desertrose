@@ -18,7 +18,7 @@
 	desc = "A backpack that opens into a localized pocket of bluespace."
 	id = "bag_holding"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/gold = 3000, /datum/material/diamond = 1500, /datum/material/uranium = 250, /datum/material/bluespace = 2000)
+	materials = list(/datum/material/gold = 3000, /datum/material/diamond = 1500, /datum/material/uranium = 250)
 	build_path = /obj/item/storage/backpack/holding
 	category = list("Bluespace Designs")
 	dangerous_construction = TRUE
@@ -29,7 +29,7 @@
 	desc = "A satchel that opens into a localized pocket of bluespace."
 	id = "satchel_holding"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/gold = 3000, /datum/material/diamond = 1500, /datum/material/uranium = 250, /datum/material/bluespace = 2000)
+	materials = list(/datum/material/gold = 3000, /datum/material/diamond = 1500, /datum/material/uranium = 250)
 	build_path = /obj/item/storage/backpack/holding/satchel
 	category = list("Bluespace Designs")
 	dangerous_construction = TRUE
@@ -40,7 +40,7 @@
 	desc = "A duffel bag that opens into a localized pocket of bluespace."
 	id = "duffelbag_holding"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/gold = 3000, /datum/material/diamond = 1500, /datum/material/uranium = 250, /datum/material/bluespace = 2000)
+	materials = list(/datum/material/gold = 3000, /datum/material/diamond = 1500, /datum/material/uranium = 250)
 	build_path = /obj/item/storage/backpack/holding/duffel
 	category = list("Bluespace Designs")
 	dangerous_construction = TRUE
@@ -51,20 +51,10 @@
 	desc = "A chemical holding thingy. Mostly used for xenobiology."
 	id = "biobag_holding"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/gold = 1500, /datum/material/diamond = 750, /datum/material/uranium = 250, /datum/material/bluespace = 1000)
+	materials = list(/datum/material/gold = 1500, /datum/material/diamond = 750, /datum/material/uranium = 250, /datum/material/glass = 1000)
 	build_path = /obj/item/storage/bag/bio/holding
 	category = list("Bluespace Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
-
-/datum/design/bluespace_crystal
-	name = "Artificial Quantum Mesh"
-	desc = "A small blue crystal with mystical properties."
-	id = "bluespace_crystal"
-	build_type = PROTOLATHE
-	materials = list(/datum/material/diamond = 1500, /datum/material/plasma = 1500)
-	build_path = /obj/item/stack/ore/bluespace_crystal/artificial
-	category = list("Bluespace Designs")
-	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE | DEPARTMENTAL_FLAG_ENGINEERING
 
 /datum/design/telesci_gps
 	name = "GPS Device"
@@ -81,7 +71,7 @@
 	desc = "A device that can desynchronize the user from spacetime."
 	id = "desynchronizer"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/iron = 1000, /datum/material/glass = 500, /datum/material/silver = 1500, /datum/material/bluespace = 1000)
+	materials = list(/datum/material/iron = 1000, /datum/material/glass = 500, /datum/material/silver = 1500, /datum/material/glass = 1000)
 	build_path = /obj/item/desynchronizer
 	category = list("Bluespace Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -102,7 +92,7 @@
 	id = "bluespace_tray"
 	build_type = PROTOLATHE
 	build_path = /obj/item/storage/bag/tray/bluespace
-	materials = list(/datum/material/iron = 2000, /datum/material/bluespace = 500)
+	materials = list(/datum/material/iron = 2000, /datum/material/glass = 500)
 	category = list("Bluespace Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SERVICE
 
@@ -112,6 +102,6 @@
 	id = "bluespace_carrier"
 	build_type = PROTOLATHE
 	build_path = /obj/item/pet_carrier/bluespace
-	materials = list(/datum/material/glass = 1000, /datum/material/bluespace = 600)
+	materials = list(/datum/material/glass = 1000, /datum/material/glass = 600)
 	category = list("Bluespace Designs")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE

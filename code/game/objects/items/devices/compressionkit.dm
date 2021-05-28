@@ -91,8 +91,8 @@
 
 /obj/item/compressionkit/attackby(obj/item/I, mob/user, params)
 	..()
-	if(istype(I, /obj/item/stack/ore/bluespace_crystal))
-		var/obj/item/stack/ore/bluespace_crystal/B = I
+	if(istype(I, /obj/item/stack/sheet/plasteel))
+		var/obj/item/stack/sheet/plasteel/B = I
 		charges += 2
 		to_chat(user, "<span class='notice'>You insert [I] into [src]. It now has [charges] charges.</span>")
 		if(B.amount > 1)

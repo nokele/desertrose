@@ -1272,7 +1272,6 @@
 	taste_description = "fizzling blue"
 	pH = 12
 	value = REAGENT_VALUE_RARE
-	material = /datum/material/bluespace
 
 /datum/reagent/bluespace/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
 	if(method == TOUCH || method == VAPOR)

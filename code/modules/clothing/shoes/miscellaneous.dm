@@ -464,9 +464,9 @@
 
 /obj/item/bluespacerecharge/attackby(obj/item/I, mob/user, params)
 	..()
-	if(!istype(I, /obj/item/stack/ore/bluespace_crystal) || uses)
+	if(!istype(I, /obj/item/stack/sheet/plasteel) || uses)
 		return
-	var/obj/item/stack/ore/bluespace_crystal/B = I
+	var/obj/item/stack/sheet/plasteel/B = I
 	if (B.amount < 10)
 		return
 	uses += 3

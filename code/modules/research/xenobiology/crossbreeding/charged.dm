@@ -109,7 +109,7 @@ Charged extracts:
 	colour = "bluespace"
 
 /obj/item/slimecross/charged/bluespace/do_effect(mob/user)
-	new /obj/item/stack/sheet/bluespace_crystal(get_turf(user), 10)
+	new /obj/item/stack/sheet/plasteel(get_turf(user), 10)
 	user.visible_message("<span class='notice'>[src] produces several sheets of polycrystal!</span>")
 	..()
 

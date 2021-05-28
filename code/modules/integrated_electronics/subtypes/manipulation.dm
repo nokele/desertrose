@@ -408,7 +408,6 @@
 		/datum/material/diamond,
 		/datum/material/uranium,
 		/datum/material/plasma,
-		/datum/material/bluespace,
 		/datum/material/titanium,
 		/datum/material/plastic
 		)

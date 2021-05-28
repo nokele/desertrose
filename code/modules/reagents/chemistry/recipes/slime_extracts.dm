@@ -526,7 +526,7 @@
 	required_other = TRUE
 
 /datum/chemical_reaction/slime/slimecrystal/on_reaction(datum/reagents/holder, multiplier)
-	var/obj/item/stack/ore/bluespace_crystal/BC = new (get_turf(holder.my_atom))
+	var/obj/item/stack/sheet/plasteel/BC = new (get_turf(holder.my_atom))
 	BC.visible_message("<span class='notice'>The [BC.name] appears out of thin air!</span>")
 	..()
 

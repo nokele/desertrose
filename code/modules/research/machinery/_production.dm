@@ -116,7 +116,7 @@
 	return round(A / max(1, all_materials[mat] * ef))
 
 /obj/machinery/rnd/production/proc/efficient_with(path)
-	return !ispath(path, /obj/item/stack/sheet) && !ispath(path, /obj/item/stack/ore/bluespace_crystal)
+	return !ispath(path, /obj/item/stack/sheet) && !ispath(path, /obj/item/stack/sheet/plasteel)
 
 /obj/machinery/rnd/production/proc/user_try_print_id(id, amount)
 	if((!istype(linked_console) && requires_console) || !id)

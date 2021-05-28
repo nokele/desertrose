@@ -240,7 +240,7 @@
 	max_occupants = 1 //far less than a regular carrier or bluespace bodybag, because it can be thrown to release the contents
 	allows_hostiles = TRUE //can fit hostile creatures, with the move resist restrictions in place, this means they still cannot take things like legions/goliaths/etc regardless
 	has_lock_sprites = FALSE //jar doesn't show the regular lock overlay
-	custom_materials = list(/datum/material/glass = 1000, /datum/material/bluespace = 600)
+	custom_materials = list(/datum/material/glass = 1000)
 	escape_time = 200 //equal to the time of a bluespace bodybag
 	alternate_escape_time = 100
 

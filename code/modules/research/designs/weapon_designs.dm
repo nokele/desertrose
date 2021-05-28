@@ -344,7 +344,7 @@
 	desc = "Not quite as menacing as it sounds"
 	id = "xray_laser"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/gold = 5000, /datum/material/uranium = 4000, /datum/material/iron = 5000, /datum/material/titanium = 2000, /datum/material/bluespace = 2000)
+	materials = list(/datum/material/gold = 5000, /datum/material/uranium = 4000, /datum/material/iron = 5000, /datum/material/titanium = 2000, /datum/material/glass = 2000)
 	build_path = /obj/item/gun/energy/xray
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SECURITY
@@ -365,7 +365,7 @@
 	desc = "A projector that emits high density quantum-coupled bluespace beams."
 	id = "wormholeprojector"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/silver = 2000, /datum/material/iron = 5000, /datum/material/diamond = 2000, /datum/material/bluespace = 3000)
+	materials = list(/datum/material/silver = 2000, /datum/material/iron = 5000, /datum/material/diamond = 2000, /datum/material/glass = 3000)
 	build_path = /obj/item/gun/energy/wormhole_projector
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE
@@ -375,7 +375,7 @@
 	desc = "A multi-mode device that blasts one-point bluespace-gravitational bolts that locally distort gravity."
 	id = "gravitygun"
 	build_type = PROTOLATHE
-	materials = list(/datum/material/silver = 8000, /datum/material/uranium = 8000, /datum/material/glass = 12000, /datum/material/iron = 12000, /datum/material/diamond = 3000, /datum/material/bluespace = 3000)
+	materials = list(/datum/material/silver = 8000, /datum/material/uranium = 8000, /datum/material/glass = 12000, /datum/material/iron = 12000, /datum/material/diamond = 3000, /datum/material/glass = 3000)
 	build_path = /obj/item/gun/energy/gravity_gun
 	category = list("Weapons")
 	departmental_flags = DEPARTMENTAL_FLAG_SCIENCE

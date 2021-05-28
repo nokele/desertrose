@@ -113,7 +113,7 @@ Industrial extracts:
 /obj/item/slimecross/industrial/bluespace
 	colour = "bluespace"
 	plasmarequired = 7
-	itempath = /obj/item/stack/ore/bluespace_crystal/artificial
+	itempath = /obj/item/stack/sheet/plasteel
 
 /obj/item/slimecross/industrial/sepia
 	colour = "sepia"
