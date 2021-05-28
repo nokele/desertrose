@@ -21,7 +21,7 @@
 	display_name = "Advanced Quantum Research"
 	description = "Deeper understanding of how the Quantum Theory works"
 	prereq_ids = list("practical_bluespace", "high_efficiency")
-	design_ids = list("bluespace_matter_bin", "femto_mani", "triphasic_scanning", "bluespace_crystal", "xenobio_slimeadv")
+	design_ids = list("bluespace_matter_bin", "femto_mani", "triphasic_scanning", "xenobio_slimeadv")
 	research_costs = list(TECHWEB_POINT_TYPE_GENERIC = 10000)
 
 /datum/techweb_node/bluespace_power
