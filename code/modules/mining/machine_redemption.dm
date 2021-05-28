@@ -17,7 +17,7 @@
 	var/ore_pickup_rate = 15
 	var/ore_multiplier = 1
 	var/point_upgrade = 1
-	var/list/ore_values = list(/datum/material/glass = 1, /datum/material/iron = 1, /datum/material/plasma = 15, /datum/material/silver = 16, /datum/material/gold = 18, /datum/material/titanium = 30, /datum/material/uranium = 30, /datum/material/diamond = 50, /datum/material/bluespace = 50, /datum/material/lead = 3)
+	var/list/ore_values = list(/datum/material/glass = 1, /datum/material/iron = 1, /datum/material/plasma = 15, /datum/material/silver = 16, /datum/material/gold = 18, /datum/material/titanium = 30, /datum/material/uranium = 30, /datum/material/diamond = 50, /datum/material/lead = 3)
 	var/message_sent = FALSE
 	var/list/ore_buffer = list()
 	var/datum/techweb/stored_research
@@ -181,11 +181,6 @@
 		if(user.transferItemToLoc(W, src))
 			inserted_disk = W
 			return TRUE
-
-	if(istype(W, /obj/item/stack/ore/bluespace_crystal/refined))
-		to_chat(user, "<span class='notice'>[W] has already been refined!</span>")
-		return
-
 	return ..()
 
 /obj/machinery/mineral/ore_redemption/multitool_act(mob/living/user, obj/item/multitool/I)

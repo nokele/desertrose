@@ -1,7 +1,7 @@
 /datum/chemical_reaction/metalgen
 	name = "metalgen"
 	id = /datum/reagent/metalgen
-	required_reagents = list(/datum/reagent/wittel = 1, /datum/reagent/bluespace = 1, /datum/reagent/toxin/mutagen = 1)
+	required_reagents = list(/datum/reagent/wittel = 1, /datum/reagent/toxin/mutagen = 1)
 	results = list(/datum/reagent/metalgen = 1)
 
 /datum/chemical_reaction/metalgen_imprint
@@ -116,17 +116,6 @@
 	var/location = get_turf(holder.my_atom)
 	for(var/i = 1, i <= multiplier, i++)
 		new /obj/item/stack/sheet/mineral/uranium(location)
-
-/datum/chemical_reaction/bluespacecrystalifaction
-	name = "Crystallized Bluespace"
-	id = "crystalbluespace"
-	required_reagents = list(/datum/reagent/consumable/frostoil = 5, /datum/reagent/bluespace = 20, /datum/reagent/iron = 1)
-	mob_react = FALSE
-
-/datum/chemical_reaction/bluespacecrystalifaction/on_reaction(datum/reagents/holder, multiplier)
-	var/location = get_turf(holder.my_atom)
-	for(var/i = 1, i <= multiplier, i++)
-		new /obj/item/stack/sheet/bluespace_crystal(location)
 
 /datum/chemical_reaction/capsaicincondensation
 	name = "Capsaicincondensation"

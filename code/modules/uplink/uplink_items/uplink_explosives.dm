@@ -68,17 +68,6 @@
 	item = /obj/item/storage/box/syndie_kit/emp
 	cost = 2
 
-/datum/uplink_item/explosives/virus_grenade
-	name = "Fungal Tuberculosis Grenade"
-	desc = "A primed bio-grenade packed into a compact box. Comes with five Bio Virus Antidote Kit (BVAK) \
-			autoinjectors for rapid application on up to two targets each, a syringe, and a bottle containing \
-			the BVAK solution."
-	item = /obj/item/storage/box/syndie_kit/tuberculosisgrenade
-	cost = 8
-	surplus = 35
-	include_modes = list(/datum/game_mode/nuclear)
-	restricted = TRUE
-
 /datum/uplink_item/explosives/grenadier
 	name = "Grenadier's belt"
 	desc = "A belt containing 26 lethally dangerous and destructive grenades. Comes with an extra multitool and screwdriver."

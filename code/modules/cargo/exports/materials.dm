@@ -87,11 +87,6 @@
 	material_id = /datum/material/mythril
 	message = "cm3 of mythril"
 
-/datum/export/material/bscrystal
-	cost = 150
-	message = "cm3 of bluespace crystals"
-	material_id = /datum/material/bluespace
-
 /datum/export/material/runite
 	cost = 300
 	message = "cm3 of runite"

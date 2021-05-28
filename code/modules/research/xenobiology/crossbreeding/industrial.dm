@@ -110,11 +110,6 @@ Industrial extracts:
 	itempath = pick(list(get_random_food(), get_random_drink()))
 	..()
 
-/obj/item/slimecross/industrial/bluespace
-	colour = "bluespace"
-	plasmarequired = 7
-	itempath = /obj/item/stack/ore/bluespace_crystal/artificial
-
 /obj/item/slimecross/industrial/sepia
 	colour = "sepia"
 	plasmarequired = 2

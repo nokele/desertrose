@@ -32,7 +32,6 @@
 	move_resist = MOVE_FORCE_VERY_STRONG
 	pull_force = MOVE_FORCE_VERY_STRONG
 	del_on_death = TRUE
-	loot = list(/obj/item/stack/ore/bluespace_crystal = 3)
 	crusher_loot = /obj/item/crusher_trophy/watcher_wing/ice_wing
 	deathmessage = "fades as the energies that tied it to this world dissipate."
 	deathsound = 'sound/magic/demon_dies.ogg'

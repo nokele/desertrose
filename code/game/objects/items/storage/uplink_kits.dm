@@ -286,16 +286,6 @@
 	new /obj/item/nuke_core_container/supermatter(src)
 	new /obj/item/paper/guides/antag/supermatter_sliver(src)
 
-/obj/item/storage/box/syndie_kit/tuberculosisgrenade
-	name = "boxed virus grenade kit"
-
-/obj/item/storage/box/syndie_kit/tuberculosisgrenade/PopulateContents()
-	new /obj/item/grenade/chem_grenade/tuberculosis(src)
-	for(var/i in 1 to 5)
-		new /obj/item/reagent_containers/hypospray/medipen/tuberculosiscure(src)
-	new /obj/item/reagent_containers/syringe(src)
-	new /obj/item/reagent_containers/glass/bottle/tuberculosiscure(src)
-
 /obj/item/storage/box/syndie_kit/chameleon
 	name = "chameleon kit"
 

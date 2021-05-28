@@ -79,7 +79,6 @@ Administrator
 	satchel = 	/obj/item/storage/backpack/satchel/med
 	duffelbag = /obj/item/storage/backpack/duffelbag/med
 	backpack_contents = list(
-		/obj/item/reagent_containers/glass/beaker/bluespace=1,
 		/obj/item/storage/firstaid/ancient=1,
 		/obj/item/reagent_containers/medspray/synthflesh=2,
 		/obj/item/reagent_containers/hypospray/combat=1,
