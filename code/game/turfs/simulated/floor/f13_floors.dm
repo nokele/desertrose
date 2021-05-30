@@ -120,7 +120,37 @@
 			icon_state = "housewood[rand(1,4)]"
 
 /turf/open/floor/wood/f13/oak
+	icon = 'icons/turf/floors.dmi'
 	icon_state = "oakfloor1"
+
+	New()
+		..()
+		if(icon_state == "oakfloor1")
+			icon_state = "oakfloor[rand(1,4)]"
+
+/turf/open/floor/wood/f13/housewoodbroken
+	icon_state = "housewood1-broken"
+
+/turf/open/floor/wood/f13/housewoodbroken2
+	icon_state = "housewood2-broken"
+
+/turf/open/floor/wood/f13/housewoodbroken3
+	icon_state = "housewood3-broken"
+
+/turf/open/floor/wood/f13/housewoodbroken4
+	icon_state = "housewood4-broken"
+
+/turf/open/floor/wood/f13/oakbroken
+	icon_state = "oakfloor1-broken"
+
+/turf/open/floor/wood/f13/oakbroken2
+	icon_state = "oakfloor2-broken"
+
+/turf/open/floor/wood/f13/oakbroken3
+	icon_state = "oakfloor3-broken"
+
+/turf/open/floor/wood/f13/oakbroken4
+	icon_state = "oakfloor4-broken"
 
 /turf/open/floor/wood/f13/maple
 	icon_state = "maplefloor1"
@@ -219,7 +249,7 @@
 	icon_state = "graveledge"
 
 /turf/open/floor/plating/f13/inside/gravel/corner
-	icon_state = "gravelcorner"	
+	icon_state = "gravelcorner"
 
 #define SHROOM_SPAWN	1
 
