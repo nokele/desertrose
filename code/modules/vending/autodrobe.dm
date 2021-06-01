@@ -128,6 +128,8 @@
 					/obj/item/shield/riot/roman/fake = 1,
 					/obj/item/clothing/under/costume/lobster = 1,
 					/obj/item/clothing/head/lobsterhat = 1,
+					/obj/item/clothing/head/jester/fool = 1,
+					/obj/item/clothing/under/jester/fool = 1,
 					/obj/item/clothing/head/drfreezehat = 1,
 					/obj/item/clothing/suit/dracula = 1,
 					/obj/item/clothing/suit/drfreeze_coat = 1,
