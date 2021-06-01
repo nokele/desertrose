@@ -3883,6 +3883,14 @@
 	icon_state = "horizontaloutermain2"
 	},
 /area/f13/wasteland)
+"cNF" = (
+/obj/structure/table/reinforced,
+/obj/item/taperecorder,
+/obj/item/pda/engineering,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/ncr)
 "cNH" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -5107,6 +5115,15 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "darkdirtysolid"
+	},
+/area/f13/ncr)
+"dAX" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrmp,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2"
 	},
 /area/f13/ncr)
 "dBa" = (
@@ -11850,12 +11867,6 @@
 /obj/structure/decoration/vent/rusty,
 /turf/closed/wall/r_wall/rust,
 /area/f13/caves)
-"hUW" = (
-/obj/machinery/light{
-	dir = 4
-	},
-/turf/open/indestructible/ground/outside/sidewalk,
-/area/f13/wasteland)
 "hVb" = (
 /mob/living/simple_animal/hostile/eyebot,
 /turf/open/indestructible/ground/outside/road{
@@ -12888,6 +12899,12 @@
 /turf/open/floor/f13/wood{
 	icon_state = "housewood2-broken"
 	},
+/area/f13/legion)
+"iDX" = (
+/obj/structure/rack,
+/obj/effect/decal/cleanable/dirt,
+/obj/item/stack/crafting/armor_plate/ten,
+/turf/open/floor/f13/wood,
 /area/f13/legion)
 "iEg" = (
 /obj/effect/decal/cleanable/blood/tracks{
@@ -14314,6 +14331,12 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/ncr)
+"juV" = (
+/obj/effect/landmark/start/f13/ncrlogisticsofficer,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/ncr)
 "jvw" = (
 /obj/structure/chair/wood/worn{
 	dir = 1
@@ -14734,6 +14757,17 @@
 /obj/structure/table,
 /turf/open/floor/f13/wood,
 /area/f13/legion)
+"jNs" = (
+/obj/structure/rack,
+/obj/effect/turf_decal/stripes/white/box,
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/item/stack/crafting/armor_plate/ten,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
+/area/f13/ncr)
 "jNt" = (
 /obj/machinery/shower{
 	dir = 4;
@@ -17818,6 +17852,15 @@
 	icon_state = "bluerustychess2"
 	},
 /area/f13/building)
+"lJx" = (
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrmp,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken"
+	},
+/area/f13/ncr)
 "lJL" = (
 /obj/structure/bonfire,
 /turf/open/floor/f13/wood,
@@ -20602,6 +20645,17 @@
 /obj/effect/spawner/lootdrop/f13/armor/tier3,
 /turf/open/floor/plating/dirt/dark,
 /area/f13/caves)
+"nLX" = (
+/obj/structure/bed,
+/obj/machinery/light{
+	dir = 4;
+	light_color = "#c1caff"
+	},
+/obj/item/bedsheet/brown,
+/turf/open/floor/f13{
+	icon_state = "darkrusty"
+	},
+/area/f13/ncr)
 "nMd" = (
 /obj/structure/reagent_dispensers/cooking_oil,
 /turf/open/indestructible/ground/outside/desert,
@@ -20734,6 +20788,18 @@
 /obj/effect/turf_decal/stripes/white/full,
 /turf/open/indestructible/ground/outside/sidewalk,
 /area/f13/wasteland)
+"nQu" = (
+/obj/structure/chair/wood{
+	dir = 1
+	},
+/obj/effect/decal/cleanable/dirt{
+	color = "000000"
+	},
+/obj/effect/landmark/start/f13/ncrheavytrooper,
+/turf/open/floor/plasteel/f13/vault_floor/dark/darksolid{
+	icon_state = "darkrustysolid"
+	},
+/area/f13/ncr)
 "nQP" = (
 /obj/structure/closet/cabinet,
 /obj/item/clothing/under/f13/brahmin,
@@ -38466,8 +38532,8 @@ kzs
 sNC
 kzs
 xGv
-kzs
-sed
+dAX
+lJx
 sHu
 xEc
 xEc
@@ -43850,11 +43916,11 @@ tXe
 nPy
 nPZ
 sGG
-cpK
-uok
-atX
-atX
-uok
+rhr
+rhr
+rhr
+rhr
+rhr
 cpK
 cpK
 bTf
@@ -44107,11 +44173,11 @@ tNa
 cpK
 lvS
 eJe
-cpK
-uok
-atX
-atX
-uok
+rhr
+cNF
+jiR
+wjR
+rhr
 cpK
 cpK
 elT
@@ -44364,11 +44430,11 @@ tXe
 cpK
 jSN
 eJe
-cpK
-uok
-atX
-atX
-uok
+rhr
+iuE
+szG
+wjR
+raV
 cpK
 cpK
 rRi
@@ -44621,11 +44687,11 @@ cpK
 cpK
 cpK
 eJe
-cpK
-uok
-atX
-atX
-uok
+rhr
+wjR
+juV
+wjR
+rhr
 cpK
 cpK
 cpK
@@ -44878,11 +44944,11 @@ sCz
 sCz
 sCz
 qLO
-cpK
-cpK
-cpK
-hUW
-cpK
+rhr
+wjR
+nLX
+uug
+rhr
 cpK
 cpK
 cpK
@@ -45136,7 +45202,7 @@ ezX
 rhr
 rhr
 ezX
-rhr
+raV
 ezX
 ezX
 ezX
@@ -45387,7 +45453,7 @@ sgz
 sgz
 koD
 ezX
-qQf
+jNs
 mfN
 qQf
 qQf
@@ -46426,7 +46492,7 @@ ohV
 pfb
 uVw
 xdt
-rPR
+nQu
 ezX
 cpK
 cpK
@@ -46940,7 +47006,7 @@ onx
 pfb
 uVw
 xdt
-rPR
+nQu
 rhr
 cpK
 cpK
@@ -99558,7 +99624,7 @@ ime
 bMP
 kAJ
 ezv
-seY
+iDX
 seY
 vfn
 iDk
