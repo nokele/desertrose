@@ -65,6 +65,14 @@
 	item_state = "dark_jester"
 	item_color = "d_jester"
 
+/obj/item/clothing/under/jester/fool
+	name = "foolish jester suit"
+	desc = " A quirky jester outfit that is red and white, staring at the turquoise and purple diamond pattern along the left leg for too long almost makes you feel off-balance like the world is revolving."
+	icon_state = "fool"
+	item_state = "fool"
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	can_adjust = FALSE
+
 /obj/item/clothing/under/hosparademale
 	name = "head of security's parade uniform"
 	desc = "A male head of security's luxury-wear, for special occasions."

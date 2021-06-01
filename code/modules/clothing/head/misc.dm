@@ -341,6 +341,12 @@
 	icon_state = "jester_hat2"
 	dynamic_hair_suffix = ""
 
+/obj/item/clothing/head/jester/fool
+	name = "foolish jester hat"
+	desc = "A white and red cowled jester hat, has two bells on each end."
+	icon_state = "fool"
+	flags_inv = HIDEEARS|HIDEHAIR|HIDEFACIALHAIR|HIDESNOUT
+
 /obj/item/clothing/head/nemes
 	name = "headdress of Nemes"
 	desc = "Lavish space tomb not included."
