@@ -15245,6 +15245,10 @@
 	},
 /turf/open/indestructible/ground/inside/dirt,
 /area/f13/tunnel)
+"mUZ" = (
+/obj/effect/landmark/map_load_mark/dungeons/northsewer,
+/turf/closed/mineral/random/low_chance,
+/area/f13/caves)
 "mVa" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/structure/barricade/wooden,
@@ -22801,11 +22805,8 @@
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier5,
-/obj/item/clothing/suit/armor/f13/power_armor/t45d{
-	color = "#C1C1C1";
-	desc = "(IX) Originally developed and manufactured for the United States Army by American defense contractor West Tek, the T-45d power armor was the first version of power armor to be successfully deployed in battle. This set looks somewhat bashed up and worn";
-	item_color = "#C1C1C1"
-	},
+/obj/item/clothing/suit/armor/f13/power_armor/t45d/gunslinger,
+/obj/item/clothing/head/helmet/f13/power_armor/t45d/gunslinger,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
 "tDc" = (
@@ -23003,6 +23004,7 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/effect/landmark/start/f13/ncrcaptain,
 /turf/open/floor/carpet/black,
 /area/f13/ncr)
 "tLd" = (
@@ -33180,13 +33182,13 @@ uoO
 uoO
 uoO
 uoO
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
-eLE
+uoO
+uoO
+uoO
+uoO
+uoO
+uoO
+uoO
 eLE
 eLE
 eLE
@@ -44746,7 +44748,7 @@ uoO
 uoO
 uoO
 uoO
-uoO
+mUZ
 uoO
 uoO
 uoO
@@ -45259,8 +45261,8 @@ uoO
 uoO
 uoO
 uoO
-eLE
-eLE
+uoO
+uoO
 eLE
 eLE
 eLE
@@ -45516,7 +45518,7 @@ uoO
 uoO
 uoO
 uoO
-eLE
+uoO
 uoO
 uoO
 uoO
@@ -45772,8 +45774,8 @@ eLE
 eLE
 eLE
 eLE
-eLE
-eLE
+uoO
+uoO
 uoO
 gpM
 gpM
@@ -46032,7 +46034,7 @@ uoO
 uoO
 uoO
 uoO
-xVz
+uoO
 lnr
 uoO
 lnr
@@ -46286,10 +46288,10 @@ uoO
 uoO
 xVz
 xVz
-xVz
 uoO
-xVz
-xVz
+uoO
+uoO
+uoO
 lnr
 lnr
 lnr
@@ -46543,10 +46545,10 @@ xVz
 xVz
 pmU
 xVz
-xVz
-xVz
-xVz
-xVz
+uoO
+uoO
+uoO
+uoO
 lnr
 lnr
 lnr
@@ -47058,8 +47060,8 @@ uoO
 uoO
 uoO
 uoO
-eLE
-eLE
+uoO
+uoO
 uoO
 uoO
 uoO
@@ -47314,8 +47316,8 @@ eLE
 eLE
 eLE
 eLE
-eLE
-eLE
+uoO
+uoO
 uoO
 eLE
 eLE
