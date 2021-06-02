@@ -587,7 +587,7 @@ Trooper
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
 	belt =          /obj/item/storage/belt/military/assault/ncr
 	glasses = 		null
-	suit_store = 	/obj/item/gun/ballistic/automatic/varmint
+	suit_store = 	/obj/item/gun/ballistic/automatic/service
 	backpack_contents = list(
 		/obj/item/kitchen/knife/combat=1, \
 		/obj/item/storage/survivalkit_aid=1, \
@@ -610,7 +610,7 @@ Trooper
 	exp_requirements = 300
 
 /datum/outfit/job/ncr/f13mp
-	name = "NCR Trooper"
+	name = "NCR Military Police"
 	jobtype = /datum/job/ncr/f13mp
 	id = 			/obj/item/card/id/dogtag/ncrsergeant
 	uniform =  		/obj/item/clothing/under/f13/ncr
@@ -619,6 +619,7 @@ Trooper
 	head = 			/obj/item/clothing/head/f13/ncr/mp
 	suit = 			/obj/item/clothing/suit/armor/f13/ncrarmor
 	belt =          /obj/item/storage/belt/military/assault/ncr
+	suit_store =    /obj/item/melee/classic_baton/telescopic
 	glasses = 		null
 	r_pocket = 		/obj/item/binoculars
 
