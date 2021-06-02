@@ -2825,7 +2825,7 @@
 /area/f13/tunnel)
 "cki" = (
 /obj/effect/decal/riverbank,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/river,
 /area/f13/tunnel)
 "ckm" = (
 /obj/effect/decal/cleanable/dirt,
@@ -6942,6 +6942,13 @@
 	icon_state = "bluerustysolid"
 	},
 /area/f13/followers)
+"fta" = (
+/obj/machinery/light/fo13colored/Pink{
+	dir = 1;
+	name = "light tube"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/tunnel)
 "ftt" = (
 /obj/structure/bookcase/random/nonfiction,
 /turf/open/floor/f13{
@@ -6955,7 +6962,7 @@
 "ftv" = (
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = "clinicoutsideladder"
+	id = "church"
 	},
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
@@ -7845,6 +7852,14 @@
 	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/mining)
+"gcJ" = (
+/obj/structure/destructible/tribal_torch/lit,
+/obj/machinery/light/fo13colored/Pink{
+	dir = 1;
+	name = "light tube"
+	},
+/turf/open/floor/wood/f13/carpet,
+/area/f13/tunnel)
 "gcN" = (
 /obj/structure/chair/wood{
 	dir = 1
@@ -10996,6 +11011,7 @@
 /obj/machinery/light{
 	dir = 4
 	},
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "iID" = (
@@ -11158,6 +11174,9 @@
 /obj/effect/spawner/lootdrop/f13/medical/wasteland/meds/drug,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/bunker)
+"iQg" = (
+/turf/open/indestructible/ground/outside/river,
+/area/f13/tunnel)
 "iQt" = (
 /obj/structure/curtain{
 	color = "#845f58"
@@ -16124,6 +16143,10 @@
 	icon_state = "redrustyfull"
 	},
 /area/f13/bunker)
+"nsn" = (
+/obj/structure/destructible/tribal_torch/lit,
+/turf/open/floor/f13/wood,
+/area/f13/tunnel)
 "nsw" = (
 /mob/living/simple_animal/hostile/handy,
 /turf/open/floor/f13{
@@ -16389,6 +16412,7 @@
 	dir = 1;
 	name = "light tube"
 	},
+/obj/structure/destructible/tribal_torch/lit,
 /turf/open/floor/wood/f13/carpet,
 /area/f13/tunnel)
 "nBL" = (
@@ -16589,7 +16613,7 @@
 /area/f13/sewer)
 "nKj" = (
 /obj/structure/flora/ausbushes/ppflowers,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/river,
 /area/f13/tunnel)
 "nKk" = (
 /obj/effect/decal/cleanable/dirt,
@@ -19447,7 +19471,7 @@
 /area/f13/brotherhood/offices2nd)
 "qdm" = (
 /obj/structure/flora/ausbushes/reedbush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/river,
 /area/f13/tunnel)
 "qdE" = (
 /obj/structure/billboard/cola/pristine,
@@ -24639,7 +24663,7 @@
 /area/f13/ncr)
 "uEs" = (
 /obj/structure/flora/ausbushes/brflowers,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/river,
 /area/f13/tunnel)
 "uEu" = (
 /obj/effect/decal/cleanable/dirt,
@@ -25932,7 +25956,7 @@
 /area/f13/caves)
 "vOu" = (
 /obj/structure/flora/ausbushes/leafybush,
-/turf/open/water,
+/turf/open/indestructible/ground/outside/river,
 /area/f13/tunnel)
 "vOA" = (
 /obj/structure/closet/secure_closet/personal,
@@ -27994,7 +28018,7 @@
 	pixel_x = -33;
 	pixel_y = -3
 	},
-/turf/open/water,
+/turf/open/indestructible/ground/outside/river,
 /area/f13/tunnel)
 "yaO" = (
 /obj/structure/flora/rock/pile/largejungle,
@@ -64570,7 +64594,7 @@ iuv
 iuv
 wbO
 iuv
-nrO
+nsn
 nrO
 iuv
 iuv
@@ -66101,7 +66125,7 @@ czc
 cGm
 nrO
 iuv
-nrO
+nsn
 uoO
 uoO
 vuv
@@ -66618,7 +66642,7 @@ iuv
 cGm
 nrO
 iuv
-nrO
+nsn
 iuv
 nrO
 xcp
@@ -66869,14 +66893,14 @@ jmN
 tNA
 uYc
 aTR
-uoO
+uXs
 nBo
 kfy
 nrO
 nrO
 nrO
 cki
-weW
+iQg
 nrO
 lZH
 nrO
@@ -67132,9 +67156,9 @@ nhV
 kfy
 nrO
 cki
-weW
+iQg
 nKj
-weW
+iQg
 lZH
 nrO
 nrO
@@ -67390,9 +67414,9 @@ baF
 nrO
 cki
 vOu
-weW
+iQg
 qdm
-weW
+iQg
 lZH
 nrO
 iuv
@@ -67646,10 +67670,10 @@ gxc
 dUq
 nrO
 cki
-weW
+iQg
 yaH
 uEs
-weW
+iQg
 lZH
 nrO
 nFc
@@ -67903,10 +67927,10 @@ gxc
 dUq
 nrO
 cki
-weW
-weW
-weW
-weW
+iQg
+iQg
+iQg
+iQg
 lZH
 iuv
 iuv
@@ -68151,7 +68175,7 @@ nrO
 iuv
 oYk
 jmN
-nrO
+fta
 vuv
 xIy
 vuv
@@ -68161,13 +68185,13 @@ baF
 nrO
 cki
 nKj
-weW
+iQg
 vOu
-weW
+iQg
 lZH
 iuv
 nrO
-nrO
+nsn
 vuv
 vuv
 vuv
@@ -68418,8 +68442,8 @@ kfy
 nrO
 cki
 qdm
-weW
-weW
+iQg
+iQg
 lZH
 nrO
 gNQ
@@ -68669,13 +68693,13 @@ nrO
 vuv
 vuv
 vuv
-kfy
+gcJ
 kfy
 nrO
 nrO
 ajt
 cki
-weW
+iQg
 nrO
 lZH
 nrO
@@ -68931,7 +68955,7 @@ nrO
 nrO
 iuv
 nrO
-nrO
+nsn
 nrO
 nrO
 nrO
@@ -69194,7 +69218,7 @@ iuv
 iuv
 iuv
 mia
-nrO
+nsn
 iuv
 bfY
 iuv
@@ -69699,7 +69723,7 @@ jmN
 cql
 nrO
 iuv
-nrO
+nsn
 uvW
 uvW
 uvW
