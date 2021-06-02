@@ -222,6 +222,12 @@
 	icon_state = "dark"
 	},
 /area/f13/bunker)
+"ajt" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood4-broken";
+	tag = "icon-housewood4-broken"
+	},
+/area/f13/tunnel)
 "ajJ" = (
 /obj/structure/sign/poster/prewar/poster71,
 /turf/closed/wall/r_wall,
@@ -349,6 +355,7 @@
 	dir = 1;
 	name = "light tube"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "aqs" = (
@@ -6945,6 +6952,13 @@
 /obj/item/clothing/head/hardhat,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"ftv" = (
+/obj/structure/ladder/unbreakable{
+	height = 1;
+	id = "clinicoutsideladder"
+	},
+/turf/open/floor/f13/wood,
+/area/f13/tunnel)
 "ftz" = (
 /obj/structure/rack,
 /obj/effect/spawner/lootdrop/f13/resourcespawner,
@@ -8287,6 +8301,10 @@
 	icon_state = "darkrustysolid"
 	},
 /area/f13/tunnel)
+"gxc" = (
+/obj/effect/landmark/start/f13/preacher,
+/turf/open/floor/wood/f13/carpet,
+/area/f13/tunnel)
 "gxq" = (
 /obj/structure/fluff/paper/stack,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -8569,6 +8587,12 @@
 /obj/item/clothing/head/helmet/roman/fake,
 /turf/open/indestructible/ground/inside/mountain,
 /area/f13/caves)
+"gNQ" = (
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken";
+	tag = "icon-housewood2-broken"
+	},
+/area/f13/tunnel)
 "gNZ" = (
 /obj/structure/barricade/bars,
 /obj/structure/table,
@@ -9359,6 +9383,10 @@
 	icon_state = "tunnelchess2"
 	},
 /area/f13/bunker)
+"hsr" = (
+/obj/effect/turf_decal/box/white,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
+/area/f13/tunnel)
 "hsv" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/spawner/lootdrop/trash,
@@ -15086,7 +15114,7 @@
 /obj/effect/decal/cleanable/generic,
 /obj/structure/ladder/unbreakable{
 	height = 1;
-	id = "cornerladder"
+	id = "clinicoutsideladder"
 	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
@@ -22923,6 +22951,13 @@
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
+"tbq" = (
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/f13/wood{
+	icon_state = "housewood2-broken";
+	tag = "icon-housewood2-broken"
+	},
+/area/f13/tunnel)
 "tbr" = (
 /obj/structure/reagent_dispensers/barrel/old,
 /turf/open/floor/f13{
@@ -25123,6 +25158,8 @@
 /area/f13/tunnel)
 "vcz" = (
 /obj/machinery/light,
+/obj/effect/turf_decal/box/white,
+/obj/structure/closet/crate/medical/anchored,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
 /area/f13/tunnel)
 "vcL" = (
@@ -53021,12 +53058,12 @@ oFg
 uoO
 uoO
 eLE
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 eLE
 "}
 (98,1,1) = {"
@@ -54048,7 +54085,7 @@ aGH
 oFg
 uoO
 uoO
-uoO
+eLE
 uoO
 uoO
 uoO
@@ -55040,9 +55077,9 @@ uoO
 eLE
 eLE
 eLE
-uoO
-uoO
-uoO
+eLE
+eLE
+eLE
 eLE
 uoO
 oFg
@@ -55551,14 +55588,14 @@ uoO
 uoO
 uoO
 uoO
+eLE
 uoO
 uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
+eLE
+eLE
 bYk
 oFg
 oFg
@@ -55808,14 +55845,14 @@ uoO
 uoO
 uoO
 uoO
+eLE
 uoO
 uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
+eLE
+eLE
 eLE
 eLE
 eLE
@@ -56064,15 +56101,15 @@ eLE
 eLE
 eLE
 eLE
+eLE
+eLE
 uoO
 uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-uoO
+eLE
+eLE
 uoO
 uoO
 uoO
@@ -56328,8 +56365,8 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
+eLE
+eLE
 eLE
 eLE
 eLE
@@ -56585,8 +56622,8 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
+eLE
+eLE
 uoO
 uoO
 uoO
@@ -56842,8 +56879,8 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
+eLE
+eLE
 uoO
 uoO
 uoO
@@ -57099,8 +57136,8 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
+eLE
+eLE
 eLE
 eLE
 uoO
@@ -57356,8 +57393,8 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
+eLE
+eLE
 eLE
 eLE
 uoO
@@ -57613,8 +57650,8 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
+eLE
+eLE
 eLE
 eLE
 uoO
@@ -57870,16 +57907,15 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-eLE
-eLE
-uoO
 eLE
 eLE
 eLE
 eLE
 uoO
+eLE
+eLE
+eLE
+eLE
 uoO
 uoO
 uoO
@@ -57902,6 +57938,7 @@ uoO
 uoO
 uoO
 uoO
+eLE
 uoO
 uoO
 uoO
@@ -58127,25 +58164,6 @@ uoO
 uoO
 uoO
 uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-uoO
-eLE
-eLE
-eLE
-eLE
-eLE
-uoO
-eLE
-uoO
 eLE
 eLE
 eLE
@@ -58157,8 +58175,27 @@ eLE
 eLE
 eLE
 eLE
-uoO
-uoO
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
+eLE
 uoO
 uoO
 uoO
@@ -63766,7 +63803,7 @@ bwR
 nrO
 nrO
 nrO
-nrO
+wVl
 nrO
 tur
 fGO
@@ -64020,7 +64057,7 @@ vuv
 vuv
 iuv
 nrO
-nrO
+wVl
 nrO
 nrO
 nrO
@@ -65288,7 +65325,7 @@ iuv
 nrO
 iuv
 nrO
-iuv
+tbq
 nrO
 iuv
 iuv
@@ -65801,11 +65838,11 @@ ivl
 dIB
 iDI
 wOt
-iuv
+xcp
 nrO
 nrO
 iuv
-nrO
+gNQ
 eoX
 uoO
 uoO
@@ -65816,7 +65853,7 @@ vuv
 tsn
 pGg
 nrO
-iuv
+tbq
 nrO
 vuv
 nXJ
@@ -66319,7 +66356,7 @@ tNA
 bTJ
 xml
 nrO
-iuv
+xcp
 nrO
 nrO
 nrO
@@ -66331,7 +66368,7 @@ nrO
 nrO
 iuv
 iuv
-nrO
+wVl
 vuv
 vuv
 iWh
@@ -66584,7 +66621,7 @@ iuv
 nrO
 iuv
 nrO
-iuv
+xcp
 nrO
 nrO
 nrO
@@ -67598,14 +67635,14 @@ npL
 npL
 gyd
 iuv
-nrO
+ajt
 jmN
 vuv
 vuv
 vuv
 vuv
 kfy
-kfy
+gxc
 dUq
 nrO
 cki
@@ -67862,7 +67899,7 @@ tAC
 xKn
 vuv
 kfy
-kfy
+gxc
 dUq
 nrO
 cki
@@ -68385,9 +68422,9 @@ weW
 weW
 lZH
 nrO
+gNQ
 nrO
-nrO
-iuv
+xcp
 bfY
 bfY
 bfY
@@ -68636,7 +68673,7 @@ kfy
 kfy
 nrO
 nrO
-nrO
+ajt
 cki
 weW
 nrO
@@ -68885,21 +68922,21 @@ uDV
 nrO
 rWP
 gDj
+wVl
+nrO
+nrO
+iuv
+iuv
+nrO
+nrO
+iuv
 nrO
 nrO
 nrO
 nrO
 nrO
 nrO
-nrO
-nrO
-nrO
-nrO
-nrO
-nrO
-nrO
-nrO
-nrO
+iuv
 nrO
 nrO
 niT
@@ -69146,16 +69183,16 @@ wOt
 uoO
 uoO
 aqr
+iuv
+nrO
+nrO
+iuv
 nrO
 nrO
 nrO
-nrO
-nrO
-nrO
-nrO
-nrO
-nrO
-nrO
+iuv
+iuv
+iuv
 mia
 nrO
 iuv
@@ -69405,12 +69442,12 @@ cql
 cql
 nrO
 nrO
+gNQ
 nrO
 nrO
-nrO
-nrO
-nrO
-nrO
+iuv
+iuv
+ajt
 nrO
 mia
 mia
@@ -69661,18 +69698,18 @@ jmN
 jmN
 cql
 nrO
+iuv
 nrO
-nrO
 uvW
 uvW
 uvW
 uvW
 jmN
+aAF
 jmN
 jmN
 jmN
-jmN
-nrO
+ajt
 bfY
 bfY
 nrO
@@ -70183,7 +70220,7 @@ xhg
 ghw
 ghw
 ghw
-cql
+ghw
 cql
 uvW
 iuv
@@ -70440,8 +70477,8 @@ ghw
 qfC
 uKs
 dZe
-cql
-cql
+ghw
+hsr
 uvW
 nrO
 vuv
@@ -70697,7 +70734,7 @@ ghw
 npL
 npL
 qMG
-cql
+ghw
 vcz
 uvW
 nrO
@@ -70951,10 +70988,10 @@ gGr
 uvW
 dQm
 ghw
-npL
-npL
-npL
-cql
+ghw
+ghw
+ghw
+ghw
 ttl
 uvW
 nrO
@@ -71214,7 +71251,7 @@ cql
 cql
 xTE
 uvW
-nrO
+ftv
 vuv
 cql
 npL
@@ -74535,7 +74572,7 @@ uoO
 uoO
 uoO
 eLE
-uoO
+dXE
 tur
 tur
 tur
@@ -74792,21 +74829,21 @@ uoO
 uoO
 uoO
 uoO
-uoO
+dXE
+aJp
 weW
 weW
 weW
 weW
 weW
 weW
+nCU
 weW
 weW
 weW
 weW
 weW
-weW
-weW
-weW
+nCU
 weW
 weW
 weW
