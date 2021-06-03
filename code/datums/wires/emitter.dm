@@ -1,4 +1,4 @@
-
+/** Commented out to avoid BoS cheesing
 /datum/wires/emitter
 	holder_type = /obj/machinery/power/emitter
 	req_knowledge = JOB_SKILL_TRAINED
@@ -17,3 +17,4 @@
 			E.mode = !E.mode
 			E.set_projectile()
 	..()
+*/

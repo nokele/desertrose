@@ -1182,17 +1182,9 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
-/obj/structure/table{
-	layer = 2.9
-	},
-/obj/machinery/light/small{
-	dir = 8
-	},
-/obj/machinery/light{
-	dir = 8
-	},
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/operations)
 "bbV" = (
@@ -2207,18 +2199,22 @@
 	},
 /area/f13/tunnel)
 "bMe" = (
+/obj/structure/table{
+	layer = 2.9
+	},
+/obj/machinery/cell_charger{
+	pixel_y = 6
+	},
+/obj/item/reagent_containers/spray/cleaner{
+	pixel_x = -9
+	},
+/obj/machinery/recharger,
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/light{
-	dir = 4
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
 	},
-/obj/machinery/camera/autoname{
-	dir = 8;
-	name = "Mess Hall Camera";
-	network = list("BoS");
-	pixel_x = -1
-	},
-/turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/brotherhood/leisure)
+/area/f13/brotherhood/operations)
 "bMq" = (
 /obj/structure/bed/mattress{
 	icon_state = "mattress3"
@@ -3099,7 +3095,12 @@
 	},
 /area/f13/sewer)
 "cAB" = (
-/obj/structure/sign/poster/prewar/poster90,
+/obj/machinery/button/door{
+	id = "bosdoors";
+	name = "Bunker Lockdown Button";
+	pixel_x = -22;
+	req_access_txt = "120"
+	},
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/operations)
 "cBb" = (
@@ -4604,6 +4605,8 @@
 /obj/machinery/light/small{
 	dir = 4
 	},
+/obj/vehicle/ridden/janicart/upgraded,
+/obj/item/key/janitor,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/operations)
 "dLK" = (
@@ -5419,6 +5422,12 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 32
 	},
+/obj/machinery/camera/autoname{
+	dir = 8;
+	name = "Mess Hall Camera";
+	network = list("BoS");
+	pixel_x = -1
+	},
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
 	icon_state = "floorrustysolid"
 	},
@@ -5969,11 +5978,11 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "eJh" = (
-/obj/structure/chair/right{
-	dir = 8
-	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
+/obj/item/flag/bos,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/brotherhood/leisure)
 "eJi" = (
 /obj/structure/chair/office/dark,
@@ -6251,12 +6260,13 @@
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/offices1st)
 "eVA" = (
-/obj/effect/decal/cleanable/dirt,
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
-/turf/open/floor/f13{
-	icon_state = "rampdowntop"
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/operations)
 "eWN" = (
@@ -6458,7 +6468,7 @@
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
-/area/f13/brotherhood/surface)
+/area/f13/brotherhood/operations)
 "feB" = (
 /obj/structure/window/fulltile/house{
 	icon_state = "storewindowhorizontal"
@@ -6715,14 +6725,17 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "fnD" = (
+/obj/structure/cable{
+	icon_state = "1-2"
+	},
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light{
-	dir = 8
+	dir = 4
 	},
-/turf/open/floor/f13{
-	icon_state = "rampdowntop"
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
 	},
-/area/f13/brotherhood/operations)
+/area/f13/brotherhood/leisure)
 "fnS" = (
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/blood,
@@ -6772,8 +6785,8 @@
 /obj/structure/extinguisher_cabinet{
 	pixel_x = 32
 	},
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/operations)
 "fqK" = (
@@ -7192,24 +7205,13 @@
 	},
 /area/f13/clinic)
 "fIN" = (
-/obj/structure/table/reinforced,
-/obj/machinery/door/poddoor/shutters{
-	id = "bosdoors";
-	name = "brotherhood shutters"
-	},
-/obj/structure/barricade/bars,
-/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
-/area/f13/brotherhood/operations)
-"fIV" = (
-/obj/effect/landmark/start/f13/Knight,
-/obj/structure/chair/office/dark{
-	dir = 8
-	},
+/obj/structure/chair/f13foldupchair,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
+/obj/effect/landmark/start/f13/Knight,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
 	},
-/area/f13/brotherhood/operations)
+/area/f13/brotherhood/leisure)
 "fJt" = (
 /obj/effect/decal/cleanable/dirt,
 /mob/living/simple_animal/hostile/handy/sentrybot/nsb,
@@ -7732,10 +7734,7 @@
 /area/f13/bunker)
 "ggm" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/poddoor/shutters{
-	id = "bosdoors";
-	name = "brotherhood shutters"
-	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -7913,13 +7912,10 @@
 /area/f13/tunnel)
 "glq" = (
 /obj/effect/decal/cleanable/dirt,
-/obj/machinery/door/poddoor/shutters{
-	id = "bosdoors";
-	name = "brotherhood shutters"
-	},
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -8286,7 +8282,7 @@
 /turf/open/floor/f13/wood,
 /area/f13/tunnel)
 "gFv" = (
-/obj/structure/sign/warning/securearea,
+/obj/effect/decal/cleanable/dirt,
 /turf/closed/wall/r_wall,
 /area/f13/brotherhood/operations)
 "gFP" = (
@@ -8319,9 +8315,14 @@
 /turf/open/floor/plasteel/f13/vault_floor/plating,
 /area/f13/brotherhood/operations)
 "gHi" = (
-/obj/item/flag/bos,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/plasteel/f13/vault_floor/plating,
+/obj/effect/decal/cleanable/dirt,
+/obj/machinery/light{
+	dir = 8
+	},
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
+	},
 /area/f13/brotherhood/operations)
 "gId" = (
 /obj/structure/sign/warning/securearea{
@@ -8349,6 +8350,7 @@
 /area/f13/tunnel)
 "gKJ" = (
 /obj/effect/turf_decal/caution/stand_clear/white,
+/obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
@@ -8391,6 +8393,7 @@
 /obj/structure/cable{
 	icon_state = "1-2"
 	},
+/obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -17601,6 +17604,12 @@
 /obj/effect/decal/cleanable/dirt{
 	color = "000000"
 	},
+/obj/machinery/button/door{
+	id = "bosdoors";
+	name = "Bunker Lockdown Button";
+	pixel_x = -22;
+	req_access_txt = "120"
+	},
 /turf/open/floor/f13{
 	icon_state = "floorrusty"
 	},
@@ -17835,14 +17844,14 @@
 	},
 /area/f13/bunker)
 "oyk" = (
-/obj/structure/table{
-	layer = 2.9
+/obj/structure/cable{
+	icon_state = "1-2"
 	},
-/obj/machinery/computer/security/bos{
-	circuit = /obj/item/circuitboard/computer/security
-	},
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/operations)
 "oyG" = (
@@ -21709,19 +21718,10 @@
 	},
 /area/f13/followers)
 "rHV" = (
-/obj/structure/table{
-	layer = 2.9
-	},
-/obj/item/pen/fountain,
-/obj/machinery/button/door{
-	id = "bosdoors";
-	name = "Bunker Lockdown Button";
-	pixel_x = -22;
-	req_access_txt = "120"
-	},
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
+/obj/effect/decal/cleanable/dirt,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/operations)
 "rIl" = (
@@ -22688,19 +22688,11 @@
 	},
 /area/f13/bunker)
 "szW" = (
-/obj/machinery/cell_charger{
-	pixel_y = 6
-	},
-/obj/structure/table{
-	layer = 2.9
-	},
-/obj/item/reagent_containers/spray/cleaner{
-	pixel_x = -9
-	},
-/obj/machinery/recharger,
 /obj/effect/decal/cleanable/dirt,
-/turf/open/floor/f13{
-	icon_state = "reddirtyfull"
+/obj/effect/decal/cleanable/dirt,
+/obj/item/flag/bos,
+/turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust{
+	icon_state = "floorrustysolid"
 	},
 /area/f13/brotherhood/operations)
 "sAa" = (
@@ -24467,12 +24459,15 @@
 	},
 /area/f13/brotherhood/reactor)
 "urc" = (
-/obj/structure/chair/left{
-	dir = 8
+/obj/structure/table{
+	layer = 2.9
 	},
+/obj/item/storage/box/lights/tubes,
+/obj/item/storage/box/lights/bulbs,
 /obj/effect/decal/cleanable/dirt,
+/obj/item/soap/homemade,
 /turf/open/floor/plasteel/f13/vault_floor/plating,
-/area/f13/brotherhood/leisure)
+/area/f13/brotherhood/operations)
 "urM" = (
 /obj/machinery/door/unpowered/wooddoor{
 	autoclose = 1;
@@ -84679,7 +84674,7 @@ xrz
 xrz
 xrz
 xrz
-nWg
+fIN
 rAo
 rAo
 sDK
@@ -85446,7 +85441,7 @@ dSf
 xGp
 xGp
 epe
-xGp
+fnD
 xGp
 xGp
 xGp
@@ -85705,11 +85700,11 @@ gEZ
 gEZ
 gEZ
 eJh
-urc
-bMe
-eJh
-urc
-gHh
+xrz
+xrz
+cfA
+xrz
+xSi
 xSi
 yhd
 xSi
@@ -85961,12 +85956,12 @@ uoI
 ehz
 erF
 dSd
-gEZ
-gEZ
-gEZ
-gEZ
-gEZ
-gHi
+xSi
+xSi
+hhn
+gFv
+vgW
+xSi
 xSi
 yhd
 xSi
@@ -86218,10 +86213,10 @@ dBy
 ehT
 rSw
 xAn
-jJM
-fnD
-jJM
-jJM
+xSi
+xSi
+xSi
+gHi
 ggm
 gKJ
 xSi
@@ -86475,10 +86470,10 @@ dSr
 dMm
 esP
 eOx
+wOp
+wOp
 eVA
-eVA
-eVA
-eVA
+oyk
 glq
 gMX
 wOp
@@ -86731,14 +86726,14 @@ rSw
 rSw
 eiN
 exH
-gEZ
-gEZ
-gEZ
-gEZ
-fIN
-gEZ
-gEZ
+cAB
 vgW
+xSi
+xSi
+xSi
+xSi
+xSi
+xSi
 yhd
 xSi
 hpI
@@ -86991,10 +86986,10 @@ gEZ
 cAB
 szW
 bbO
-oyk
-fIV
+xSi
 rHV
-gFv
+rHV
+xSi
 xSi
 azD
 xSi
@@ -87246,12 +87241,12 @@ dTR
 xSi
 xSi
 slX
-xxn
-rFJ
-xxn
-xxn
-xxn
-slX
+xSi
+xSi
+xSi
+xSi
+xSi
+xSi
 xSi
 haW
 wOp
@@ -87503,12 +87498,12 @@ yhd
 xSi
 xSi
 slX
-xxn
+xSi
 fqz
-xxn
+bbs
 fqz
-xxn
-slX
+xSi
+xSi
 xSi
 yhd
 xSi
@@ -87755,7 +87750,7 @@ pXq
 pXq
 pXq
 pXq
-xSi
+bMe
 azD
 xSi
 xSi
@@ -91884,7 +91879,7 @@ xSi
 gEZ
 qpd
 dLF
-iAs
+urc
 iAs
 hPn
 oSq

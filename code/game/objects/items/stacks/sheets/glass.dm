@@ -1,11 +1,8 @@
 /* Glass stack types
  * Contains:
  *		Glass sheets
- *		Plasma glass
  *		Reinforced glass sheets
- *		Reinforced plasma glass
  *		Titanium glass
- *		Plastitanium glass
  *		Glass shards - TODO: Move this into code/game/object/item/weapons
  */
 
@@ -94,7 +91,7 @@ GLOBAL_LIST_INIT(glass_recipes, list ( \
 		return ..()
 
 
-
+/**
 GLOBAL_LIST_INIT(pglass_recipes, list ( \
 	new/datum/stack_recipe("directional window", /obj/structure/window/plasma/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("fulltile window", /obj/structure/window/plasma/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE) \
@@ -143,6 +140,8 @@ GLOBAL_LIST_INIT(pglass_recipes, list ( \
 /obj/item/stack/sheet/plasmaglass/on_solar_construction(obj/machinery/power/solar/S)
 	S.max_integrity *= 1.2
 	S.efficiency *= 1.2
+*/
+
 
 /*
  * Reinforced glass sheets
@@ -196,7 +195,7 @@ GLOBAL_LIST_INIT(reinforced_glass_recipes, list ( \
 /obj/item/stack/sheet/rglass/get_main_recipes()
 	. = ..()
 	. += GLOB.reinforced_glass_recipes
-
+/**
 GLOBAL_LIST_INIT(prglass_recipes, list ( \
 	new/datum/stack_recipe("directional reinforced window", /obj/structure/window/plasma/reinforced/unanchored, time = 0, on_floor = TRUE, window_checks = TRUE), \
 	new/datum/stack_recipe("fulltile reinforced window", /obj/structure/window/plasma/reinforced/fulltile/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE) \
@@ -223,7 +222,7 @@ GLOBAL_LIST_INIT(prglass_recipes, list ( \
 /obj/item/stack/sheet/plasmarglass/on_solar_construction(obj/machinery/power/solar/S)
 	S.max_integrity *= 2.2
 	S.efficiency *= 1.2
-
+*/
 GLOBAL_LIST_INIT(titaniumglass_recipes, list(
 	new/datum/stack_recipe("shuttle window", /obj/structure/window/shuttle/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE)
 	))
@@ -247,7 +246,7 @@ GLOBAL_LIST_INIT(titaniumglass_recipes, list(
 /obj/item/stack/sheet/titaniumglass/on_solar_construction(obj/machinery/power/solar/S)
 	S.max_integrity *= 2.5
 	S.efficiency *= 1.5
-
+/**
 GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 	new/datum/stack_recipe("plastitanium window", /obj/structure/window/plastitanium/unanchored, 2, time = 0, on_floor = TRUE, window_checks = TRUE)
 	))
@@ -270,7 +269,7 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 /obj/item/stack/sheet/plastitaniumglass/get_main_recipes()
 	. = ..()
 	. += GLOB.plastitaniumglass_recipes
-
+*/
 /obj/item/stack/sheet/titaniumglass/on_solar_construction(obj/machinery/power/solar/S)
 	S.max_integrity *= 2
 	S.efficiency *= 2
@@ -379,7 +378,7 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 		else
 			playsound(loc, 'sound/effects/glass_step.ogg', 50, 1)
 	return ..()
-
+/**
 /obj/item/shard/plasma
 	name = "purple shard"
 	desc = "A nasty looking shard of plasma glass."
@@ -392,3 +391,4 @@ GLOBAL_LIST_INIT(plastitaniumglass_recipes, list(
 /obj/item/shard/plasma/alien
 	name = "alien shard"
 	desc = "A nasty looking shard of advanced alloy glass."
+*/	
