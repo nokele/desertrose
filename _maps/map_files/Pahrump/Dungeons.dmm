@@ -53,7 +53,8 @@
 "acN" = (
 /obj/structure/chair/stool{
 	dir = 8;
-	icon_state = "bench"
+	icon_state = "bench";
+	
 	},
 /obj/item/storage/backpack/security,
 /turf/open/floor/plasteel/f13{
@@ -1159,7 +1160,8 @@
 /obj/structure/chair/f13chair2,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "bEV" = (
@@ -1204,7 +1206,8 @@
 "bJM" = (
 /obj/machinery/light/small,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "bKe" = (
@@ -1461,7 +1464,8 @@
 /obj/structure/table,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "ceF" = (
@@ -1724,7 +1728,8 @@
 /area/f13/bunker)
 "czt" = (
 /obj/structure/chair{
-	dir = 8
+	dir = 8;
+	
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -2253,7 +2258,8 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "doS" = (
@@ -3076,7 +3082,8 @@
 	dir = 1
 	},
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "eDB" = (
@@ -3150,7 +3157,8 @@
 /obj/structure/window/plastitanium,
 /obj/structure/grille,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "eFo" = (
@@ -3341,7 +3349,8 @@
 "eZF" = (
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "eZM" = (
@@ -3458,7 +3467,8 @@
 "feR" = (
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "feS" = (
@@ -3590,7 +3600,8 @@
 "flu" = (
 /obj/structure/chair/stool{
 	dir = 8;
-	icon_state = "bench"
+	icon_state = "bench";
+	
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /obj/effect/decal/cleanable/dirt,
@@ -3957,7 +3968,8 @@
 /obj/structure/wreck/trash/machinepile,
 /obj/item/stock_parts/cell/ammo/mfc,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "fTs" = (
@@ -4598,7 +4610,8 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "gHj" = (
@@ -4982,7 +4995,8 @@
 "hfI" = (
 /obj/structure/wreck/trash/machinepile,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "hhp" = (
@@ -5127,7 +5141,8 @@
 /area/f13/bunker)
 "hqJ" = (
 /obj/structure/chair/stool{
-	icon_state = "bench_center"
+	icon_state = "bench_center";
+	
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13{
@@ -5266,7 +5281,8 @@
 	name = "Pre-War Medicine"
 	},
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "hFs" = (
@@ -6241,7 +6257,8 @@
 /obj/effect/decal/remains/human,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "jlr" = (
@@ -6518,7 +6535,8 @@
 /obj/item/trash/candy,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "jLk" = (
@@ -6660,7 +6678,8 @@
 	dir = 1
 	},
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "jUG" = (
@@ -7608,7 +7627,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/item/reagent_containers/hypospray/medipen/stimpak,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "loi" = (
@@ -7741,7 +7761,8 @@
 	name = "Pre-War Medicine"
 	},
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "lxI" = (
@@ -8042,7 +8063,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "mas" = (
@@ -8919,7 +8941,8 @@
 /obj/structure/grille,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "niU" = (
@@ -9345,7 +9368,8 @@
 "nMa" = (
 /obj/structure/chair/stool{
 	dir = 4;
-	icon_state = "bench"
+	icon_state = "bench";
+	
 	},
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
@@ -9746,7 +9770,8 @@
 "okD" = (
 /obj/structure/chair/f13chair2,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "olU" = (
@@ -9917,7 +9942,8 @@
 "oAO" = (
 /obj/structure/table,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "oCN" = (
@@ -10020,7 +10046,8 @@
 "oIQ" = (
 /obj/structure/chair/stool{
 	dir = 4;
-	icon_state = "bench"
+	icon_state = "bench";
+	
 	},
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/plasteel/f13/vault_floor/floor,
@@ -10306,7 +10333,8 @@
 /obj/item/trash/chips,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier2,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "pfr" = (
@@ -10737,7 +10765,8 @@
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier3,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "pKG" = (
@@ -10759,7 +10788,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/machinery/light/small,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "pML" = (
@@ -11345,7 +11375,8 @@
 /obj/structure/wreck/trash/machinepile,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "qEC" = (
@@ -11562,7 +11593,8 @@
 	color = "red"
 	},
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "qVM" = (
@@ -12231,7 +12263,8 @@
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "rLZ" = (
@@ -12910,7 +12943,8 @@
 /obj/structure/table,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "tfa" = (
@@ -12975,7 +13009,8 @@
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "tkJ" = (
@@ -13347,7 +13382,8 @@
 "tMi" = (
 /obj/structure/sink{
 	dir = 1;
-	pixel_y = 16
+	pixel_y = 16;
+	
 	},
 /obj/structure/mirror{
 	pixel_y = 32
@@ -13449,7 +13485,8 @@
 	name = "Pre-War Medicine"
 	},
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "tWv" = (
@@ -13470,7 +13507,8 @@
 /obj/structure/table,
 /obj/effect/spawner/lootdrop/f13/weapon/gun/ammo/tier1,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "tYu" = (
@@ -13834,7 +13872,8 @@
 /area/f13/vault)
 "uDi" = (
 /obj/structure/toilet{
-	dir = 1
+	dir = 1;
+	
 	},
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/plasteel/f13{
@@ -13873,7 +13912,8 @@
 /obj/effect/decal/cleanable/dirt,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "uIR" = (
@@ -14794,7 +14834,8 @@
 /area/f13/bunker)
 "vVP" = (
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "vXb" = (
@@ -16025,7 +16066,8 @@
 	dir = 4
 	},
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 "xEJ" = (
@@ -16487,7 +16529,8 @@
 /obj/effect/spawner/lootdrop/f13/junkspawners,
 /obj/effect/decal/cleanable/dirt,
 /turf/open/floor/f13{
-	icon_state = "greenrustyfull"
+	icon_state = "greenrustyfull";
+	
 	},
 /area/f13/bunker)
 
@@ -18069,7 +18112,7 @@ heT
 heT
 heT
 heT
-heT
+tSp
 bsh
 bsh
 bsh
@@ -46402,7 +46445,7 @@ heT
 heT
 heT
 heT
-tSp
+heT
 heT
 heT
 hbR
