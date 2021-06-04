@@ -31,7 +31,7 @@
 
 /obj/effect/landmark/map_load_mark/dungeons/north
     name = "North Bunker"
-    templates = list("north_bunker_3")
+    templates = list("north_bunker_1","north_bunker_3")
 
 /datum/map_template/fallout/dungeons/northbunker1
 	name = "North Bunker 1"
