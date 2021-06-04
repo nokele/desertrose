@@ -28,15 +28,19 @@
 /obj/item/twohanded/update_icon_state()
 	icon_state = "[icon_prefix]0"
 
-/*
- * Fireaxe
- */
+////////
+//AXES//
+////////
+
+//FIREAXE
 /obj/item/twohanded/fireaxe //DONE
+	icon = 'icons/fallout/objects/weapons/melee.dmi'
 	icon_state = "fireaxe0"
-	lefthand_file = 'icons/mob/inhands/weapons/axes_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/axes_righthand.dmi'
-	name = "woodaxe"
-	desc = "The axe forgets what the tree remembers."
+	icon_prefix = "fireaxe"
+	lefthand_file = 'icons/fallout/mobs/onmob/melee/twohanded_lefthand.dmi'
+	righthand_file = 'icons/fallout/mobs/onmob/melee/twohanded_lefthand.dmi'
+	name = "fireaxe"
+	desc = "A heavy axe complete with chipping red powder laquer."
 	force = 25
 	throwforce = 15
 	w_class = WEIGHT_CLASS_BULKY
@@ -51,7 +55,7 @@
 	resistance_flags = FIRE_PROOF
 	wound_bonus = -15
 	bare_wound_bonus = 20
-	icon_prefix = "fireaxe"
+
 
 /*/obj/item/twohanded/fireaxe/Initialize()
 	. = ..()
@@ -84,10 +88,8 @@
 		var/obj/structure/grille/G = A
 		G.take_damage(40, BRUTE, "melee", 0)
 
-/*
- * Bone Axe
- */
-/obj/item/twohanded/fireaxe/boneaxe  //DONE
+//BONE AXE
+/obj/item/twohanded/fireaxe/boneaxe
 	icon_state = "bone_axe0"
 	name = "bone axe"
 	desc = "A large, vicious axe crafted out of several sharpened bone plates and crudely tied together. Made of monsters, by killing monsters, for killing monsters."
@@ -98,22 +100,27 @@
 	AddComponent(/datum/component/two_handed, force_unwielded=25, force_wielded=40, icon_wielded="[icon_prefix]1")
 
 
+//BUMPER SWORD
 /obj/item/twohanded/fireaxe/bmprsword
 	name = "bumper sword"
 	icon_state = "bmprsword0"
 	desc = "A heavy makeshift sword fashioned out of a car bumper."
-	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
 	slot_flags = ITEM_SLOT_BACK
 	icon_prefix = "bmprsword"
 
-//spears
-/obj/item/twohanded/spear //DONE
-	icon_state = "spearglass0"
-	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
-	name = "improvised metal glaive"
-	desc = "A improvised metal glaive that can be wielded."
+//////////
+//SPEARS//
+//////////
+
+//SCRAP SPEAR
+/obj/item/twohanded/spear
+	icon = 'icons/fallout/objects/weapons/melee.dmi'
+	icon_state = "spear_scrap0"
+	icon_prefix = "spear_scrap"
+	lefthand_file = 'icons/fallout/mobs/onmob/melee/twohanded_lefthand.dmi'
+	righthand_file = 'icons/fallout/mobs/onmob/melee/twohanded_lefthand.dmi'
+	name = "scrap spear"
+	desc = "Simple spear made from a piece of glass tied to a metal rod."
 	force = 15
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
@@ -131,7 +138,7 @@
 	armor = list("melee" = 0, "bullet" = 0, "laser" = 0, "energy" = 0, "bomb" = 0, "bio" = 0, "rad" = 0, "fire" = 50, "acid" = 30)
 	var/obj/item/grenade/explosive = null
 	var/war_cry = "AAAAARGH!!!"
-	icon_prefix = "spearglass"
+
 	wound_bonus = -15
 	bare_wound_bonus = 15
 
@@ -221,29 +228,35 @@
 		desc = "A makeshift spear with \a [G] attached to it."
 	update_icon()
 
+//GLAIVE
+/obj/item/twohanded/spear/glaive
+	name = "metal glaive"
+	desc = "Polearm once very popular in the western wasteland. A forged steel blade on a wooden handle."
+	icon_state = "spear_glaive0"
+	icon_prefix = "spear_glaive"
+
+/obj/item/twohanded/spear/glaive/ComponentInitialize()
+	. = ..()
+	AddComponent(/datum/component/two_handed, force_unwielded=20, force_wielded=36, icon_wielded="[icon_prefix]1")
+
+//LEGION LANCE
 /obj/item/twohanded/spear/lance
-	icon_state = "lance0"
-	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
 	name = "legion lance"
 	desc = "A long spear made in the Legions war foundries. Useful for fighting tribals and hunting when ammunition is scarce."
-	icon_prefix = "lance"
+	icon_state = "spear_lance0"
+	icon_prefix = "spear_lance"
 
 /obj/item/twohanded/spear/lance/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/butchering, 100, 70) //decent in a pinch, but pretty bad.
-	AddElement(/datum/element/sword_point)
-	AddComponent(/datum/component/two_handed, force_unwielded=10, force_wielded=40, icon_wielded="[icon_prefix]1")
+	AddComponent(/datum/component/two_handed, force_unwielded=28, force_wielded=40, icon_wielded="[icon_prefix]1")
 
-/*
- * Bone Spear
- */
+
+//BONE SPEAR
 /obj/item/twohanded/spear/bonespear	//Blatant imitation of spear, but made out of bone. Not valid for explosive modification.
-	icon_state = "bone_spear0"
-	lefthand_file = 'icons/mob/inhands/weapons/polearms_lefthand.dmi'
-	righthand_file = 'icons/mob/inhands/weapons/polearms_righthand.dmi'
 	name = "bone spear"
-	desc = "A haphazardly-constructed yet still deadly weapon. The pinnacle of modern technology."
+	desc = "Traditional weapon of many tribes, carved from bone, sharpened and reinforced with leather strips."
+	icon_state = "spear_bone0"
+	icon_prefix = "spear_bone"
 	force = 15
 	w_class = WEIGHT_CLASS_BULKY
 	slot_flags = ITEM_SLOT_BACK
@@ -255,19 +268,20 @@
 	hitsound = 'sound/weapons/bladeslice.ogg'
 	attack_verb = list("attacked", "poked", "jabbed", "torn", "gored")
 	sharpness = SHARP_POINTY
-	icon_prefix = "bone_spear"
+
 
 /obj/item/twohanded/spear/bonespear/ComponentInitialize()
 	. = ..()
 	AddComponent(/datum/component/two_handed, force_unwielded=15, force_wielded=30, icon_wielded="[icon_prefix]1")
 
+//DEATHCLAW SPEAR
 /obj/item/twohanded/spear/bonespear/deathclaw
 	name = "deathclaw spear"
 	desc = "A finely crafted spear with a shaft wrapped in deathclaw leather. It is tipped with a claw from a beast that must have been terrifying in size."
 	force = 20
 	armour_penetration = 0.3
-	icon_state = "clawspear0"
-	icon_prefix = "clawspear"
+	icon_state = "spear_claw0"
+	icon_prefix = "spear_claw"
 
 /obj/item/twohanded/spear/bonespear/deathclaw/ComponentInitialize()
 	. = ..()
@@ -292,7 +306,7 @@
 		return
 	M.apply_damage(20, TOX, null, 0)
 
-// CHAINSAW
+// chainsaw
 /obj/item/twohanded/chainsaw
 	name = "chainsaw"
 	desc = "A versatile power tool. Useful for limbing trees and delimbing humans."
@@ -420,7 +434,7 @@
 
 /obj/item/twohanded/baseball/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 15, force_wielded = 30, icon_wielded="[icon_prefix]1")
+	AddComponent(/datum/component/two_handed, force_unwielded = 18, force_wielded = 30, icon_wielded="[icon_prefix]1")
 
 /obj/item/twohanded/baseball/spiked
 	name = "spiked baseball bat"
@@ -435,7 +449,7 @@
 
 /obj/item/twohanded/baseball/spiked/ComponentInitialize()
 	. = ..()
-	AddComponent(/datum/component/two_handed, force_unwielded = 20, force_wielded = 35, icon_wielded="[icon_prefix]1")
+	AddComponent(/datum/component/two_handed, force_unwielded = 22, force_wielded = 35, icon_wielded="[icon_prefix]1")
 
 /obj/item/twohanded/sledgehammer
 	name = "sledgehammer"
@@ -588,37 +602,6 @@ var/list/possible_colors = list("red")
 //COMMENTED OUT STUFF
 
 /* Im not removing it, but commenting it out. Its a good example of stuff, but it isnt really good for the server, no?
-//GREY TIDE
-/obj/item/twohanded/spear/grey_tide
-	icon_state = "spearglass0"
-	name = "\improper Grey Tide"
-	desc = "Recovered from the aftermath of a revolt aboard Defense Outpost Theta Aegis, in which a seemingly endless tide of Assistants caused heavy casualities among Nanotrasen military forces."
-	throwforce = 20
-	throw_speed = 4
-	attack_verb = list("gored")
-	var/clonechance = 50
-	var/clonedamage = 12
-	var/clonespeed = 0
-	var/clone_replication_chance = 30
-	var/clone_lifespan = 100
-
-
-/obj/item/twohanded/spear/grey_tide/afterattack(atom/movable/AM, mob/living/user, proximity)
-	. = ..()
-	if(!proximity)
-		return
-	user.faction |= "greytide([REF(user)])"
-	if(isliving(AM))
-		var/mob/living/L = AM
-		if(istype (L, /mob/living/simple_animal/hostile/illusion))
-			return
-		if(!L.stat && prob(50))
-			var/mob/living/simple_animal/hostile/illusion/M = new(user.loc)
-			M.faction = user.faction.Copy()
-			M.Copy_Parent(user, 100, user.health/2.5, 12, 30)
-			M.GiveTarget(L)
-
-
 
 /obj/item/twohanded/bonespear/venom //added for Viper raiders -Thes
 	container_type = INJECTABLE
