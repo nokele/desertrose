@@ -30,8 +30,8 @@
 	mappath = "_maps/map_files/templates/dungeons/oasis_bunker_2.dmm"
 
 /obj/effect/landmark/map_load_mark/dungeons/north
-	name = "North Bunker"
-	templates = list("north_bunker_1")
+    name = "North Bunker"
+    templates = list("north_bunker_3")
 
 /datum/map_template/fallout/dungeons/northbunker1
 	name = "North Bunker 1"
@@ -39,7 +39,11 @@
 	mappath = "_maps/map_files/templates/dungeons/north_bunker_1.dmm"
 
 /datum/map_template/fallout/dungeons/northbunker2
-	name = "North Bunker 2" 
+	name = "North Bunker 2"
 	id = "north_bunker_2"
 	mappath = "_maps/map_files/templates/dungeons/north_bunker_2.dmm"
 
+/datum/map_template/fallout/dungeons/northbunker3
+	name = "North Bunker 3"
+	id = "north_bunker_3"
+	mappath = "_maps/map_files/templates/dungeons/north_bunker_3.dmm"
