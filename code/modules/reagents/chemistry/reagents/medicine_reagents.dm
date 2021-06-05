@@ -32,7 +32,6 @@
 	name = "Adminordrazine"
 	description = "It's magic. We don't have to explain it."
 	color = "#ffffff"
-	can_synth = FALSE
 	taste_description = "badmins"
 	value = REAGENT_VALUE_GLORIOUS
 
@@ -1070,6 +1069,7 @@
 	overdose_threshold = 60
 	pH = 8.7
 	value = REAGENT_VALUE_RARE
+	can_synth = TRUE
 
 /datum/reagent/medicine/stimulants/on_mob_metabolize(mob/living/L)
 	..()
@@ -1325,7 +1325,7 @@
 	pH = 11
 	value = REAGENT_VALUE_COMMON //not any higher. Ambrosia is a milestone for hydroponics already.
 
-	
+
 //Earthsblood is still a wonderdrug. Just... don't expect to be able to mutate something that makes plants so healthy.
 /datum/reagent/medicine/earthsblood/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
 	. = ..()
@@ -1339,7 +1339,7 @@
 			myseed.adjust_yield(round(chems.get_reagent_amount(src.type) * 1))
 			myseed.adjust_endurance(round(chems.get_reagent_amount(src.type) * 0.5))
 			myseed.adjust_production(-round(chems.get_reagent_amount(src.type) * 0.5))
-	
+
 /datum/reagent/medicine/earthsblood/on_mob_life(mob/living/carbon/M)
 	M.adjustBruteLoss(-3 * REM, FALSE)
 	M.adjustFireLoss(-3 * REM, FALSE)
@@ -1387,7 +1387,6 @@
 	description = "An extract of lavaland atmospheric and mineral elements. Heals the user in small doses, but is extremely toxic otherwise."
 	color = "#a1a1a1"
 	overdose_threshold = 3 //To prevent people stacking massive amounts of a very strong healing reagent
-	can_synth = FALSE
 	pH = 14
 	value = REAGENT_VALUE_AMAZING
 
@@ -1475,6 +1474,7 @@
 	name = "Muscle Stimulant"
 	description = "A potent chemical that allows someone under its influence to be at full physical ability even when under massive amounts of pain."
 	value = REAGENT_VALUE_RARE
+	can_synth = TRUE
 
 /datum/reagent/medicine/muscle_stimulant/on_mob_metabolize(mob/living/M)
 	. = ..()
@@ -1632,7 +1632,6 @@
 	name = "liquid wisdom"
 	description = "the physical representation of wisdom, in liquid form"
 	taste_mult = 4
-	can_synth = FALSE
 	overdose_threshold = 30
 	value = REAGENT_VALUE_UNCOMMON // while it's 'rare', it can be milked from the wisdom cow
 

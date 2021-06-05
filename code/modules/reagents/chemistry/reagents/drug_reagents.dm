@@ -44,6 +44,7 @@
 	taste_description = "smoke"
 	trippy = FALSE
 	pH = 8
+	can_synth = TRUE
 
 /datum/reagent/drug/nicotine/on_mob_life(mob/living/carbon/M)
 	if(prob(1))
@@ -112,7 +113,7 @@
 	addiction_threshold = 15
 	pH = 9
 	value = REAGENT_VALUE_UNCOMMON
-
+	can_synth = TRUE
 
 /datum/reagent/drug/krokodil/on_mob_life(mob/living/carbon/M)
 	var/high_message = pick("You feel calm.", "You feel collected.", "You feel like you need to relax.")

@@ -293,6 +293,7 @@
 	color = "#B31008" // rgb: 179, 16, 8
 	taste_description = "scorching agony"
 	pH = 7.4
+	can_synth = TRUE
 
 /datum/reagent/consumable/condensedcapsaicin/reaction_mob(mob/living/M, method=TOUCH, reac_volume)
 	if(!ishuman(M) && !ismonkey(M))
@@ -416,6 +417,7 @@
 	taste_description = "mushroom"
 	pH = 11
 	value = REAGENT_VALUE_COMMON
+	can_synth = TRUE
 
 /datum/reagent/drug/mushroomhallucinogen/on_mob_life(mob/living/carbon/M)
 	M.slurring = max(M.slurring,50)
@@ -824,7 +826,6 @@
 	color = "#792300"
 	taste_description = "indescribable"
 	taste_mult = 100
-	can_synth = FALSE
 	pH = 6.1
 	value = REAGENT_VALUE_AMAZING
 

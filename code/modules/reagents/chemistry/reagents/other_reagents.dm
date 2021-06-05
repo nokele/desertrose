@@ -912,7 +912,6 @@
 	name = "Gluttony's Blessing"
 	description = "An advanced corruptive toxin produced by something terrible."
 	color = "#5EFF3B" //RGB: 94, 255, 59
-	can_synth = FALSE
 	taste_description = "decay"
 	value = REAGENT_VALUE_GLORIOUS
 
@@ -926,6 +925,7 @@
 	metabolization_rate = 0.25 * REAGENTS_METABOLISM
 	taste_description = "bitterness"
 	pH = 10
+	can_synth = TRUE
 
 /datum/reagent/serotrotium/on_mob_life(mob/living/carbon/M)
 	if(ishuman(M))
@@ -940,6 +940,7 @@
 	color = "#808080" // rgb: 128, 128, 128
 	taste_mult = 0 // oderless and tasteless
 	pH = 9.2//It's acutally a huge range and very dependant on the chemistry but pH is basically a made up var in it's implementation anyways
+	can_synth = TRUE
 
 /datum/reagent/oxygen/reaction_obj(obj/O, reac_volume)
 	if((!O) || (!reac_volume))
@@ -960,6 +961,7 @@
 	color = "#6E3B08" // rgb: 110, 59, 8
 	taste_description = "metal"
 	pH = 5.5
+	can_synth = TRUE
 
 /datum/reagent/copper/reaction_obj(obj/O, reac_volume)
 	if(istype(O, /obj/item/stack/sheet/metal))
@@ -974,6 +976,7 @@
 	reagent_state = GAS
 	color = "#808080" // rgb: 128, 128, 128
 	taste_mult = 0
+	can_synth = TRUE
 
 
 /datum/reagent/nitrogen/reaction_obj(obj/O, reac_volume)
@@ -995,6 +998,7 @@
 	color = "#808080" // rgb: 128, 128, 128
 	taste_mult = 0
 	pH = 0.1//Now I'm stuck in a trap of my own design. Maybe I should make -ve pHes? (not 0 so I don't get div/0 errors)
+	can_synth = TRUE
 
 /datum/reagent/potassium
 	name = "Potassium"
@@ -1002,12 +1006,14 @@
 	reagent_state = SOLID
 	color = "#A0A0A0" // rgb: 160, 160, 160
 	taste_description = "sweetness"
+	can_synth = TRUE
 
 /datum/reagent/mercury
 	name = "Mercury"
 	description = "A curious metal that's a liquid at room temperature. Neurodegenerative and very bad for the mind."
 	color = "#484848" // rgb: 72, 72, 72A
 	taste_mult = 0 // apparently tasteless.
+	can_synth = TRUE
 
 /datum/reagent/mercury/on_mob_life(mob/living/carbon/M)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !isspaceturf(M.loc))
@@ -1024,6 +1030,7 @@
 	color = "#BF8C00" // rgb: 191, 140, 0
 	taste_description = "rotten eggs"
 	pH = 4.5
+	can_synth = TRUE
 
 /datum/reagent/carbon
 	name = "Carbon"
@@ -1033,6 +1040,7 @@
 	taste_description = "sour chalk"
 	pH = 5
 	material = /datum/material/diamond
+	can_synth = TRUE
 
 /datum/reagent/carbon/reaction_turf(turf/T, reac_volume)
 	if(!isspaceturf(T))
@@ -1047,6 +1055,7 @@
 	color = "#808080" // rgb: 128, 128, 128
 	taste_description = "chlorine"
 	pH = 7.4
+	can_synth = TRUE
 
 // You're an idiot for thinking that one of the most corrosive and deadly gasses would be beneficial
 /datum/reagent/chlorine/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
@@ -1069,6 +1078,7 @@
 	color = "#808080" // rgb: 128, 128, 128
 	taste_description = "acid"
 	pH = 2
+	can_synth = TRUE
 
 // You're an idiot for thinking that one of the most corrosive and deadly gasses would be beneficial
 /datum/reagent/fluorine/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
@@ -1091,6 +1101,7 @@
 	color = "#808080" // rgb: 128, 128, 128
 	taste_description = "salty metal"
 	pH = 11.6
+	can_synth = TRUE
 
 /datum/reagent/phosphorus
 	name = "Phosphorus"
@@ -1099,6 +1110,7 @@
 	color = "#832828" // rgb: 131, 40, 40
 	taste_description = "vinegar"
 	pH = 6.5
+	can_synth = TRUE
 
 /datum/reagent/lithium
 	name = "Lithium"
@@ -1107,6 +1119,7 @@
 	color = "#808080" // rgb: 128, 128, 128
 	taste_description = "metal"
 	pH = 11.3
+	can_synth = TRUE
 
 /datum/reagent/lithium/on_mob_life(mob/living/carbon/M)
 	if(CHECK_MOBILITY(M, MOBILITY_MOVE) && !isspaceturf(M.loc))
@@ -1121,6 +1134,7 @@
 	color = "#808080" // rgb: 128, 128, 128
 	taste_description = "sweetness"
 	pH = 9
+	can_synth = TRUE
 
 /datum/reagent/radium
 	name = "Radium"
@@ -1129,6 +1143,7 @@
 	color = "#C7C7C7" // rgb: 199,199,199
 	taste_description = "the colour blue and regret"
 	pH = 10
+	can_synth = TRUE
 
 /datum/reagent/radium/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
 	. = ..()
@@ -1179,6 +1194,7 @@
 	overdose_threshold = 30
 	color = "#c2391d"
 	material = /datum/material/lead
+	can_synth = TRUE
 
 /datum/reagent/iron
 	name = "Iron"
@@ -1189,6 +1205,7 @@
 	overdose_threshold = 30
 	color = "#c2391d"
 	material = /datum/material/iron
+	can_synth = TRUE
 
 /datum/reagent/iron/on_mob_life(mob/living/carbon/C)
 	if((HAS_TRAIT(C, TRAIT_NOMARROW)))
@@ -1221,6 +1238,7 @@
 	color = "#F7C430" // rgb: 247, 196, 48
 	taste_description = "expensive metal"
 	material = /datum/material/gold
+	can_synth = TRUE
 
 /datum/reagent/silver
 	name = "Silver"
@@ -1243,6 +1261,7 @@
 	taste_description = "the inside of a reactor"
 	pH = 4
 	material = /datum/material/uranium
+	can_synth = TRUE
 
 /datum/reagent/uranium/on_mob_life(mob/living/carbon/M)
 	M.apply_effect(1/M.metabolism_efficiency,EFFECT_IRRADIATE,0)
@@ -1303,6 +1322,7 @@
 	reagent_state = SOLID
 	color = "#A8A8A8" // rgb: 168, 168, 168
 	taste_description = "metal"
+	can_synth = TRUE
 
 /datum/reagent/silicon
 	name = "Silicon"
@@ -1312,6 +1332,7 @@
 	taste_mult = 0
 	pH = 10
 	material = /datum/material/glass
+	can_synth = TRUE
 
 /datum/reagent/fuel
 	name = "Welding fuel"
@@ -1322,7 +1343,7 @@
 	glass_name = "glass of welder fuel"
 	glass_desc = "Unless you're an industrial tool, this is probably not safe for consumption."
 	pH = 4
-
+	can_synth = TRUE
 
 /datum/reagent/fuel/reaction_mob(mob/living/M, method=TOUCH, reac_volume)//Splashing people with welding fuel to make them easy to ignite!
 	if(method == TOUCH || method == VAPOR)
@@ -1457,7 +1478,6 @@
 	name = "Nanomachines"
 	description = "Microscopic construction robots."
 	color = "#535E66" // rgb: 83, 94, 102
-	can_synth = FALSE
 	taste_description = "sludge"
 	value = REAGENT_VALUE_GLORIOUS
 
@@ -1469,7 +1489,6 @@
 	name = "Xenomicrobes"
 	description = "Microbes with an entirely alien cellular structure."
 	color = "#535E66" // rgb: 83, 94, 102
-	can_synth = FALSE
 	taste_description = "sludge"
 	value = REAGENT_VALUE_GLORIOUS
 
@@ -1481,7 +1500,6 @@
 	name = "Tubercle bacillus Cosmosis microbes"
 	description = "Active fungal spores."
 	color = "#92D17D" // rgb: 146, 209, 125
-	can_synth = FALSE
 	taste_description = "slime"
 	pH = 11
 	value = REAGENT_VALUE_GLORIOUS
@@ -1521,6 +1539,7 @@
 	color = "#404030" // rgb: 64, 64, 48
 	taste_description = "mordant"
 	pH = 11.6
+	can_synth = TRUE
 
 /datum/reagent/ammonia/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
 	. = ..()
@@ -1555,6 +1574,7 @@
 	color = "#B0B0B0" // rgb : 192, 192, 192
 	taste_description = "something unknowable"
 	pH = 6
+	can_synth = TRUE
 
 /datum/reagent/carbondioxide/reaction_obj(obj/O, reac_volume)
 	if((!O) || (!reac_volume))
@@ -1576,6 +1596,7 @@
 	color = "#808080"
 	taste_description = "sweetness"
 	pH = 5.8
+	can_synth = TRUE
 
 /datum/reagent/nitrous_oxide/reaction_obj(obj/O, reac_volume)
 	if((!O) || (!reac_volume))
@@ -1812,6 +1833,7 @@
 	reagent_state = LIQUID
 	color = "#292929"
 	taste_description = "oil"
+	can_synth = TRUE
 
 /datum/reagent/stable_plasma
 	name = "Stable Plasma"
@@ -1821,6 +1843,7 @@
 	taste_description = "bitterness"
 	taste_mult = 1.5
 	pH = 1.5
+	can_synth = TRUE
 
 /datum/reagent/stable_plasma/on_mob_life(mob/living/carbon/C)
 	C.adjustPlasma(10)
@@ -1833,6 +1856,7 @@
 	color = "#694600"
 	taste_description = "metal"
 	pH = 4.5
+	can_synth = TRUE
 
 /datum/reagent/bromine
 	name = "Bromine"
@@ -1841,6 +1865,7 @@
 	color = "#b37740"
 	taste_description = "chemicals"
 	pH = 7.8
+	can_synth = TRUE
 
 /datum/reagent/phenol
 	name = "Phenol"
@@ -1849,6 +1874,7 @@
 	taste_description = "sweet and tarry" //Again, not a strong acid.
 	pH = 5.5
 	color = "#e6e8ff"
+	can_synth = TRUE
 
 /datum/reagent/ash
 	name = "Ash"
@@ -2164,7 +2190,6 @@
 		of the host body."
 	color = "#123524" // RGB (18, 53, 36)
 	metabolization_rate = INFINITY
-	can_synth = FALSE
 	taste_description = "brains"
 	pH = 0.5
 	value = REAGENT_VALUE_GLORIOUS
@@ -2347,7 +2372,6 @@
 	description = "404: Chemical not found."
 	metabolization_rate = REAGENTS_METABOLISM
 	color = "#0000FF"
-	can_synth = FALSE
 	var/datum/dna/original_dna
 	var/reagent_ticks = 0
 	chemical_flags = REAGENT_INVISIBLE
@@ -2468,7 +2492,6 @@
 	data = list("donor"=null,"viruses"=null,"donor_DNA"=null,"blood_type"=null,"resistances"=null,"trace_chem"=null,"mind"=null,"ckey"=null,"gender"=null,"real_name"=null)
 	reagent_state = LIQUID
 	color = "#FFFFFF" // rgb: 255, 255, 255
-	can_synth = FALSE
 	nutriment_factor = 0.5 * REAGENTS_METABOLISM
 	var/decal_path = /obj/effect/decal/cleanable/semen
 
@@ -2591,7 +2614,6 @@ datum/reagent/eldritch
 	name = "Hairball"
 	description = "A bundle of keratinous bits and fibers, not easily digestible."
 	reagent_state = SOLID
-	can_synth = FALSE
 	metabolization_rate = 0.05 * REAGENTS_METABOLISM
 	taste_description = "wet hair"
 	var/amount = 0
@@ -2637,7 +2659,6 @@ datum/reagent/eldritch
 
 /datum/reagent/red_ichor
 	name = "Red Ichor"
-	can_synth = FALSE
 	description = "A unknown red liquid, linked to healing of most moral wounds."
 	color = "#c10000"
 	metabolization_rate = REAGENTS_METABOLISM * 2.5
@@ -2654,7 +2675,6 @@ datum/reagent/eldritch
 
 /datum/reagent/green_ichor
 	name = "Green Ichor"
-	can_synth = FALSE
 	description = "A unknown green liquid, linked to healing of most internal wounds."
 	color = "#158c00"
 	metabolization_rate = REAGENTS_METABOLISM * 2.5
@@ -2671,7 +2691,6 @@ datum/reagent/eldritch
 
 /datum/reagent/blue_ichor
 	name = "Blue Ichor"
-	can_synth = FALSE
 	description = "A unknown blue liquid, linked to healing the mind."
 	color = "#0914e0"
 	metabolization_rate = REAGENTS_METABOLISM * 2.5

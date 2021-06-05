@@ -30,6 +30,7 @@
 	taste_description = "mushroom"
 	value = REAGENT_VALUE_UNCOMMON
 	pH = 13
+	can_synth = TRUE
 
 /datum/reagent/toxin/FEV_solution
 	name = "Unstable FEV solution"
@@ -66,6 +67,7 @@
 	taste_mult = 0.9
 	value = REAGENT_VALUE_VERY_COMMON
 	pH = 2.3
+	can_synth = TRUE
 
 /datum/reagent/toxin/mutagen/reaction_mob(mob/living/carbon/M, method=TOUCH, reac_volume)
 	if(!..())
@@ -268,6 +270,7 @@
 	taste_description = "sourness"
 	pH = 11
 	value = REAGENT_VALUE_UNCOMMON
+	can_synth = TRUE
 
 /datum/reagent/toxin/mindbreaker/on_mob_life(mob/living/carbon/M)
 	M.hallucination += 5
@@ -574,6 +577,7 @@
 	metabolization_rate = 0.125 * REAGENTS_METABOLISM
 	toxpwr = 1.25
 	value = REAGENT_VALUE_UNCOMMON
+	can_synth = TRUE
 
 /datum/reagent/toxin/cyanide/on_mob_life(mob/living/carbon/M)
 	if(prob(5))
@@ -897,6 +901,7 @@
 	self_consuming = TRUE
 	pH = 2.75
 	value = REAGENT_VALUE_NONE
+	can_synth = TRUE
 
 // Sure, go ahead and pour acid on your precious plants. What's the worst that could happen?
 /datum/reagent/toxin/acid/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)
@@ -937,6 +942,7 @@
 	toxpwr = 2
 	acidpwr = 42.0
 	value = REAGENT_VALUE_COMMON
+	can_synth = TRUE
 
 /datum/reagent/toxin/acid/fantiacid
 	name = "Fluoroantimonic acid"
@@ -945,6 +951,7 @@
 	toxpwr = 2
 	acidpwr = 150.0
 	value = REAGENT_VALUE_COMMON
+	can_synth = TRUE
 
 // ACID II: UNHEEDED WARNINGS
 /datum/reagent/toxin/acid/fluacid/on_hydroponics_apply(obj/item/seeds/myseed, datum/reagents/chems, obj/machinery/hydroponics/mytray, mob/user)

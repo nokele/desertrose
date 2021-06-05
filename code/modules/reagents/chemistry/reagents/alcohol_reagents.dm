@@ -2094,7 +2094,6 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	name = "Commander and Chief"
 	description = "A cocktail for the captain on the go."
 	color = "#ffffc9"
-	can_synth = FALSE
 	boozepwr = 50
 	quality = DRINK_FANTASTIC
 	taste_description = "duty and responsibility"
@@ -2375,7 +2374,6 @@ All effects don't start immediately, but rather get worse over time; the rate is
 	boozepwr = 35
 	quality = DRINK_GOOD
 	taste_description = "bad coding"
-	can_synth = FALSE
 	var/list/names = list("null fruit" = 1) //Names of the fruits used. Associative list where name is key, value is the percentage of that fruit.
 	var/list/tastes = list("bad coding" = 1) //List of tastes. See above.
 	pH = 4

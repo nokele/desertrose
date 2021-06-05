@@ -6,6 +6,7 @@
 	color = "#550000"
 	taste_description = "sweet tasting metal"
 	value = REAGENT_VALUE_COMMON
+	can_synth = TRUE
 
 /datum/reagent/thermite/reaction_turf(turf/T, reac_volume)
 	if(reac_volume >= 1)
@@ -23,6 +24,7 @@
 	color = "#808080" // rgb: 128, 128, 128
 	taste_description = "oil"
 	value = REAGENT_VALUE_EXCEPTIONAL
+	can_synth = TRUE
 
 /datum/reagent/stabilizing_agent
 	name = "Stabilizing Agent"
@@ -40,6 +42,7 @@
 	metabolization_rate = 4
 	taste_description = "burning"
 	value = REAGENT_VALUE_COMMON
+	can_synth = TRUE
 
 /datum/reagent/clf3/on_mob_life(mob/living/carbon/M)
 	M.adjust_fire_stacks(2)
@@ -100,6 +103,7 @@
 	metabolization_rate = 0.05
 	taste_description = "salt"
 	value = REAGENT_VALUE_RARE
+	can_synth = TRUE
 
 /datum/reagent/blackpowder/on_mob_life(mob/living/carbon/M)
 	..()
@@ -120,6 +124,7 @@
 	color = "#C8C8C8"
 	taste_description = "salt"
 	value = REAGENT_VALUE_UNCOMMON
+	can_synth = TRUE
 
 /datum/reagent/smoke_powder
 	name = "Smoke Powder"
@@ -128,6 +133,7 @@
 	color = "#C8C8C8"
 	taste_description = "smoke"
 	value = REAGENT_VALUE_COMMON
+	can_synth = TRUE
 
 /datum/reagent/sonic_powder
 	name = "Sonic Powder"
@@ -166,6 +172,7 @@
 	color = "#FA00AF"
 	taste_description = "burning"
 	value = REAGENT_VALUE_COMMON
+	can_synth = TRUE
 
 /datum/reagent/napalm/on_mob_life(mob/living/carbon/M)
 	M.adjust_fire_stacks(1)
