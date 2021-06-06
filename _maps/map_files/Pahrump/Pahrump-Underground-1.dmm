@@ -136,7 +136,7 @@
 /turf/open/water,
 /area/f13/tunnel)
 "aeS" = (
-/obj/structure/frame/machine,
+/obj/machinery/rnd/production/circuit_imprinter,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -15036,6 +15036,14 @@
 "mps" = (
 /turf/closed/wall,
 /area/f13/bunker)
+"mpt" = (
+/obj/machinery/computer/rdconsole/core/followers{
+	dir = 8
+	},
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "mpA" = (
 /mob/living/simple_animal/hostile/raider/firefighter,
 /turf/open/floor/plasteel/f13/vault_floor/misc/vaultrust,
@@ -20987,6 +20995,12 @@
 /obj/effect/decal/cleanable/blood/splatter,
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
+"rkV" = (
+/obj/machinery/rnd/production/protolathe,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "rkW" = (
 /obj/structure/wreck/trash/five_tires,
 /obj/effect/decal/cleanable/dirt/dust,
@@ -24501,6 +24515,12 @@
 	},
 /turf/open/floor/plasteel/f13/vault_floor/yellow,
 /area/f13/tunnel)
+"uCT" = (
+/obj/machinery/rnd/server/followers,
+/turf/open/floor/f13{
+	icon_state = "bluerustysolid"
+	},
+/area/f13/followers)
 "uDa" = (
 /obj/structure/window/reinforced,
 /obj/effect/turf_decal/stripes/line,
@@ -49990,12 +50010,12 @@ jlt
 cuB
 tFc
 oFg
-tKU
+uCT
 tKU
 tKU
 aeS
-aeS
-aeS
+mpt
+rkV
 vCM
 tKU
 tKU
