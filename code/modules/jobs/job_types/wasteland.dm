@@ -453,7 +453,7 @@ Raider
 		/obj/item/ammo_box/a762=2)
 
 /datum/outfit/loadout/raider_legion
-	name = "Exiled Legionnaire"
+	name = "Exiled Legionary"
 	suit = /obj/item/clothing/suit/armor/f13/exile/legexile
 	uniform = /obj/item/clothing/under/f13/exile/legion
 	id = /obj/item/card/id/rusted/rustedmedallion
