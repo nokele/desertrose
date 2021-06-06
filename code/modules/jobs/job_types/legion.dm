@@ -4,7 +4,7 @@
 	department_flag = LEGION
 	selection_color = "#ffeeee"
 
-	forbids = "The Legion forbids: Using drugs such as stimpacks and alcohol. Ghouls joining. Women fighting or being trained to fight (self defense and suicide allowed). Using robots and advanced machines. Killing Legion members in secret, only if according to law and in public is it acceptable."
+	forbids = "The Legion forbids: Using medicinal or recreational drugs detrimental to the human condition such as but not limited to, stimpacks, alcohol, painkillers & smoking including not least machines that dispense them.<br>Recruitment or captures of Ghouls & Mutants.<br>Women fighting or being trained to fight (personal self-defense and suicide allowed).<br>Using robots and advanced machines.<br>Killing Legion members in secret, only if according to law and in public is it acceptable."
 	enforces = "The Legion demands: Obeying orders of superiors. A roman style name. Wearing the uniform, unless acting as a NON-COMBAT infiltrator. Expect death as punishment for failing to obey."
 	objectivesList = list("Focus on the tribals, win them over or intimidate them.", "Focus on Oasis, display dominance.", "Send out patrols and establish checkpoints to curb use of digusting drugs and degenerate behaviour.", "Flagstaff requests more worker: acquire slaves, train them if possible, send them east for breaking if not.", "Make sure no other faction gains dominance over Oasis, if they remain neutral it can be used to the Legions advantage.")
 
@@ -58,7 +58,7 @@
 ///Legate - Admin///
 ////////////////////
 
-/datum/job/CaesarsLegion/Legionnaire/f13legate
+/datum/job/CaesarsLegion/Legionnaire/legate
 	title = "Legate"
 	flag = F13LEGATE
 	head_announce = list("Security")
@@ -67,11 +67,11 @@
 	req_admin_notify = 1
 	total_positions = 0
 	spawn_positions = 0
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legate
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/legate
 	access = list()
 	minimal_access = list()
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13legate/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/legate/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -80,9 +80,9 @@
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13legate
+/datum/outfit/job/CaesarsLegion/Legionnaire/legate
 	name =			"Legate"
-	jobtype =		/datum/job/CaesarsLegion/Legionnaire/f13legate
+	jobtype =		/datum/job/CaesarsLegion/Legionnaire/legate
 	shoes = 		/obj/item/clothing/shoes/f13/military/legate
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/legate
 	head = 			/obj/item/clothing/head/helmet/f13/legion/legate
@@ -102,7 +102,7 @@
 
 // CENTURION
 
-/datum/job/CaesarsLegion/Legionnaire/f13centurion
+/datum/job/CaesarsLegion/Legionnaire/centurion
 	title = "Legion Centurion"
 	flag = F13CENTURION
 	faction = "Legion"
@@ -110,11 +110,11 @@
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are the camp commander and strongest soldier. Use your officers, the Decanii, to delegate tasks, make sure you lead and give orders. Take no disrespect, you are the dominus. If you prove a fool or weak, expect to be dispatched by a stronger subordinate."
-	supervisors = "the Legate"
+	supervisors = "The Legate."
 	selection_color = "#ffdddd"
 	req_admin_notify = 1
 	display_order = JOB_DISPLAY_ORDER_CENTURION
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/centurion
 	exp_requirements = 1500
 
 	loadout_options = list(
@@ -123,7 +123,7 @@
 	/datum/outfit/loadout/centurion //marksman and powerfist
 	)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/centurion/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -132,9 +132,9 @@
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13centurion
+/datum/outfit/job/CaesarsLegion/Legionnaire/centurion
 	name = "Legion Centurion"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13centurion
+	jobtype = /datum/job/CaesarsLegion/Legionnaire/centurion
 	id =			/obj/item/card/id/dogtag/legcenturion
 	mask =			/obj/item/clothing/mask/bandana/legcenturion
 	neck =			/obj/item/storage/belt/holster
@@ -176,19 +176,19 @@
 
 // VETERAN DECANUS (Riot Shotgun, Spatha M1911)
 
-/datum/job/CaesarsLegion/Legionnaire/f13decanvet
+/datum/job/CaesarsLegion/Legionnaire/decanvet
 	title = "Legion Veteran Decanus"
 	flag = F13DECANVET
 	faction = "Legion"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You answer directly to the Centurion, his second in command. Lead the camp, ensure its defended, keep track of the Explorers and use your veterans to their full potential."
-	supervisors = "the Centurion"
+	supervisors = "The Centurion."
 	display_order = JOB_DISPLAY_ORDER_DECANVET
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/decanvet
 	exp_requirements = 900
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/decanvet/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -196,9 +196,9 @@
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decanvet
+/datum/outfit/job/CaesarsLegion/Legionnaire/decanvet
 	name = 			"Legion Veteran Decanus"
-	jobtype = 		/datum/job/CaesarsLegion/Legionnaire/f13decanvet
+	jobtype = 		/datum/job/CaesarsLegion/Legionnaire/decanvet
 	id = 			/obj/item/card/id/dogtag/legveteran
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/heavy
 	head = 			/obj/item/clothing/head/helmet/f13/legion/heavy
@@ -220,28 +220,28 @@
 
 // PRIME DECANUS (M1 garand, .44 revolver, gladius)
 
-/datum/job/CaesarsLegion/Legionnaire/f13decan
+/datum/job/CaesarsLegion/Legionnaire/decan
 	title = "Legion Prime Decanus"
 	flag = F13DECAN
 	faction = "Legion"
 	total_positions = 1
 	spawn_positions = 1
 	description = "A experienced officer, often commanding the camp. Give orders, lead patrols."
-	supervisors = "the Veteran Decanus and the Centurion"
+	supervisors = "The Veteran Decanus and the Centurion."
 	display_order = JOB_DISPLAY_ORDER_DECAN
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/decan
 	exp_requirements = 720
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decan/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/decan/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decan
+/datum/outfit/job/CaesarsLegion/Legionnaire/decan
 	name =			"Prime Decanus"
-	jobtype =		/datum/job/CaesarsLegion/Legionnaire/f13decan
+	jobtype =		/datum/job/CaesarsLegion/Legionnaire/decan
 	id = 			/obj/item/card/id/dogtag/legveteran
 	suit =			/obj/item/clothing/suit/armor/f13/legion/vet
 	head =			/obj/item/clothing/head/helmet/f13/legion/prime/decan
@@ -263,7 +263,7 @@
 
 // RECRUIT DECANUS
 
-/datum/job/CaesarsLegion/Legionnaire/f13decanrec
+/datum/job/CaesarsLegion/Legionnaire/decanrec
 	title = "Legion Recruit Decanus"
 	flag = F13DECANREC
 	faction = "Legion"
@@ -272,7 +272,7 @@
 	description = "The junior officer, you must train the recruits and test them, and if a suicide charge is needed, lead them to a glorious death."
 	supervisors = "the Prime/Veteran Decanus and the Centurion"
 	display_order = JOB_DISPLAY_ORDER_DECANREC
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/decanrec
 	exp_requirements = 600
 
 	loadout_options = list(
@@ -280,16 +280,16 @@
 	/datum/outfit/loadout/recdecgun, //greasegun, riotshield and punch dagger
 	)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/decanrec/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13decanrec
+/datum/outfit/job/CaesarsLegion/Legionnaire/decanrec
 	name = "Legion Recruit Decanus"
-	jobtype = /datum/job/CaesarsLegion/Legionnaire/f13decanrec
+	jobtype = /datum/job/CaesarsLegion/Legionnaire/decanrec
 	id = 			/obj/item/card/id/dogtag/legveteran
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet
 	head = 			/obj/item/clothing/head/helmet/f13/legion/recruit/decan
@@ -327,19 +327,19 @@
 
 // VEXILLARIUS (9mm burst with 1 ap mag to fight PA, ripper.) Intended to have flexible loadout to help counter stuff Legion can't replicate.
 
-/datum/job/CaesarsLegion/Legionnaire/f13vexillarius
+/datum/job/CaesarsLegion/Legionnaire/vexillarius
 	title = "Legion Vexillarius"
 	flag = F13VEXILLARIUS
 	faction = "Legion"
 	total_positions = 1
 	spawn_positions = 1
 	description = "You are a Veteran of proven bravery, selected to carry weapons to counter enemies with heavy armor. When not fighting, relay orders from the commander and act as a bodyguard."
-	supervisors = "the Veteran Decanus and Centurion"
+	supervisors = "The Veteran Decanus and Centurion."
 	display_order = JOB_DISPLAY_ORDER_VEXILLARIUS
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vexillarius
 	exp_requirements = 720
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/vexillarius/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -347,16 +347,16 @@
 	ADD_TRAIT(H, TRAIT_IRONFIST, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13vexillarius
+/datum/outfit/job/CaesarsLegion/Legionnaire/vexillarius
 	name =			"Vexillarius"
-	jobtype =		/datum/job/CaesarsLegion/Legionnaire/f13vexillarius
+	jobtype =		/datum/job/CaesarsLegion/Legionnaire/vexillarius
 	id = 			/obj/item/card/id/dogtag/legveteran
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet/combvexil
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/vet/vexil
 	mask =			/obj/item/clothing/mask/bandana/legvet
 	neck =			/obj/item/storage/belt/holster
 	glasses = 		/obj/item/clothing/glasses/sunglasses
-	suit_store = 	/obj/item/gun/ballistic/automatic/pistol/beretta/automatic	
+	suit_store = 	/obj/item/gun/ballistic/automatic/pistol/beretta/automatic
 	r_pocket =		/obj/item/flashlight/lantern
 	l_pocket =		/obj/item/restraints/handcuffs
 	l_hand = 		/obj/item/nullrod/claymore/chainsaw_sword
@@ -374,16 +374,16 @@
 
 // VETERAN
 
-/datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	title = "Veteran Legionnaire"
+/datum/job/CaesarsLegion/Legionnaire/vetlegionary
+	title = "Veteran Legionary"
 	flag = F13VETLEGIONARY
 	faction = "Legion"
 	total_positions = 4
 	spawn_positions = 4
 	description = "A hardened warrior, obeying the orders from the Decanus and Centurion is second nature, as is fighting the profligates. If no officers are present, make sure the younger warriors act like proper Legionaires."
-	supervisors = "the Decani and Centurion"
+	supervisors = "The Decanii legionaires and the Centurion."
 	display_order = JOB_DISPLAY_ORDER_VETLEGIONARY
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionary
 	exp_requirements = 600
 
 	loadout_options = list(
@@ -392,16 +392,16 @@
 		/datum/outfit/loadout/vetrifle, //trail gun, .357 revolver, gladius.
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionnaire
-	name =			"Veteran Legionnaire"
-	jobtype =		/datum/job/CaesarsLegion/Legionnaire/vetlegionnaire
+/datum/outfit/job/CaesarsLegion/Legionnaire/vetlegionary
+	name =			"Veteran Legionary"
+	jobtype =		/datum/job/CaesarsLegion/Legionnaire/vetlegionary
 	id = 			/obj/item/card/id/dogtag/legveteran
 	mask =			/obj/item/clothing/mask/bandana/legvet
 	head = 			/obj/item/clothing/head/helmet/f13/legion/vet
@@ -415,7 +415,7 @@
 
 /datum/outfit/loadout/vetberserker
 	name =			"Berserker"
-	suit_store =	/obj/item/gun/ballistic/shotgun/automatic/combat/auto5	
+	suit_store =	/obj/item/gun/ballistic/shotgun/automatic/combat/auto5
 	backpack_contents = list(
 		/obj/item/storage/fancy/ammobox/slugshot=1,
 		/obj/item/twohanded/fireaxe=1,
@@ -441,17 +441,17 @@
 
 // PRIME
 
-/datum/job/CaesarsLegion/Legionnaire/f13legionary
-	title = "Prime Legionnaire"
+/datum/job/CaesarsLegion/Legionnaire/legionary
+	title = "Prime Legionary"
 	flag = F13LEGIONARY
 	faction = "Legion"
 	total_positions = 4
 	spawn_positions = 4
-	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legions muscle, the young men who will build the future with their own blood and sacrifice, for Caesar."
-	supervisors = "the Decani and Centurion"
+	description = "A front line soldier who has shown ability to obey and fought in some battles. The Legion's muscle; the young men who will build the future with their own blood and sacrifice, for Caesar."
+	supervisors = "The Decanii and the Centurion."
 	display_order = JOB_DISPLAY_ORDER_LEGIONARY
 	exp_requirements = 120
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/legionary
 
 	loadout_options = list(
 		/datum/outfit/loadout/primelancer, //lance, .44 revolver
@@ -459,16 +459,16 @@
 		/datum/outfit/loadout/primebrave //M1911 pistol, fireaxe, bola
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/legionary/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13legionary
-	name =			"Prime Legionnaire"
-	jobtype = 		/datum/job/CaesarsLegion/Legionnaire/f13legionary
+/datum/outfit/job/CaesarsLegion/Legionnaire/legionary
+	name =			"Prime Legionary"
+	jobtype = 		/datum/job/CaesarsLegion/Legionnaire/legionary
 	id				= /obj/item/card/id/dogtag/legprime
 	mask			= /obj/item/clothing/mask/bandana/legprime
 	head			= /obj/item/clothing/head/helmet/f13/legion/prime
@@ -506,25 +506,25 @@
 
 // RECRUIT
 
-/datum/job/CaesarsLegion/Legionnaire/f13recleg
-	title = "Recruit Legionnaire"
+/datum/job/CaesarsLegion/Legionnaire/recruitleg
+	title = "Recruit Legionary"
 	flag = F13RECRUITLEG
 	faction = "Legion"
 	total_positions = 6
 	spawn_positions = 6
 	description = "You have recently come of age or been inducted into Caesar's Legion. You have absolutely no training, and are expected to follow every whim of the Decanii and your Centurion. Respect the soldiers of higher rank."
-	supervisors = "the Decani and Centurion."
+	supervisors = "The Decanii and the Centurion firstmost. Your experienced prime & veteran brothers secondarily for guidance."
 	display_order = JOB_DISPLAY_ORDER_RECRUITLEG
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/recruitleg
 
 	loadout_options = list(
 		/datum/outfit/loadout/recruittribal, //lance, .357 revolver
 		/datum/outfit/loadout/recruitlegion //autopipe, machete
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13recleg
-	name =			"Recruit Legionnaire"
-	jobtype =		/datum/job/CaesarsLegion/Legionnaire/f13recleg
+/datum/outfit/job/CaesarsLegion/Legionnaire/recruitleg
+	name =			"Recruit Legionary"
+	jobtype =		/datum/job/CaesarsLegion/Legionnaire/recruitleg
 	id = 			/obj/item/card/id/dogtag/legrecruit
 	shoes = 		/obj/item/clothing/shoes/f13/military/leather
 	suit = 			/obj/item/clothing/suit/armor/f13/legion/recruit
@@ -550,18 +550,18 @@
 		/obj/item/ammo_box/magazine/autopipe=2)
 
 
-// EXPLORER 
+// EXPLORER
 
-/datum/job/CaesarsLegion/Legionnaire/f13explorer
+/datum/job/CaesarsLegion/Legionnaire/explorer
 	title = "Legion Explorer"
 	flag = F13EXPLORER
 	faction = "Legion"
 	total_positions = 3
 	spawn_positions = 3
 	description = "Scout the area, secure key points, but do not ignore orders or wordlessly die some place. A good explorer helps his unit by taking initiative and helping the commander without needing micro-managment."
-	supervisors = "the Veteran Decanus and Centurion must be obeyed, and as always, respect must be given to other Decanus. You are not a officer, but you are a specialist."
+	supervisors = "The Veteran Decanus and Centurion must be obeyed, and as always, respect must be given to other Decanii. You are not a officer, but you are a specialist."
 	display_order = JOB_DISPLAY_ORDER_EXPLORER
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/explorer
 	exp_requirements = 300
 
 	loadout_options = list(
@@ -569,16 +569,16 @@
 		/datum/outfit/loadout/expambusher //trench shotgun, .357 revolver, c4, machete, smokebomb
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/explorer/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_HARD_YARDS, src)
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13explorer
+/datum/outfit/job/CaesarsLegion/Legionnaire/explorer
 	name =		"Legion Explorer"
-	jobtype =	/datum/job/CaesarsLegion/Legionnaire/f13explorer
+	jobtype =	/datum/job/CaesarsLegion/Legionnaire/explorer
 	id = 		/obj/item/card/id/dogtag/legprime
 	suit = 		/obj/item/clothing/suit/armor/f13/legion/vet/explorer
 	head = 		/obj/item/clothing/head/helmet/f13/legion/vet/explorer
@@ -608,7 +608,7 @@
 	suit_store =	/obj/item/gun/ballistic/shotgun/automatic/hunting/trail
 	backpack_contents = list(
 		/obj/item/ammo_box/tube/m44=4,
-		/obj/item/gun/ballistic/revolver/m29=1,		
+		/obj/item/gun/ballistic/revolver/m29=1,
 		/obj/item/ammo_box/a357=2)
 
 //////////////////////
@@ -618,7 +618,7 @@
 // CAMP DUTY Forgemasters: legion weapon recipes, tinkering or Slavemasters, temporary posting for legionnaires, RP, keep eye on slaves.
 // For both : Defend camp, help out there, dont run off, Mars teachings to help make potions.
 
-/datum/job/CaesarsLegion/Legionnaire/f13campfollower
+/datum/job/CaesarsLegion/Legionnaire/campfollower
 	title = "Camp Duty"
 	flag = F13CAMPFOLLOWER
 	faction = "Legion"
@@ -627,7 +627,7 @@
 	description = " The Slavemaster is a legionnaire temporarily assigned to keeping slaves and prisoners in check, either to recuperate from wounds or by request. The Forgemaster makes weapons of all sorts and upgrades them, keeping order in the Forge. Both are warriors expected to kill intruders and fight in defense of the camp."
 	supervisors = "the Centurion."
 	display_order = JOB_DISPLAY_ORDER_CAMPFOLLOWER
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/campfollower
 	exp_requirements = 300
 
 	loadout_options = list(
@@ -635,16 +635,16 @@
 		/datum/outfit/loadout/forgemaster //sledgehammer, crafting recipes spathas, gladius, lance, trail carbine
 		)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/campfollower/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
 	ADD_TRAIT(H, TRAIT_BIG_LEAGUES, src)
 	ADD_TRAIT(H, TRAIT_MARS_TEACH, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13campfollower
+/datum/outfit/job/CaesarsLegion/Legionnaire/campfollower
 	name =			"Camp Duty"
-	jobtype = 		/datum/job/CaesarsLegion/Legionnaire/f13campfollower
+	jobtype = 		/datum/job/CaesarsLegion/Legionnaire/campfollower
 	id =			/obj/item/card/id/dogtag/legslavemaster
 	mask = 			/obj/item/clothing/mask/bandana/auxilia
 	uniform = 		/obj/item/clothing/under/f13/legskirt
@@ -854,13 +854,13 @@
 Possible paths - refine Forgemaster role, more recipes etc.
 Continue tweaking down power of loadouts in tandem with NCR.
 Slavemaster merged with Forgemaster in a support role has pros and cons, might need shuffle around at some later date.
-Add recipes/traits to keep refining support roles. 
+Add recipes/traits to keep refining support roles.
 
 Priestess of Mars removed to reduce bloat, Legate is enough for admin intervention IC.
 
 Venator  - Removed to reduce role bloat and clarify chain of command.
 */
-/datum/job/CaesarsLegion/Legionnaire/f13venator
+/datum/job/CaesarsLegion/Legionnaire/venator
 	title = "Legion Venator"
 	flag = F13VENATOR
 	faction = "Legion"
@@ -870,10 +870,10 @@ Venator  - Removed to reduce role bloat and clarify chain of command.
 	supervisors = "the Centurion"
 	selection_color = "#ffdddd"
 	display_order = JOB_DISPLAY_ORDER_VENATOR
-	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/f13venator
+	outfit = /datum/outfit/job/CaesarsLegion/Legionnaire/venator
 	exp_requirements = 1500
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13venator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
+/datum/outfit/job/CaesarsLegion/Legionnaire/venator/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
 	..()
 	if(visualsOnly)
 		return
@@ -882,9 +882,9 @@ Venator  - Removed to reduce role bloat and clarify chain of command.
 	ADD_TRAIT(H, TRAIT_TECHNOPHOBE, src)
 	ADD_TRAIT(H, TRAIT_GENERIC, src)
 
-/datum/outfit/job/CaesarsLegion/Legionnaire/f13venator
+/datum/outfit/job/CaesarsLegion/Legionnaire/venator
 	name = "Legion Venator"
-	jobtype 	= /datum/job/CaesarsLegion/Legionnaire/f13explorer
+	jobtype 	= /datum/job/CaesarsLegion/Legionnaire/explorer
 	id 			= 	/obj/item/card/id/dogtag/legvenator
 	suit 		= 	/obj/item/clothing/suit/armor/f13/legion/venator
 	head 		= 	/obj/item/clothing/head/helmet/f13/legion/venator
