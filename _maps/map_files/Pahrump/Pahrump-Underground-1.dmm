@@ -136,7 +136,8 @@
 /turf/open/water,
 /area/f13/tunnel)
 "aeS" = (
-/obj/machinery/rnd/production/circuit_imprinter,
+/obj/structure/frame/machine,
+/obj/item/circuitboard/machine/circuit_imprinter,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
@@ -20996,7 +20997,8 @@
 /turf/open/indestructible/ground/inside/subway,
 /area/f13/tunnel)
 "rkV" = (
-/obj/machinery/rnd/production/protolathe,
+/obj/structure/frame/machine,
+/obj/item/circuitboard/machine/techfab/department/medical,
 /turf/open/floor/f13{
 	icon_state = "bluerustysolid"
 	},
