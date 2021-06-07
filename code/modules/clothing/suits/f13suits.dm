@@ -114,6 +114,17 @@
 	item_state = "det_suit"
 	armor = list("tier" = 1)
 
+/obj/item/clothing/suit/f13/pmarsrobe
+	name = "priestess of mars robe"
+	desc = "A red robe decorated with bird feathers for the Priestess of Mars."
+	icon_state = "pmars_robe"
+	item_state = "pmars_robe"
+	armor = list(melee = 0, bullet = 0, laser = 20, energy = 20, bomb = 5, bio = 0, rad = 0, fire = 100, acid = 0)
+	resistance_flags = LAVA_PROOF | FIRE_PROOF
+	body_parts_covered = CHEST|GROIN|ARMS|LEGS
+	flags_inv = HIDEGLOVES|HIDESHOES
+
+
 /obj/item/clothing/suit/f13/mfp //Mad Max 1 1979 babe!
 	name = "MFP jacket"
 	desc = "(II) A Main Force Patrol leather jacket.<br>Offbeat."
