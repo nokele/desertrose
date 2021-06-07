@@ -384,8 +384,8 @@ Star Paladin
 /datum/outfit/loadout/spaladina
 	name = "Long-Range Support Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/ballistic/automatic/m72=1,
-		/obj/item/ammo_box/magazine/m2mm=3,
+		/obj/item/gun/energy/laser/wattz2k/extended=1,
+		/obj/item/stock_parts/cell/ammo/mfc=3,
 		/obj/item/gun/energy/laser/plasma/glock=1,
 		/obj/item/stock_parts/cell/ammo/ec=2,
 		)
@@ -393,7 +393,7 @@ Star Paladin
 /datum/outfit/loadout/spaladinc
 	name = "Mainline Senior Paladin"
 	backpack_contents = list(
-		/obj/item/gun/energy/laser/aer14=1,
+		/obj/item/gun/energy/laser/aer12=1,
 		/obj/item/stock_parts/cell/ammo/mfc=2,
 		/obj/item/gun/ballistic/automatic/pistol/beretta/automatic=1,
 		/obj/item/ammo_box/magazine/m9mmds=3

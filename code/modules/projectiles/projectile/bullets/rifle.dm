@@ -95,6 +95,6 @@
 
 //2mm Electromagnetic
 /obj/item/projectile/bullet/c2mm
-	damage = 55
-	armour_penetration = 0.85
+	damage = 50
+	armour_penetration = 0.80
 	pixels_per_second = TILES_TO_PIXELS(100)
