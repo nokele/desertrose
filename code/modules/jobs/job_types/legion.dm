@@ -688,22 +688,25 @@
 
 // AUXILIA - Females with specialist training. Cause men dont do womens work in Legion and vice versa. Cant have it both ways. Healing is womens work, basta.
 // Medicus only one with MID surgery, Treasurer get tinkering, both get Mars & Low Surgery.
+// Priestesses of Mars are yet to await particular religious input.
 
 /datum/job/CaesarsLegion/auxilia
-	title = "Household Slave"
+	title = "Auxilia"
 	flag = F13AUXILIA
 	faction = "Legion"
-	total_positions = 2
-	spawn_positions = 2
-	description = "You are a slave that has been recognized as being talented and trustworthy, given special medical training or entrusted with the camp funds and maintaining weapons. As part of the Centurions household you are expected to help the camp even if given no orders."
-	supervisors = "the Centurion"
+	total_positions = 3
+	spawn_positions = 3
+	description = "You are a female slave that has been recognized for your talents & trustworthyness enough to roam within the boundaries of the camp, but you are by no means totally free to speak or act your mind.<br>You are unable to escape by yourself without help and at your own discretion may be reluctant to follow attempts at 'rescue'.<br>Priestesses of Mars are non-combatant religious fanatics and have a important enough role within the camp, protelyzing the teachings of Mars and virtues of his son Caesar.<br>Temptresses are elevated beauties, Aureus amongst denarii; who use their influence to try and confer preferencial treatment, they are not prostitutes (such a title or trade would mean death) though are often gifted between high ranking or worthy legionaries."
+	supervisors = "The Veteran Decanus and Centurion firstmost with immediacy on risk of pain of death, maintain appropriate respect for legionaries of the opposite sex.<br>All women offered as gifts are expected to be subservient to their allocated 'masters' until the priviledge is retracted, they are gifted and bartered again or discarded at discretion."
 	display_order = JOB_DISPLAY_ORDER_AUXILIA
 	outfit = /datum/outfit/job/CaesarsLegion/auxilia
 	exp_requirements = 600
 
 	loadout_options = list(
-	/datum/outfit/loadout/auxassist, // Tinker and keep track of the money, handle trading beneath the warriors
-	/datum/outfit/loadout/auxmedicus // Do surgery, medical tasks.
+	/datum/outfit/loadout/auxassist, // Tinker and keep track of the money, handle trading beneath the warriors.
+	/datum/outfit/loadout/auxmedicus, // Do surgery, medical tasks.
+	/datum/outfit/loadout/auxassistpriestess, //Applies spiritual edge to roleplay.
+	/datum/outfit/loadout/auxassisttemptress //Prostitute is a dirty word in the legion, you are more or less a gold-digger.
 	)
 
 /datum/outfit/job/CaesarsLegion/auxilia/post_equip(mob/living/carbon/human/H, visualsOnly = FALSE)
@@ -720,7 +723,7 @@
 			L.update_label()
 
 /datum/outfit/job/CaesarsLegion/auxilia
-	name = 			"Household Slave"
+	name = 			"Auxila"
 	jobtype = 		/datum/job/CaesarsLegion/auxilia
 	id =			/obj/item/card/id/legionbrand
 	head =			/obj/item/clothing/head/f13/legion/auxilia
@@ -768,6 +771,20 @@
 		/obj/item/bonesetter=1,
 		/obj/item/book/granter/trait/midsurgery=1)
 
+/datum/outfit/loadout/auxassistpriestess
+	name =		"Priestess of Mars (Religious RP)"
+	uniform = /obj/item/clothing/under/f13/priestess
+	head	= /obj/item/clothing/head/helmet/f13/legion/marsheaddress
+	suit	= /obj/item/clothing/suit/f13/pmarsrobe
+	gloves	= /obj/item/clothing/gloves/fingerless
+	backpack_contents = list(
+		/obj/item/reagent_containers/pill/patch/healingpowder=2)
+
+/datum/outfit/loadout/auxassisttemptress
+	name =		"Temptress (Debutante RP)"
+	uniform = /obj/item/clothing/under/f13/legauxiliaf/temptress
+	backpack_contents = list(
+		/obj/item/lipstick = 1)
 
 // LOYAL SLAVES - Servant cook, and assist with medical, low surgery. Worker farm and mine.
 // Both get Mars teachings to help out when normal work is done.
